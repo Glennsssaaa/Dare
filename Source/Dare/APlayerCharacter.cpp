@@ -17,16 +17,14 @@ AAPlayerCharacter::AAPlayerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
-	CubeMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CubeMesh"));
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> CubeMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Cube.Cube'"));
-	UStaticMesh* CubeMeshRef = CubeMeshAsset.Object;
-	CubeMesh->SetStaticMesh(CubeMeshRef);
-	CubeMesh->SetupAttachment(GetRootComponent());
-	CubeMesh->SetRelativeScale3D(FVector3d(0.5f,0.5f,1.0f));
+	//GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
+	PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
 
+	PlayerMesh->SetupAttachment(GetRootComponent());
+	
 	DirectionArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrowComponent"));
-	DirectionArrowComponent->SetupAttachment(CubeMesh);
+	DirectionArrowComponent->SetupAttachment(PlayerMesh);
+	
 	DirectionArrowComponent->SetHiddenInGame(false);
 }
 
@@ -36,12 +34,15 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	APlayerController* PC = Cast<APlayerController>(GetController());
+	//print the controller index
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
-	Subsystem->ClearAllMappings();
+	//Subsystem->ClearAllMappings();
 	Subsystem->AddMappingContext(InputMapping,0);
-
+	
 	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
-	PEI->BindAction(InputActions->InputMove,ETriggerEvent::Triggered, this, &AAPlayerCharacter::Move);
+	
+	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
+	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
 
 }
 
@@ -62,12 +63,14 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 	if(MoveValue.Y !=0 || MoveValue.X!=0)
 	{
 		PlayerDirection = FVector(MoveValue.Y,MoveValue.X,0);
-		CubeMesh->SetWorldRotation(FMath::Lerp(CubeMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
+		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
 	}
+
 }
 
-void AAPlayerCharacter::Move(const FInputActionValue& Value)
+void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 {
+
 	MoveValue=Value.Get<FVector2D>();
 	//Add movement input
 	if(MoveValue.Y != 0)
@@ -78,6 +81,16 @@ void AAPlayerCharacter::Move(const FInputActionValue& Value)
 		AddMovementInput(GetActorRightVector(), MoveValue.X * MovementSpeed);
 	}
 	
+}
+
+void AAPlayerCharacter::Interact(const FInputActionValue& Value)
+{
+	//print interact
+	UE_LOG(LogTemp, Warning, TEXT("Interact"));
+	APlayerController* PC = Cast<APlayerController>(GetController());
+	if(InteractableActor!=NULL){
+		//InteractableActor->Destroy();
+	}
 }
 
 

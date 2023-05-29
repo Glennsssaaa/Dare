@@ -17,6 +17,12 @@ class DARE_API UInputConfigData : public UDataAsset
 
 public:
 	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly)
-	UInputAction* InputMove;
+	UInputAction* InputControllerMove;
+	
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly)
+	UInputAction* InputKeyboardMove;
+	
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly)
+	UInputAction* InputInteract;
 	
 };

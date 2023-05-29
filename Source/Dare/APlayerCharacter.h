@@ -38,15 +38,20 @@ public:
 		float RotationSpeed = 5.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 		float MovementSpeed = 5.0f;
-    
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	class AActor* InteractableActor;
+	
     FVector PlayerDirection;
 	FVector2D MoveValue;
 private:
-	void Move(const FInputActionValue& Value);
+	void KeyboardMove(const FInputActionValue& Value);
 	
-	//cube component
+	void Interact(const FInputActionValue& Value);
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-		class UStaticMeshComponent* CubeMesh;
+	class UStaticMeshComponent* PlayerMesh;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class UArrowComponent* DirectionArrowComponent;
+
 };
