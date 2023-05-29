@@ -37,12 +37,17 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 		float RotationSpeed = 5.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
-		float MovementSpeed = 5.0f;
+		float MovementSpeed = 7.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class AActor* InteractableActor;
-	
-    FVector PlayerDirection;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FVector2D MoveValue;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool Interacting;
+    FVector PlayerDirection;
+	
 private:
 	void KeyboardMove(const FInputActionValue& Value);
 	

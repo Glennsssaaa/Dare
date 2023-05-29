@@ -60,7 +60,7 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	// lerp the player's direction to the direction variable
-	if(MoveValue.Y !=0 || MoveValue.X!=0)
+	if(MoveValue.Y !=0 || MoveValue.X!=0 && !Interacting)
 	{
 		PlayerDirection = FVector(MoveValue.Y,MoveValue.X,0);
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
@@ -70,17 +70,17 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 
 void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 {
-
-	MoveValue=Value.Get<FVector2D>();
-	//Add movement input
-	if(MoveValue.Y != 0)
-		AddMovementInput(GetActorForwardVector(), MoveValue.Y * MovementSpeed);
-
-	if(MoveValue.X!=0)
-	{
-		AddMovementInput(GetActorRightVector(), MoveValue.X * MovementSpeed);
-	}
-	
+	if(!Interacting){
+        MoveValue=Value.Get<FVector2D>();
+        //Add movement input
+        if(MoveValue.Y != 0)
+            AddMovementInput(GetActorForwardVector(), MoveValue.Y * MovementSpeed);
+    
+        if(MoveValue.X!=0)
+        {
+            AddMovementInput(GetActorRightVector(), MoveValue.X * MovementSpeed);
+        }
+    }
 }
 
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
