@@ -35,23 +35,54 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
-		float RotationSpeed = 5.0f;
+	float RotationSpeed = 5.0f;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
-		float MovementSpeed = 5.0f;
+	float MovementSpeed = 5.0f;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class AActor* InteractableActor;
 	
     FVector PlayerDirection;
 	FVector2D MoveValue;
+
+	// Player Dash
+	void PlayerDash();
+
+protected:
+	// Character Dash Variables
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	float DashCooldown = 5.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	int DashCharges = 3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	float DashDistance = 650.0f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	float DashSpeed = 1.35f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	FVector PredictedLocation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	bool bIsPlayerDashing = false;
+
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	FTimerHandle DashCooldownTimerHandle;
+	
 private:
 	void KeyboardMove(const FInputActionValue& Value);
-	
 	void Interact(const FInputActionValue& Value);
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-		class UArrowComponent* DirectionArrowComponent;
+	class UArrowComponent* DirectionArrowComponent;
+
+
 
 };
