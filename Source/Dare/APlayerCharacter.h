@@ -50,13 +50,20 @@ public:
 	void PlayerDash();
 
 protected:
-	// Character Dash Variables
+	// Dash Timer
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
-	float DashCooldown = 5.0f;
+	float DashCooldown = 0.f;
 
+	// Default Dash Cooldown
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	float DashCooldownDefault = 3.f;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	int DashCharges = 3;
-
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+	int DashChargesMax = 3;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashDistance = 650.0f;
 	

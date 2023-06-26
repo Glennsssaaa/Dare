@@ -68,6 +68,33 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
 	}
 
+
+	// Reduce Dash timer if needed
+	if(DashCooldown > 0.f)
+	{
+		DashCooldown -= DeltaTime;
+		
+		// Clamp Dash Cooldown to 0
+		if(DashCooldown < 0.f)
+		{
+			DashCooldown = 0.f;
+		}
+		
+		if (DashCooldown <= 0.f && DashCharges < DashChargesMax)
+		{
+			DashCharges++;
+			if(DashCharges < DashChargesMax)
+			{
+				DashCooldown = DashCooldownDefault;
+			}
+		}
+	}
+
+	// Print Dash Cooldown to screen
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Cooldown: %f"), DashCooldown));
+
+	// Print Dash Charges to screen
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
 }
 
 void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
@@ -98,17 +125,18 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 
 void AAPlayerCharacter::PlayerDash()
 {
+	// Check if the player is already dashing or if the dash is on cooldown
+	if(bIsPlayerDashing || DashCharges == 0) return;
+
 	// Disable Player Input to prevent player movement during dash
-	if(bIsPlayerDashing) return;
-	
 	DisableInput(UGameplayStatics::GetPlayerController(GetWorld(), 0));
 	UE_LOG(LogTemp, Warning, TEXT("Dash"));
-
-	// Run Dash Movement every frame until the player reaches the predicted location
-	bIsPlayerDashing = true;
 	
+	bIsPlayerDashing = true;
 	// Find the predicted location of the player after the dash
 	PredictedLocation = (DirectionArrowComponent->GetForwardVector() * DashDistance) + GetActorLocation();
+
+	DashCharges--;
 	
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
 	{
@@ -129,6 +157,12 @@ void AAPlayerCharacter::PlayerDash()
 			GetWorld()->GetTimerManager().ClearTimer(DashCooldownTimerHandle);
 				
 			bIsPlayerDashing = false;
+
+			// Only reset the cooldowm
+			if(DashCharges == DashChargesMax - 1)
+			{
+				DashCooldown = DashCooldownDefault;
+			}
 		}
 	}, GetWorld()->DeltaTimeSeconds / 2.75, true, 0.0f);
 	
