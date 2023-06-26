@@ -9,6 +9,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "InputConfigData.h"
 #include "Components/ArrowComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 
 
@@ -43,6 +44,7 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
+	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
 
 }
 
@@ -66,11 +68,38 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
 	}
 
+
+	// Reduce Dash timer if needed
+	if(DashCooldown > 0.f)
+	{
+		DashCooldown -= DeltaTime;
+		
+		// Clamp Dash Cooldown to 0
+		if(DashCooldown < 0.f)
+		{
+			DashCooldown = 0.f;
+		}
+		
+		if (DashCooldown <= 0.f && DashCharges < DashChargesMax)
+		{
+			DashCharges++;
+			if(DashCharges < DashChargesMax)
+			{
+				DashCooldown = DashCooldownDefault;
+			}
+		}
+	}
+
+	// Print Dash Cooldown to screen
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Cooldown: %f"), DashCooldown));
+
+	// Print Dash Charges to screen
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
 }
 
 void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 {
-
+	
 	MoveValue=Value.Get<FVector2D>();
 	//Add movement input
 	if(MoveValue.Y != 0)
@@ -88,10 +117,58 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 	//print interact
 	UE_LOG(LogTemp, Warning, TEXT("Interact"));
 	APlayerController* PC = Cast<APlayerController>(GetController());
-	if(InteractableActor!=NULL){
+	if(InteractableActor!=NULL)
+	{
 		//InteractableActor->Destroy();
 	}
 }
+
+void AAPlayerCharacter::PlayerDash()
+{
+	// Check if the player is already dashing or if the dash is on cooldown
+	if(bIsPlayerDashing || DashCharges == 0) return;
+
+	// Disable Player Input to prevent player movement during dash
+	DisableInput(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+	UE_LOG(LogTemp, Warning, TEXT("Dash"));
+	
+	bIsPlayerDashing = true;
+	// Find the predicted location of the player after the dash
+	PredictedLocation = (DirectionArrowComponent->GetForwardVector() * DashDistance) + GetActorLocation();
+
+	DashCharges--;
+	
+	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+	{
+		FHitResult SweepHitResult;
+			
+		// Set actor location using interpolation and check if there is any collision in the way
+		SetActorLocation(FMath::Lerp(GetActorLocation(), PredictedLocation, GetWorld()->GetDeltaSeconds() * DashSpeed), true, &SweepHitResult);
+
+		const FVector2D ActorLocation2D = FVector2D(GetActorLocation().X, GetActorLocation().Y);
+		const FVector2D PredictedLocation2D = FVector2D(PredictedLocation.X, PredictedLocation.Y);
+			
+		if (SweepHitResult.bBlockingHit || ActorLocation2D.Equals(PredictedLocation2D, 100.f))
+		{
+			// Location reached, activate dash cooldown, re-enable input and camera lag
+			EnableInput(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+
+			// Clear Dash timer to stop function running every frame
+			GetWorld()->GetTimerManager().ClearTimer(DashCooldownTimerHandle);
+				
+			bIsPlayerDashing = false;
+
+			// Only reset the cooldowm
+			if(DashCharges == DashChargesMax - 1)
+			{
+				DashCooldown = DashCooldownDefault;
+			}
+		}
+	}, GetWorld()->DeltaTimeSeconds / 2.75, true, 0.0f);
+	
+}
+
+
 
 
 	

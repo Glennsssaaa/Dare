@@ -13,4 +13,5 @@ UCLASS()
 class DARE_API ULocalMPViewportClient : public UGameViewportClient
 {
 	GENERATED_BODY()
+	
 };
