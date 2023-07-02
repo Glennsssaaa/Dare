@@ -39,7 +39,10 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float MovementSpeed = 5.0f;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
+	FVector2D LookValue;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class AActor* InteractableActor;
 	
@@ -50,6 +53,8 @@ public:
 	void PlayerDash();
 
 protected:
+
+	//Dash Variables
 	// Dash Timer
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashCooldown = 0.f;
@@ -75,7 +80,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	bool bIsPlayerDashing = false;
-
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	FTimerHandle DashCooldownTimerHandle;
@@ -83,6 +87,7 @@ protected:
 private:
 	void KeyboardMove(const FInputActionValue& Value);
 	void Interact(const FInputActionValue& Value);
+	void Aim(const FInputActionValue& Value);
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;

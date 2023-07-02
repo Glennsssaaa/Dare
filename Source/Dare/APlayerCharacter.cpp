@@ -43,9 +43,9 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
 	
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
+    PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
-
 }
 
 
@@ -62,12 +62,13 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	// lerp the player's direction to the direction variable
-	if(MoveValue.Y !=0 || MoveValue.X!=0)
+	if(LookValue.Y !=0 || LookValue.X!=0)
 	{
-		PlayerDirection = FVector(MoveValue.Y,MoveValue.X,0);
+		PlayerDirection = FVector(-LookValue.Y,LookValue.X,0);
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
 	}
-
+    
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Look Value: %f"), LookValue.X));
 
 	// Reduce Dash timer if needed
 	if(DashCooldown > 0.f)
@@ -112,15 +113,20 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 	
 }
 
+void AAPlayerCharacter::Aim(const FInputActionValue& Value){
+    LookValue=Value.Get<FVector2D>();
+
+    if(LookValue.X==0){
+        LookValue.X=1;    
+    }
+        PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
+}
+
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 {
 	//print interact
 	UE_LOG(LogTemp, Warning, TEXT("Interact"));
 	APlayerController* PC = Cast<APlayerController>(GetController());
-	if(InteractableActor!=NULL)
-	{
-		//InteractableActor->Destroy();
-	}
 }
 
 void AAPlayerCharacter::PlayerDash()

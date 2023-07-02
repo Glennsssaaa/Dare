@@ -27,4 +27,7 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	UInputAction* InputDash;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    UInputAction* InputAim;
 };
