@@ -1,23 +1,23 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
 #include "DestructableObject.h"
-
+#include "ATankCharacter.h"
 // Sets default values
 ADestructableObject::ADestructableObject()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	if(!DestructableObjectMesh)
+	if(!DestructibleObjectMesh)
 	{
-		DestructableObjectMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ObjectMesh"));
-		DestructableObjectMesh->SetupAttachment(GetRootComponent());
+		DestructibleObjectMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ObjectMesh"));
+		DestructibleObjectMesh->SetupAttachment(GetRootComponent());
 	}
 
-	/*if (!ObjectCollisionBox) 
+	if (!ObjectCollisionBox) 
 	{
 		ObjectCollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("CollisionBox"));
-	}*/
+	}
+
 
 }
 
@@ -34,4 +34,5 @@ void ADestructableObject::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
 

@@ -91,11 +91,11 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 		}
 	}
 
-	// Print Dash Cooldown to screen
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Cooldown: %f"), DashCooldown));
+	//// Print Dash Cooldown to screen
+	//GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Cooldown: %f"), DashCooldown));
 
-	// Print Dash Charges to screen
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
+	//// Print Dash Charges to screen
+	//GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
 }
 
 void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)

@@ -52,6 +52,9 @@ public:
 	// Player Dash
 	void PlayerDash();
 
+	// Getters and Setters
+	bool GetIsDashing() { return bIsPlayerDashing; };
+
 protected:
 
 	//Dash Variables
