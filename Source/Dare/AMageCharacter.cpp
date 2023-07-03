@@ -2,6 +2,8 @@
 
 
 #include "AMageCharacter.h"
+#include "Kismet/GameplayStatics.h"
+
 
 // Sets default values
 AAMageCharacter::AAMageCharacter()
@@ -15,7 +17,8 @@ AAMageCharacter::AAMageCharacter()
 void AAMageCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-
+	QueryParams.bTraceComplex = true;
+	QueryParams.AddIgnoredActor(this);
 }
 
 // Called every frame
@@ -24,20 +27,51 @@ void AAMageCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+
 void AAMageCharacter::Interact(const FInputActionValue& Value)
 {
 	//print interact
-	UE_LOG(LogTemp, Warning, TEXT("Interact"));
-	APlayerController* PC = Cast<APlayerController>(GetController());
+	UE_LOG(LogTemp, Warning, TEXT("Inherited"));
+	NextLocation.X = GetActorLocation().X;
+	NextLocation.Y = GetActorLocation().Y;
+	NextLocation.Z = GetActorLocation().Z + 200;
+	LineTraceArc();
+	isDrawing = true;
+	GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AAMageCharacter::LineTraceArc, 0.01f, true);
 }
 
+void AAMageCharacter::InteractEnd(const FInputActionValue& Value) {
+	GetWorldTimerManager().ClearTimer(lineTraceTimer);
+	GravityOffset = FVector::ZeroVector;
+}
 
 void AAMageCharacter::LineTraceArc() {
+	GravityOffset = GravityOffset + FVector(0,0,gravity * 0.1);
+	float offset = (abs(MoveValue.X + MoveValue.Y) + 1) * 1000;
+	float next = pow((offset*0.01),2) / (offset / 1000);
+	FVector vec = GetMesh()->GetForwardVector() * next;
+	
+	
 	FHitResult Hit;
-	FVector TraceStart = GetActorLocation();
-	FVector TraceEnd = GetActorLocation() + GetActorForwardVector() * 1000.f;
-	FCollisionQueryParams QueryParams;
+	FVector TraceStart = NextLocation;
+	FVector TraceEnd = (vec + NextLocation) + GravityOffset;
+
 	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd, ECC_GameTraceChannel1, QueryParams);
 	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 5.0f, 0, 10.f);
+	if (Hit.bBlockingHit) {
+		NextLocation.X = GetActorLocation().X;
+		NextLocation.Y = GetActorLocation().Y;
+		NextLocation.Z = GetActorLocation().Z + 200;
+		GravityOffset = FVector::ZeroVector;
+		FVector2D hitUV;
+		UGameplayStatics::FindCollisionUV(Hit,0,hitUV);
+		UE_LOG(LogTemp, Error, TEXT("UV Location %s"), *hitUV.ToString());
+
+		DrawFunc(Hit,hitUV);
+	
+	}
+	else {
+		NextLocation = TraceEnd;
+	}
 	
 }

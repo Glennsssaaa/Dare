@@ -45,6 +45,7 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
     PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
+	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Completed, this, &AAPlayerCharacter::InteractEnd);
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
 }
 
@@ -127,6 +128,10 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 	//print interact
 	UE_LOG(LogTemp, Warning, TEXT("Interact"));
 	APlayerController* PC = Cast<APlayerController>(GetController());
+}
+
+void AAPlayerCharacter::InteractEnd(const FInputActionValue& Value) {
+
 }
 
 void AAPlayerCharacter::PlayerDash()

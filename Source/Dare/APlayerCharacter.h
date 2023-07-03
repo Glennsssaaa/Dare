@@ -51,6 +51,10 @@ public:
 
 	// Player Dash
 	void PlayerDash();
+	void KeyboardMove(const FInputActionValue& Value);
+	virtual void Interact(const FInputActionValue& Value);
+	virtual void InteractEnd(const FInputActionValue& Value);
+	void Aim(const FInputActionValue& Value);
 
 protected:
 
@@ -85,10 +89,7 @@ protected:
 	FTimerHandle DashCooldownTimerHandle;
 	
 private:
-	void KeyboardMove(const FInputActionValue& Value);
-	void Interact(const FInputActionValue& Value);
-	void Aim(const FInputActionValue& Value);
-	
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;
 	

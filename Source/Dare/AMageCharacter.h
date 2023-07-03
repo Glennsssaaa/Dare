@@ -23,10 +23,22 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	void Interact(const FInputActionValue& Value) override;
+	void InteractEnd(const FInputActionValue& Value) override;
+
+	UFUNCTION(BlueprintImplementableEvent)
+		void DrawFunc(FHitResult Hit, FVector2D hitUV);
 
 private:
-	virtual void Interact(const FInputActionValue& Value);
 
+	//Line Trace Variables
 	void LineTraceArc();
+	FVector GravityOffset;
+	FVector NextLocation;
+	float gravity = -980;
+	bool isDrawing = false;
+	FTimerHandle lineTraceTimer; 
+	FCollisionQueryParams QueryParams;
+
 	int AbilitySelected = 0;
 };
