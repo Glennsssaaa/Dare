@@ -94,7 +94,10 @@ protected:
 	FTimerHandle DashCooldownTimerHandle;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	bool bCanPlayerMove = false;
+	bool bCanPlayerMove = true;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	bool bIsAbility = false;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;

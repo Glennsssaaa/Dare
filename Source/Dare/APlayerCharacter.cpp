@@ -48,6 +48,8 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Completed, this, &AAPlayerCharacter::InteractEnd);
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
+	PEI->BindAction(InputActions->InputAbility, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityOne);
+
 }
 
 
@@ -60,6 +62,8 @@ void AAPlayerCharacter::BeginPlay()
 
 void AAPlayerCharacter::AbilityOne()
 {
+//	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("maybe")));
+
 }
 
 // Called every frame
@@ -108,6 +112,8 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 
 void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 {
+	// Player can't move during certain actions, for example if they are aiming the tank's charge attack
+	if(!bCanPlayerMove) { return; }
 	
 	MoveValue=Value.Get<FVector2D>();
 	//Add movement input

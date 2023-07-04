@@ -48,4 +48,6 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UArrowComponent* DashAimArrowComponent;
 
+	UPROPERTY()
+	float ChargeDistance = 1500,f;
 };
