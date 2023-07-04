@@ -30,4 +30,10 @@ public:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
     UInputAction* InputAim;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	UInputAction* InputTankCharge;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	UInputAction* InputRelease;
 };
