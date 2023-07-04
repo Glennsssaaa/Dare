@@ -9,6 +9,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "InputConfigData.h"
 #include "Components/ArrowComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 
@@ -41,7 +42,7 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	Subsystem->AddMappingContext(InputMapping,0);
 	
 	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
-	
+	PC->SetShowMouseCursor(true);
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
     PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
@@ -68,8 +69,10 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 		PlayerDirection = FVector(-LookValue.Y,LookValue.X,0);
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
 	}
-    
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Look Value: %f"), LookValue.X));
+	//Player Direction Mouse Controls
+	GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(ETraceTypeQuery::TraceTypeQuery1, false, mouseHit);
+	playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), mouseHit.Location);
+	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), FRotator(0,playerDirection.Yaw,0), DeltaTime*RotationSpeed));
 
 	// Reduce Dash timer if needed
 	if(DashCooldown > 0.f)
@@ -125,9 +128,7 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 {
-	//print interact
-	UE_LOG(LogTemp, Warning, TEXT("Interact"));
-	APlayerController* PC = Cast<APlayerController>(GetController());
+
 }
 
 void AAPlayerCharacter::InteractEnd(const FInputActionValue& Value) {

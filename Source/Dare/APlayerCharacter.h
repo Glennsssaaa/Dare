@@ -48,7 +48,11 @@ public:
 	
     FVector PlayerDirection;
 	FVector2D MoveValue;
-
+	FVector mousePosition;
+	FVector mouseDirection;
+	FRotator playerDirection;
+	FHitResult mouseHit;
+	
 	// Player Dash
 	void PlayerDash();
 	void KeyboardMove(const FInputActionValue& Value);
@@ -88,14 +92,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	FTimerHandle DashCooldownTimerHandle;
 	
-private:
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UArrowComponent* DirectionArrowComponent;
-
-
-
 };

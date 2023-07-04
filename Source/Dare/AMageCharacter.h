@@ -27,7 +27,7 @@ public:
 	void InteractEnd(const FInputActionValue& Value) override;
 
 	UFUNCTION(BlueprintImplementableEvent)
-		void DrawFunc(FHitResult Hit, FVector2D hitUV);
+		void DrawFunc(AActor* hitActor, FVector2D hitUV);
 
 private:
 
