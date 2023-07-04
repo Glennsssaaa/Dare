@@ -26,7 +26,8 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = "Input")
 		class UInputConfigData* InputActions;
-	
+
+	virtual void AbilityOne();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -91,6 +92,9 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	FTimerHandle DashCooldownTimerHandle;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	bool bCanPlayerMove = false;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;

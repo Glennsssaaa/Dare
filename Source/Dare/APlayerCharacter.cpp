@@ -58,6 +58,10 @@ void AAPlayerCharacter::BeginPlay()
 	
 }
 
+void AAPlayerCharacter::AbilityOne()
+{
+}
+
 // Called every frame
 void AAPlayerCharacter::Tick(float DeltaTime)
 {
