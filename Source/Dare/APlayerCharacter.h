@@ -34,6 +34,13 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION()
+	virtual void PlayerAbility();
+
+	UFUNCTION()
+	virtual void AbilityOne();
+
+		
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float RotationSpeed = 5.0f;
 	
@@ -86,8 +93,13 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	FTimerHandle DashCooldownTimerHandle;
+
+	bool isAbility = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool bCanPlayerMove = true;
 	
-private:
+protected:
 	void KeyboardMove(const FInputActionValue& Value);
 	void Interact(const FInputActionValue& Value);
 	void Aim(const FInputActionValue& Value);

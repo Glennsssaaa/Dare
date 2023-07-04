@@ -24,10 +24,28 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	// Input functions
+	UFUNCTION()
+	void TankCharge();
+
+	// UFUNCTION()
+	// void PlayerAbility() override;
+
+	void AbilityOne() override;
+
+	void AimCharge();
+
+	void Charge();
+	UFUNCTION()
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+protected:
 	// Tank Charge Collision Hitbox
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UBoxComponent* ChargeHitBox;
-	
-	UFUNCTION()
-	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	// Used for player to aim the dash
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	class UArrowComponent* DashAimArrowComponent;
+
 };

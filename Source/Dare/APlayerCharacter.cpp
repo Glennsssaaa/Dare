@@ -46,6 +46,37 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
+	PEI->BindAction(InputActions->InputTankCharge, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerAbility);
+}
+
+void AAPlayerCharacter::PlayerAbility()
+{
+	// Do ability
+
+	if(!isAbility)
+	{
+		isAbility = true;
+		GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+		{
+			isAbility = false;
+		}, 5.f, false);
+
+		AbilityOne();
+
+		// 1. Aim Dash
+		
+	}
+	else
+	{
+		// 2. Do Dash
+		PlayerDash();
+		isAbility = false;
+	}
+}
+
+void AAPlayerCharacter::AbilityOne()
+{
+	
 }
 
 
@@ -62,11 +93,11 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	// lerp the player's direction to the direction variable
-	if(LookValue.Y !=0 || LookValue.X!=0)
-	{
-		PlayerDirection = FVector(-LookValue.Y,LookValue.X,0);
-		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
-	}
+	// if(LookValue.Y !=0 || LookValue.X!=0)
+	// {
+	// 	PlayerDirection = FVector(-LookValue.Y,LookValue.X,0);
+	// 	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
+	// }
     
 	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Look Value: %f"), LookValue.X));
 
@@ -104,7 +135,9 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 	MoveValue=Value.Get<FVector2D>();
 	//Add movement input
 	if(MoveValue.Y != 0)
+	{
 		AddMovementInput(GetActorForwardVector(), MoveValue.Y * MovementSpeed);
+	}
 
 	if(MoveValue.X!=0)
 	{
@@ -126,7 +159,7 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 {
 	//print interact
 	UE_LOG(LogTemp, Warning, TEXT("Interact"));
-	APlayerController* PC = Cast<APlayerController>(GetController());
+//	APlayerController* PC = Cast<APlayerController>(GetController());
 }
 
 void AAPlayerCharacter::PlayerDash()
