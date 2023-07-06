@@ -12,7 +12,7 @@ AATankCharacter::AATankCharacter()
 	if(!ChargeHitBox)
 	{
 		ChargeHitBox = CreateDefaultSubobject<UBoxComponent>(TEXT("ChargeHitBox"));
-		ChargeHitBox->SetupAttachment(RootComponent);
+		ChargeHitBox->SetupAttachment(PlayerMesh);
 		ChargeHitBox->OnComponentBeginOverlap.AddDynamic(this, &AATankCharacter::OnOverlapBegin);
 	}
 
