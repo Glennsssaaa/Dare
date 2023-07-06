@@ -24,7 +24,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	void Interact(const FInputActionValue& Value) override;
-	void InteractEnd(const FInputActionValue& Value) override;
 
 	UFUNCTION(BlueprintImplementableEvent)
 		void DrawFunc(AActor* hitActor, FVector2D hitUV);

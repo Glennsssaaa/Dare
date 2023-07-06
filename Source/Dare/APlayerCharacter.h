@@ -42,23 +42,31 @@ public:
 	float MovementSpeed = 5.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
+	bool bUsingKeyboard;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	FVector2D LookValue;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class AActor* InteractableActor;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
+	TArray<TEnumAsByte<EObjectTypeQuery>> mousehitObjs;
+
     FVector PlayerDirection;
 	FVector2D MoveValue;
 	FVector mousePosition;
 	FVector mouseDirection;
 	FRotator playerDirection;
 	FHitResult mouseHit;
+
+	int selectedAbility=1;
+	bool bToggleInteract=false;
 	
 	// Player Dash
 	void PlayerDash();
 	void KeyboardMove(const FInputActionValue& Value);
 	virtual void Interact(const FInputActionValue& Value);
-	virtual void InteractEnd(const FInputActionValue& Value);
 	void Aim(const FInputActionValue& Value);
 
 protected:

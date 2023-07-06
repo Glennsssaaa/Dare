@@ -2,6 +2,8 @@
 
 
 #include "AMageCharacter.h"
+
+#include "HeadMountedDisplayTypes.h"
 #include "Kismet/GameplayStatics.h"
 
 
@@ -20,42 +22,80 @@ void AAMageCharacter::BeginPlay()
 	QueryParams.bTraceComplex = true;
 	QueryParams.AddIgnoredActor(this);
 	QueryParams.bReturnFaceIndex=true;
+	bUsingKeyboard=true;
+	AbilitySelected=1;
 }
 
 // Called every frame
 void AAMageCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(bToggleInteract)
+	{
+		if(AbilitySelected==1)
+		{
+
+		}
+	}
+	else
+	{
+	
+	}
 }
 
 
 void AAMageCharacter::Interact(const FInputActionValue& Value)
 {
-	NextLocation.X = GetActorLocation().X;
-	NextLocation.Y = GetActorLocation().Y;
-	NextLocation.Z = GetActorLocation().Z + 200;
-	LineTraceArc();
-	isDrawing = true;
-	GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AAMageCharacter::LineTraceArc, 0.01f, true);
+	//Interact toggle 
+	if(bToggleInteract)
+	{
+		//Clears water ability timer
+		GetWorldTimerManager().ClearTimer(lineTraceTimer);
+		GravityOffset = FVector::ZeroVector;
+	}
+	else
+	{
+		//Water ability
+		if(AbilitySelected==1)
+		{
+			//Calculates next position and calls function by timer
+			NextLocation.X = GetActorLocation().X;
+			NextLocation.Y = GetActorLocation().Y;
+			NextLocation.Z = GetActorLocation().Z + 200;
+			isDrawing = true;
+			GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AAMageCharacter::LineTraceArc, 0.01f, true);
+		}
+	}
+	Super::Interact(Value);
+	
 }
 
-void AAMageCharacter::InteractEnd(const FInputActionValue& Value) {
-	GetWorldTimerManager().ClearTimer(lineTraceTimer);
-	GravityOffset = FVector::ZeroVector;
-}
-
+//Trace in arc for water spell
 void AAMageCharacter::LineTraceArc() {
+	//Trajectory calculation to move in arc
+	float mouseDist = FVector::Distance(PlayerMesh->GetComponentLocation(), mouseHit.Location);
 	GravityOffset = GravityOffset + FVector(0,0,gravity * 0.1);
-	float offset = (abs(MoveValue.X + MoveValue.Y) + 1) * 1000;
+	float offset;
+	//Position modified by mouse position
+	if(bUsingKeyboard)
+	{
+		offset = mouseDist*5;
+	}
+	else
+	{
+		offset = 5;
+	}
 	float next = pow((offset*0.01),2) / (offset / 1000);
 	FVector vec = PlayerMesh->GetForwardVector() * next;
 	
 	FHitResult Hit;
 	FVector TraceStart = NextLocation;
 	FVector TraceEnd = (vec + NextLocation) + GravityOffset;
-	
-	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd, ECC_GameTraceChannel1, QueryParams);
-	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 5.0f, 0, 10.f);
+	//Trace against the floor
+	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_GameTraceChannel1 , QueryParams);
+	//DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 5.0f, 0, 10.f);
+	//If hit, call the drawfunc from blueprints with the hit actor and UV locations
 	if (Hit.bBlockingHit) {
 		NextLocation.X = GetActorLocation().X;
 		NextLocation.Y = GetActorLocation().Y;
@@ -64,7 +104,6 @@ void AAMageCharacter::LineTraceArc() {
 		FVector2D hitUV;
 		UGameplayStatics::FindCollisionUV(Hit,0,hitUV);
 		DrawFunc(Hit.GetActor(),hitUV);
-	
 	}
 	else {
 		NextLocation = TraceEnd;

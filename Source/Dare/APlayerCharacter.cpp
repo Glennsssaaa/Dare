@@ -46,7 +46,6 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
     PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
-	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Completed, this, &AAPlayerCharacter::InteractEnd);
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
 }
 
@@ -66,18 +65,21 @@ void AAPlayerCharacter::AbilityOne()
 void AAPlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
+
+	if(bUsingKeyboard){
+		//Player Direction Mouse Controls
+		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorForObjects(mousehitObjs, false, mouseHit);
+		playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), mouseHit.Location);
+		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), FRotator(0,playerDirection.Yaw,0), DeltaTime*RotationSpeed));
+	}
 	// lerp the player's direction to the direction variable
-	if(LookValue.Y !=0 || LookValue.X!=0)
+	else if(LookValue.Y !=0 || LookValue.X!=0 && !bUsingKeyboard)
 	{
 		PlayerDirection = FVector(-LookValue.Y,LookValue.X,0);
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
 	}
-	//Player Direction Mouse Controls
-	GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(ETraceTypeQuery::TraceTypeQuery1, false, mouseHit);
-	playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), mouseHit.Location);
-	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), FRotator(0,playerDirection.Yaw,0), DeltaTime*RotationSpeed));
 
+	
 	// Reduce Dash timer if needed
 	if(DashCooldown > 0.f)
 	{
@@ -132,11 +134,16 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 {
+	if(bToggleInteract)
+	{
+		bToggleInteract=false;
+		UE_LOG(LogTemp,Warning,TEXT("Interact"));
 
-}
-
-void AAPlayerCharacter::InteractEnd(const FInputActionValue& Value) {
-
+	}
+	else
+	{
+		bToggleInteract=true;
+	}
 }
 
 void AAPlayerCharacter::PlayerDash()
