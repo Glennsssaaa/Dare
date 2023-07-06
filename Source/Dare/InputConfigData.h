@@ -32,7 +32,7 @@ public:
     UInputAction* InputAim;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	UInputAction* InputTankCharge;
+	UInputAction* InputAbility;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	UInputAction* InputRelease;
