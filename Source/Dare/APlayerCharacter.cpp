@@ -19,11 +19,9 @@ AAPlayerCharacter::AAPlayerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	//GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 	PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
-
 	PlayerMesh->SetupAttachment(GetRootComponent());
-	
+
 	DirectionArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrowComponent"));
 	DirectionArrowComponent->SetupAttachment(PlayerMesh);
 	
@@ -40,9 +38,11 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
 	//Subsystem->ClearAllMappings();
 	Subsystem->AddMappingContext(InputMapping,0);
-	
+
+	//Enhanced Input Setup
 	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
 	PC->SetShowMouseCursor(true);
+	//Input Binding
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
     PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
@@ -72,8 +72,8 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 
 	if(bUsingKeyboard){
 		//Player Direction Mouse Controls
-		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorForObjects(mousehitObjs, false, mouseHit);
-		playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), mouseHit.Location);
+		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorForObjects(mousehitObjs, false, MouseHit);
+		playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), MouseHit.Location);
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), FRotator(0,playerDirection.Yaw,0), DeltaTime*RotationSpeed));
 	}
 	// lerp the player's direction to the direction variable
@@ -130,7 +130,8 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 }
 
 void AAPlayerCharacter::Aim(const FInputActionValue& Value){
-    LookValue=Value.Get<FVector2D>();
+	//Player look direction by controller value (Unused)
+	LookValue=Value.Get<FVector2D>();
 
     if(LookValue.X==0){
         LookValue.X=1;    
@@ -140,11 +141,10 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 {
+	//Interact set to toggle
 	if(bToggleInteract)
 	{
 		bToggleInteract=false;
-		UE_LOG(LogTemp,Warning,TEXT("Interact"));
-
 	}
 	else
 	{
