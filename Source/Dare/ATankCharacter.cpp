@@ -13,7 +13,6 @@ AATankCharacter::AATankCharacter()
 	{
 		ChargeHitBox = CreateDefaultSubobject<UBoxComponent>(TEXT("ChargeHitBox"));
 		ChargeHitBox->SetupAttachment(PlayerMesh);
-		ChargeHitBox->OnComponentBeginOverlap.AddDynamic(this, &AATankCharacter::OnOverlapBegin);
 	}
 
 	if(!DashAimArrowComponent)
@@ -35,6 +34,7 @@ void AATankCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	DashAimArrowComponent->SetVisibility(false);
+	ChargeHitBox->OnComponentBeginOverlap.AddDynamic(this, &AATankCharacter::OnOverlapBegin);
 	DashDistance = 1350.f;
 
 }

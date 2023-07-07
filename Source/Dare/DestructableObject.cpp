@@ -16,7 +16,9 @@ ADestructableObject::ADestructableObject()
 	if (!ObjectCollisionBox) 
 	{
 		ObjectCollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("CollisionBox"));
+		ObjectCollisionBox->SetupAttachment(DestructibleObjectMesh);
 	}
+	
 
 
 }
