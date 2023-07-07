@@ -74,7 +74,7 @@ void AAMageCharacter::Interact(const FInputActionValue& Value)
 //Trace in arc for water spell
 void AAMageCharacter::LineTraceArc() {
 	//Trajectory calculation to move in arc
-	float mouseDist = FVector::Distance(PlayerMesh->GetComponentLocation(), mouseHit.Location);
+	float mouseDist = FVector::Distance(PlayerMesh->GetComponentLocation(), MouseHit.Location);
 	GravityOffset = GravityOffset + FVector(0,0,gravity * 0.1);
 	float offset;
 	//Position modified by mouse position

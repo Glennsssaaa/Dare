@@ -34,7 +34,6 @@ AATankCharacter::AATankCharacter()
 void AATankCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	ChargeHitBox->OnComponentBeginOverlap.AddDynamic(this, &AATankCharacter::OnOverlapBegin);
 	DashAimArrowComponent->SetVisibility(false);
 	DashDistance = 1350.f;
 

@@ -35,6 +35,8 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	
+	 ///Control Variables 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float RotationSpeed = 5.0f;
 	
@@ -47,18 +49,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	FVector2D LookValue;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
+	TArray<TEnumAsByte<EObjectTypeQuery>> mousehitObjs;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class AActor* InteractableActor;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
-	TArray<TEnumAsByte<EObjectTypeQuery>> mousehitObjs;
-
     FVector PlayerDirection;
 	FVector2D MoveValue;
-	FVector mousePosition;
-	FVector mouseDirection;
+	FVector MousePosition;
+	FVector MouseDirection;
 	FRotator playerDirection;
-	FHitResult mouseHit;
+	FHitResult MouseHit;
 
 	int selectedAbility=1;
 	bool bToggleInteract=false;
@@ -71,7 +73,7 @@ public:
 
 protected:
 
-	//Dash Variables
+	///Dash Variables
 	// Dash Timer
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashCooldown = 0.f;
@@ -100,13 +102,14 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	FTimerHandle DashCooldownTimerHandle;
-
+	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool bCanPlayerMove = true;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool bIsAbility = false;
-	
+
+	///Components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;
 	
