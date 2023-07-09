@@ -18,9 +18,6 @@ ADestructableObject::ADestructableObject()
 		ObjectCollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("CollisionBox"));
 		ObjectCollisionBox->SetupAttachment(DestructibleObjectMesh);
 	}
-	
-
-
 }
 
 // Called when the game starts or when spawned

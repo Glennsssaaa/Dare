@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/Actor.h"
 #include "DestructableObject.generated.h"
@@ -32,4 +34,7 @@ public:
 	// Object Collision Box
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UBoxComponent* ObjectCollisionBox;
+
+
+	
 };
