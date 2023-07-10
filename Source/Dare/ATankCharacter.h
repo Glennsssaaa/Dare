@@ -32,6 +32,8 @@ public:
 	// void PlayerAbility() override;
 
 	void AbilityOne() override;
+	void AbilityTwo();
+	void Rebuild();
 
 	void AimCharge();
 
@@ -48,5 +50,7 @@ protected:
 	class UArrowComponent* DashAimArrowComponent;
 
 	UPROPERTY()
-	float ChargeDistance = 1500,f;
+	float ChargeDistance = 1500.f;
+
+	bool bIsInRebuildZone;
 };

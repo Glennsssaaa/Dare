@@ -28,6 +28,8 @@ protected:
 		class UInputConfigData* InputActions;
 
 	virtual void AbilityOne();
+
+	virtual void AbilityTwo();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

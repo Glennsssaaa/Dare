@@ -55,22 +55,6 @@ void AATankCharacter::TankCharge()
 	// Dash / Charge when key is released 
 }
 
-void AATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-	APlayerController* PC = Cast<APlayerController>(GetController());
-	//print the controller index
-	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
-	//Subsystem->ClearAllMappings();
-	Subsystem->AddMappingContext(InputMapping,0);
-
-	//Enhanced Input Setup
-	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
-	PC->SetShowMouseCursor(true);
-	
-
-}
 
 
 void AATankCharacter::AbilityOne()
