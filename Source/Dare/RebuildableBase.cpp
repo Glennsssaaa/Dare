@@ -56,6 +56,7 @@ void ARebuildableBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	getalla
 }
 
 void ARebuildableBase::ToggleHouseDestruction()

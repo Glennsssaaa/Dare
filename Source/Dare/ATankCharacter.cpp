@@ -110,7 +110,11 @@ void AATankCharacter::AbilityTwo()
 	Super::AbilityTwo();
 	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Rebuild Input")));
 
-	Rebuild();
+	// If building destroyed, rebuild it
+	if(Rebuildable->GetIsDestroyed())
+	{
+		Rebuild();
+	}
 }
 
 void AATankCharacter::AimCharge()
@@ -164,9 +168,12 @@ void AATankCharacter::Charge()
 void AATankCharacter::Rebuild()
 {
 	// Check if overlapping with house rebuild collision
-
-//	ChargeHitBox->GetOverlappingComponents();
-	
+	// TArray<UPrimitiveComponent*>& OutOverlappingComponents
+ //  ChargeHitBox->GetOverlappingComponents(TArray<UPrimitiveComponent*>& OutOverlappingComponents);
+	if(bIsInRebuildZone && Rebuildable)
+	{
+		Rebuildable->ToggleHouseDestruction();	
+	}
 
 	// If it is, rebuild
 
@@ -192,10 +199,40 @@ void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 
 	if(OtherComp->ComponentHasTag("Rebuild"))
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Rebuild")));
-		ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
-		OverlappedCharacter->ToggleHouseDestruction();
 
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Rebuild")));
+		// ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
+		// OverlappedCharacter->ToggleHouseDestruction();
+		Rebuildable = Cast<ARebuildableBase>(OtherActor);
 		bIsInRebuildZone = true;
+		
+		
+	}
+
+	if(OtherComp->ComponentHasTag("HouseCollision"))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Destory")));
+		ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
+
+		if(OverlappedCharacter->GetIsDestroyed() == false)
+		{
+			OverlappedCharacter->ToggleHouseDestruction();
+		}
+	}
+	
+}
+
+void AATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
+
+	if(OtherComp->ComponentHasTag("Rebuild"))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Left rebuild area")));
+		// ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
+		// OverlappedCharacter->ToggleHouseDestruction();
+		Rebuildable = nullptr;
+		bIsInRebuildZone = false;
 	}
 }

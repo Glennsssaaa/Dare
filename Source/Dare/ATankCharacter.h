@@ -44,6 +44,7 @@ public:
 
 	UFUNCTION()
 	void Charge();
+<<<<<<< Updated upstream
 
 	UFUNCTION()
 	void Rebuild();
@@ -51,6 +52,12 @@ public:
 	
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+=======
+	
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) override;
+>>>>>>> Stashed changes
+
+	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) override;
 
 protected:
 	// Tank Charge Collision Hitbox
@@ -63,6 +70,9 @@ protected:
 
 	UPROPERTY()
 	float ChargeDistance = 1500.f;
+
+	UPROPERTY()
+	class ARebuildableBase* Rebuildable;
 
 	bool bIsInRebuildZone;
 

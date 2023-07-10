@@ -4,8 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "NiagaraFunctionLibrary.h"
-#include "NiagaraComponent.h"
 #include "RebuildableBase.generated.h"
 
 UCLASS()
@@ -26,17 +24,27 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ToggleClean();
 
+	// Getters and Setters
+	UFUNCTION(BlueprintCallable)
+	bool GetIsDestroyed(){ return bIsDestroyed; };
+
+	UFUNCTION(BlueprintCallable)
+	bool GetIsOnFire(){ return bIsOnFire; };
+
+	UFUNCTION(BlueprintCallable)
+	bool GetIsClean(){ return bIsClean; };
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	// Destroyed static mesh
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
-	class UStaticMeshComponent* DestroyedMesh;
+	UStaticMeshComponent* DestroyedMesh;
 
 	// Rebuilt static mesh
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
-	class UStaticMeshComponent* RebuiltMesh;
+	UStaticMeshComponent* RebuiltMesh;
 
 	// Rebuilding Collision Area
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
@@ -44,19 +52,20 @@ protected:
 
 	// House Collision Box
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
-	class UBoxComponent* HouseCollision;
+	UBoxComponent* HouseCollision;
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UNiagaraSystem* FireVfx;
+
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
+	bool bIsOnFire = false;
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
-	bool bIsOnFire;
+	bool bIsDestroyed = true;
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
-	bool bIsDestroyed;
-	
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
-	bool bIsClean;
+	bool bIsClean = false;
 	
 
 public:	
