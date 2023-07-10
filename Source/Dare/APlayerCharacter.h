@@ -35,7 +35,7 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	
+
 	 ///Control Variables 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float RotationSpeed = 5.0f;
@@ -70,7 +70,12 @@ public:
 	void KeyboardMove(const FInputActionValue& Value);
 	virtual void Interact(const FInputActionValue& Value);
 	void Aim(const FInputActionValue& Value);
+	UFUNCTION()
+	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION()
+	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+	
 protected:
 
 	///Dash Variables
@@ -115,4 +120,10 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UArrowComponent* DirectionArrowComponent;
+
+	UPROPERTY(VisibleAnywhere,BlueprintReadWrite,Category="Components", meta = (AllowPrivateAccess="true"));
+	class UBoxComponent* InteractCollision;
+
+private:
+	class AInteractableObject* overlappedObject;
 };

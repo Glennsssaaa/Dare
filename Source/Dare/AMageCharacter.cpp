@@ -3,7 +3,6 @@
 
 #include "AMageCharacter.h"
 
-#include "HeadMountedDisplayTypes.h"
 #include "Kismet/GameplayStatics.h"
 
 
