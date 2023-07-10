@@ -9,7 +9,10 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "InputConfigData.h"
 #include "Components/ArrowComponent.h"
+#include "InteractableObject.h"
+#include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "GeometryCollection/GeometryCollectionComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 
@@ -26,6 +29,12 @@ AAPlayerCharacter::AAPlayerCharacter()
 	DirectionArrowComponent->SetupAttachment(PlayerMesh);
 	
 	DirectionArrowComponent->SetHiddenInGame(false);
+
+	InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
+	InteractCollision->SetupAttachment(PlayerMesh);
+	InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
+	InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapBegin);
+	InteractCollision->OnComponentEndOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapEnd);
 }
 
 // Called to bind functionality to input
@@ -155,6 +164,10 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 	{
 		bToggleInteract=true;
 	}
+	if(overlappedObject!=nullptr)
+	{
+		overlappedObject->Interact();
+	}
 }
 
 void AAPlayerCharacter::PlayerDash()
@@ -200,6 +213,25 @@ void AAPlayerCharacter::PlayerDash()
 		}
 	}, GetWorld()->DeltaTimeSeconds / 2.75, true, 0.0f);
 	
+}
+
+void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	overlappedObject=Cast<AInteractableObject>(OtherActor);
+	if(overlappedObject!=nullptr)
+	{
+		overlappedObject->Interact();
+	}
+}
+
+void AAPlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	if(overlappedObject!=nullptr)
+	{
+		overlappedObject=nullptr;
+	}
 }
 
 
