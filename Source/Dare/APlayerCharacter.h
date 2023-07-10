@@ -119,9 +119,6 @@ protected:
 	///Components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlayerMesh;
-	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	class UArrowComponent* DirectionArrowComponent;
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadWrite,Category="Components", meta = (AllowPrivateAccess="true"));
 	class UBoxComponent* InteractCollision;

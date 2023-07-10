@@ -25,11 +25,6 @@ AAPlayerCharacter::AAPlayerCharacter()
 	PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
 	PlayerMesh->SetupAttachment(GetRootComponent());
 
-	DirectionArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrowComponent"));
-	DirectionArrowComponent->SetupAttachment(PlayerMesh);
-	
-	DirectionArrowComponent->SetHiddenInGame(false);
-
 	InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
 	InteractCollision->SetupAttachment(PlayerMesh);
 	InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
@@ -168,6 +163,7 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 	{
 		overlappedObject->Interact();
 	}
+
 }
 
 void AAPlayerCharacter::PlayerDash()
@@ -181,7 +177,7 @@ void AAPlayerCharacter::PlayerDash()
 	
 	bIsPlayerDashing = true;
 	// Find the predicted location of the player after the dash
-	PredictedLocation = (DirectionArrowComponent->GetForwardVector() * DashDistance) + GetActorLocation();
+	PredictedLocation = (PlayerMesh->GetForwardVector() * DashDistance) + GetActorLocation();
 
 	DashCharges--;
 	
@@ -221,7 +217,6 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 	overlappedObject=Cast<AInteractableObject>(OtherActor);
 	if(overlappedObject!=nullptr)
 	{
-		overlappedObject->Interact();
 	}
 }
 

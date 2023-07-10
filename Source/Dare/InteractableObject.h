@@ -30,11 +30,10 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* ObjectMesh;
-
+	
 	UPROPERTY(VisibleAnywhere,BlueprintReadWrite,Category="Components", meta=(AllowPrivateAccess="true"))
 	class UBoxComponent* CollisionMesh;
 
-	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -46,11 +45,8 @@ public:
 	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 	UFUNCTION(BlueprintCallable)
-	void Interact();
+	virtual void Interact();
 	
-	UPROPERTY(VisibleAnywhere,BlueprintReadWrite,Category="Components", meta=(AllowPrivateAccess="true"))
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Components", meta=(AllowPrivateAccess="true"))
 	EobjectType ObjectType;
-
-	bool MuscleOverlap;
-	bool MageOverlap;
 };

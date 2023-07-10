@@ -16,10 +16,8 @@ AInteractableObject::AInteractableObject()
 
 	CollisionMesh=CreateDefaultSubobject<UBoxComponent>(TEXT("ObjectCollision"));
 	CollisionMesh->SetupAttachment(ObjectMesh);
-	CollisionMesh->SetCollisionProfileName(TEXT("Trigger"));
 	CollisionMesh->OnComponentBeginOverlap.AddDynamic(this, &AInteractableObject::OnOverlapBegin);
 	CollisionMesh->OnComponentEndOverlap.AddDynamic(this, &AInteractableObject::OnOverlapEnd);
-
 }
 
 // Called when the game starts or when spawned
@@ -40,6 +38,7 @@ void AInteractableObject::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AA
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	ObjectMesh->SetRenderCustomDepth(true);
+
 }
 
 void AInteractableObject::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -50,6 +49,6 @@ void AInteractableObject::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AAct
 
 void AInteractableObject::Interact()
 {
-	UE_LOG(LogTemp,Warning,TEXT("Interacted"));
+
 }
 

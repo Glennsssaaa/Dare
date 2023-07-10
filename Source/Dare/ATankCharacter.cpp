@@ -110,7 +110,7 @@ void AATankCharacter::Charge()
 	bIsPlayerDashing = true;
 	
 	// Find the predicted location of the player after the dash
-	PredictedLocation = (DirectionArrowComponent->GetForwardVector() * 2000.f) + GetActorLocation();
+	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * 2000.f) + GetActorLocation();
 
 	
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
