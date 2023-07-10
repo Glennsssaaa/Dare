@@ -27,7 +27,6 @@ protected:
 	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = "Input")
 		class UInputConfigData* InputActions;
 
-	virtual void AbilityOne();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -35,7 +34,11 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	
+	UFUNCTION()
+	virtual void AbilityOne();
+
+	UFUNCTION()
+	virtual void AbilityTwo();
 	 ///Control Variables 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float RotationSpeed = 5.0f;

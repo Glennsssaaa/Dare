@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 #include "RebuildableBase.generated.h"
 
 UCLASS()
@@ -14,6 +16,15 @@ class DARE_API ARebuildableBase : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ARebuildableBase();
+
+	UFUNCTION(BlueprintCallable)
+	void ToggleHouseDestruction();
+
+	UFUNCTION(BlueprintCallable)
+	void ToggleFire();
+
+	UFUNCTION(BlueprintCallable)
+	void ToggleClean();
 
 protected:
 	// Called when the game starts or when spawned
@@ -34,6 +45,18 @@ protected:
 	// House Collision Box
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
 	class UBoxComponent* HouseCollision;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class UNiagaraSystem* FireVfx;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
+	bool bIsOnFire;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
+	bool bIsDestroyed;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
+	bool bIsClean;
 	
 
 public:	

@@ -2,7 +2,8 @@
 
 
 #include "RebuildableBase.h"
-
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -14,27 +15,32 @@ ARebuildableBase::ARebuildableBase()
 	if(!DestroyedMesh)
 	{
 		DestroyedMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DestroyedMesh"));
-		RootComponent = DestroyedMesh;
+		DestroyedMesh->SetupAttachment(RootComponent);
 	}
 
 	if(!RebuiltMesh)
 	{
 		RebuiltMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RebuiltMesh"));
-		RebuiltMesh->SetupAttachment(GetRootComponent());
+		RebuiltMesh->SetupAttachment(DestroyedMesh);
 	}
 
 	if(!RebuildCollision)
 	{
 		RebuildCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("RebuildCollision"));
-		RebuildCollision->SetupAttachment(GetRootComponent());
+		RebuildCollision->SetupAttachment(DestroyedMesh);
 	}
 
 	if(!HouseCollision)
 	{
 		HouseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("HouseCollision"));
-		HouseCollision->SetupAttachment(GetRootComponent());
+		HouseCollision->SetupAttachment(DestroyedMesh);
 	}
-	
+
+	if(!FireVfx)
+	{
+	//	UNiagaraComponent* NiagaraComp = UNiagaraFunctionLibrary::SpawnSystemAttached(FireVfx, DestroyedMesh, NAME_None, FVector(0.f), FRotator(0.f), EAttachLocation::Type::KeepRelativeOffset, true);
+		
+	}
 
 }
 
@@ -52,3 +58,31 @@ void ARebuildableBase::Tick(float DeltaTime)
 
 }
 
+void ARebuildableBase::ToggleHouseDestruction()
+{
+	bIsDestroyed = !bIsDestroyed;
+
+	if(bIsDestroyed)
+	{
+		RebuiltMesh->SetVisibility(false);
+		DestroyedMesh->SetVisibility(true);
+	}
+	else
+	{
+		RebuiltMesh->SetVisibility(true);
+		DestroyedMesh->SetVisibility(false);
+
+	}
+}
+
+void ARebuildableBase::ToggleFire()
+{
+	bIsOnFire = !bIsOnFire;
+
+	
+}
+
+void ARebuildableBase::ToggleClean()
+{
+	bIsClean = !bIsClean;
+}

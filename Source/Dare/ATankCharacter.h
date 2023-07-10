@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "APlayerCharacter.h"
+#include "NiagaraComponent.h"
 #include "ATankCharacter.generated.h"
 
 /**
@@ -28,14 +29,26 @@ public:
 	UFUNCTION()
 	void TankCharge();
 
+	void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
+
 	// UFUNCTION()
 	// void PlayerAbility() override;
 
 	void AbilityOne() override;
 
+	void AbilityTwo() override;
+
+
+	UFUNCTION()
 	void AimCharge();
 
+	UFUNCTION()
 	void Charge();
+
+	UFUNCTION()
+	void Rebuild();
+
+	
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
@@ -49,5 +62,8 @@ protected:
 	class UArrowComponent* DashAimArrowComponent;
 
 	UPROPERTY()
-	float ChargeDistance = 1500,f;
+	float ChargeDistance = 1500.f;
+
+	bool bIsInRebuildZone;
+
 };

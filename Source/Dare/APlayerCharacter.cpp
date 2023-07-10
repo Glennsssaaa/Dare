@@ -48,6 +48,7 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
 	PEI->BindAction(InputActions->InputAbility, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityOne);
+	PEI->BindAction(InputActions->InputAbilityTwo, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityTwo);
 
 }
 
@@ -63,6 +64,10 @@ void AAPlayerCharacter::AbilityOne()
 {
 //	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("maybe")));
 
+}
+
+void AAPlayerCharacter::AbilityTwo()
+{
 }
 
 // Called every frame

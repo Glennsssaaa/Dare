@@ -2,6 +2,9 @@
 
 #include "ATankCharacter.h"
 #include "DestructableObject.h"
+#include "EnhancedInputComponent.h"
+#include "InputConfigData.h"
+#include "RebuildableBase.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -52,6 +55,22 @@ void AATankCharacter::TankCharge()
 	// Dash / Charge when key is released 
 }
 
+void AATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	APlayerController* PC = Cast<APlayerController>(GetController());
+	//print the controller index
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
+	//Subsystem->ClearAllMappings();
+	Subsystem->AddMappingContext(InputMapping,0);
+
+	//Enhanced Input Setup
+	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
+	PC->SetShowMouseCursor(true);
+	
+
+}
 
 
 void AATankCharacter::AbilityOne()
@@ -86,6 +105,14 @@ void AATankCharacter::AbilityOne()
 
 }
 
+void AATankCharacter::AbilityTwo()
+{
+	Super::AbilityTwo();
+	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Rebuild Input")));
+
+	Rebuild();
+}
+
 void AATankCharacter::AimCharge()
 {
 	
@@ -104,8 +131,10 @@ void AATankCharacter::Charge()
 	
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
 	{
+		DashAimArrowComponent->SetVisibility(false);
+		
 		FHitResult SweepHitResult;
-			
+		
 		// Set actor location using interpolation and check if there is any collision in the way
 		SetActorLocation(FMath::Lerp(GetActorLocation(), PredictedLocation, GetWorld()->GetDeltaSeconds() * DashSpeed), true, &SweepHitResult);
 
@@ -116,7 +145,6 @@ void AATankCharacter::Charge()
 		{
 			// Location reached, activate dash cooldown, re-enable input and camera lag
 			bCanPlayerMove = true;
-			DashAimArrowComponent->SetVisibility(false);
 
 			// Clear Dash timer to stop function running every frame
 			GetWorld()->GetTimerManager().ClearTimer(DashCooldownTimerHandle);
@@ -130,6 +158,19 @@ void AATankCharacter::Charge()
 			}
 		}
 	}, GetWorld()->DeltaTimeSeconds / 2.75, true, 0.0f);
+	
+}
+
+void AATankCharacter::Rebuild()
+{
+	// Check if overlapping with house rebuild collision
+
+//	ChargeHitBox->GetOverlappingComponents();
+	
+
+	// If it is, rebuild
+
+	// Else, signal to play they are not in an appropriate zone?
 	
 }
 
@@ -147,5 +188,14 @@ void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 
 		// Instead do this for now
 		OtherActor->Destroy();
+	}
+
+	if(OtherComp->ComponentHasTag("Rebuild"))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Rebuild")));
+		ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
+		OverlappedCharacter->ToggleHouseDestruction();
+
+		bIsInRebuildZone = true;
 	}
 }

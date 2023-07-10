@@ -27,6 +27,8 @@ void ADestructableObject::BeginPlay()
 	
 }
 
+
+
 // Called every frame
 void ADestructableObject::Tick(float DeltaTime)
 {
