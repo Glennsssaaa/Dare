@@ -2,14 +2,14 @@
 
 
 #include "AMageCharacter.h"
-
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
 AAMageCharacter::AAMageCharacter()
 {
-
 }
 
 
@@ -64,6 +64,9 @@ void AAMageCharacter::Interact(const FInputActionValue& Value)
 			NextLocation.Z = GetActorLocation().Z + 200;
 			isDrawing = true;
 			GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AAMageCharacter::LineTraceArc, 0.01f, true);
+			UNiagaraComponent* NiagaraComp = UNiagaraFunctionLibrary::SpawnSystemAttached(WaterEffect,PlayerMesh,NAME_None,FVector(0,0,0), FRotator(0,0,0), EAttachLocation::Type::KeepRelativeOffset,true);
+			NiagaraComp->SetVectorParameter(FName("StartLocation"),PlayerMesh->GetComponentLocation());
+			NiagaraComp->SetVectorParameter(FName("TargetVector"),PlayerMesh->GetComponentLocation()+FVector(100,0,0));
 		}
 	}
 	Super::Interact(Value);
@@ -107,5 +110,5 @@ void AAMageCharacter::LineTraceArc() {
 	else {
 		NextLocation = TraceEnd;
 	}
-	
+
 }

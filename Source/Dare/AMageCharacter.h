@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "APlayerCharacter.h"
+#include "NiagaraSystem.h"
 #include "AMageCharacter.generated.h"
 
 /**
@@ -20,6 +21,9 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere,Category="Water")
+	UNiagaraSystem* WaterEffect;
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
