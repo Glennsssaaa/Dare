@@ -34,6 +34,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	bool GetIsClean(){ return bIsClean; };
 
+	UFUNCTION(BlueprintCallable)
+	void SetIsRebuilding(bool bTemp) {  bIsRebuilding = bTemp; };
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -66,7 +69,16 @@ protected:
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	bool bIsClean = false;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
+	bool bIsRebuilding = false;
 	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
+	float RebuildProgress = 0.0f;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
+	float RebuildSpeed = 10.0f;
+
 
 public:	
 	// Called every frame

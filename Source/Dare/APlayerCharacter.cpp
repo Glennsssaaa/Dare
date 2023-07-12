@@ -144,6 +144,16 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
         PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
 }
 
+void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+}
+
+void AAPlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+}
+
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 {
 	//Interact set to toggle

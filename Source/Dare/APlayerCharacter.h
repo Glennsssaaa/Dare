@@ -73,13 +73,11 @@ public:
 	void KeyboardMove(const FInputActionValue& Value);
 	virtual void Interact(const FInputActionValue& Value);
 	void Aim(const FInputActionValue& Value);
-<<<<<<< Updated upstream
-=======
+
 	UFUNCTION()
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 	UFUNCTION()
 	virtual void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
->>>>>>> Stashed changes
 
 protected:
 

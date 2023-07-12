@@ -117,6 +117,20 @@ void AATankCharacter::AbilityTwo()
 	}
 }
 
+void AATankCharacter::Rebuild()
+{
+	// Check if overlapping with house rebuild collision
+	// TArray<UPrimitiveComponent*>& OutOverlappingComponents
+	//  ChargeHitBox->GetOverlappingComponents(TArray<UPrimitiveComponent*>& OutOverlappingComponents);
+	if(bIsInRebuildZone && Rebuildable)
+	{
+		Rebuildable->SetIsRebuilding(true);	
+	}
+
+
+	
+}
+
 void AATankCharacter::AimCharge()
 {
 	
@@ -165,31 +179,13 @@ void AATankCharacter::Charge()
 	
 }
 
-void AATankCharacter::Rebuild()
-{
-	// Check if overlapping with house rebuild collision
-	// TArray<UPrimitiveComponent*>& OutOverlappingComponents
- //  ChargeHitBox->GetOverlappingComponents(TArray<UPrimitiveComponent*>& OutOverlappingComponents);
-	if(bIsInRebuildZone && Rebuildable)
-	{
-		Rebuildable->ToggleHouseDestruction();	
-	}
 
-	// If it is, rebuild
-
-	// Else, signal to play they are not in an appropriate zone?
-	
-}
 
 
 void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Step 1")));
-
 	if (OtherActor->ActorHasTag("Destruct") && bIsPlayerDashing)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Step 2")));
-
 		// Smoke fog function at some point
 		//dynamic_cast<ADestructableObject>(OtherActor).DoSomethingReallyCoolLater;
 
@@ -227,12 +223,12 @@ void AATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* 
 {
 	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
 
+	// Player left build zone, stop rebuilding
 	if(OtherComp->ComponentHasTag("Rebuild"))
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Left rebuild area")));
-		// ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
-		// OverlappedCharacter->ToggleHouseDestruction();
-		Rebuildable = nullptr;
+		Rebuildable->SetIsRebuilding(false);
+	//	Rebuildable = nullptr;
 		bIsInRebuildZone = false;
 	}
 }
