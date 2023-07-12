@@ -5,6 +5,7 @@
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
 #include "Components/BoxComponent.h"
+#include "Components/WidgetComponent.h"
 
 // Sets default values
 ARebuildableBase::ARebuildableBase()
@@ -56,6 +57,17 @@ void ARebuildableBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if(bIsRebuilding)
+	{
+		RebuildProgress += DeltaTime * 30.f;
+		if(RebuildProgress >= 100.f)
+		{
+			RebuildProgress = 100.f;
+			bIsRebuilding = false;
+			ToggleHouseDestruction();
+		}
+	}
+
 }
 
 void ARebuildableBase::ToggleHouseDestruction()
@@ -66,6 +78,8 @@ void ARebuildableBase::ToggleHouseDestruction()
 	{
 		RebuiltMesh->SetVisibility(false);
 		DestroyedMesh->SetVisibility(true);
+		RebuildProgress = 0.f;
+
 	}
 	else
 	{
