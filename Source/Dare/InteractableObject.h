@@ -49,4 +49,7 @@ public:
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Components", meta=(AllowPrivateAccess="true"))
 	EobjectType ObjectType;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	bool bInteracted;
 };

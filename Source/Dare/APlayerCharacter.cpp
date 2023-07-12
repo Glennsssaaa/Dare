@@ -12,7 +12,6 @@
 #include "InteractableObject.h"
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
-#include "GeometryCollection/GeometryCollectionComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 
@@ -30,6 +29,7 @@ AAPlayerCharacter::AAPlayerCharacter()
 	InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
 	InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapBegin);
 	InteractCollision->OnComponentEndOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapEnd);
+	PlayerMesh->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnMeshOverlapBegin);
 }
 
 // Called to bind functionality to input
@@ -218,6 +218,14 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 	if(overlappedObject!=nullptr)
 	{
 	}
+	if(OtherActor->ActorHasTag("Respawn"))
+	{
+		RespawnPos = this->GetActorLocation();
+	}
+	if(OtherActor->ActorHasTag("Kill"))
+	{
+		SetActorLocation(RespawnPos);
+	}
 }
 
 void AAPlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -227,6 +235,12 @@ void AAPlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor
 	{
 		overlappedObject=nullptr;
 	}
+}
+
+void AAPlayerCharacter::OnMeshOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+
 }
 
 

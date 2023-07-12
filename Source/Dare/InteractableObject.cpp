@@ -49,6 +49,7 @@ void AInteractableObject::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AAct
 
 void AInteractableObject::Interact()
 {
-
+	UE_LOG(LogTemp,Warning,TEXT("Interact"));
+	bInteracted=true;
 }
 
