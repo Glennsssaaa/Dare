@@ -184,6 +184,8 @@ void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 			OverlappedCharacter->ToggleHouseDestruction();
 		}
 	}
+
+	
 	
 }
 
@@ -196,8 +198,11 @@ void AATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* 
 	if(OtherComp->ComponentHasTag("Rebuild"))
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Left rebuild area")));
-		Rebuildable->SetIsRebuilding(false);
-		Rebuildable = nullptr;
+		if(Rebuildable)
+		{
+			Rebuildable->SetIsRebuilding(false);
+			Rebuildable = nullptr;
+		}
 		bIsInRebuildZone = false;
 	}
 }

@@ -40,7 +40,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-
+	
+	void UpdateMappings(FText DisplayName, FKey NewKey);
+	
 	// Control Variables 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float RotationSpeed = 5.0f;

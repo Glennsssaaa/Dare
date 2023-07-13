@@ -32,7 +32,7 @@ AAPlayerCharacter::AAPlayerCharacter()
 	if(!PlayerSkeletalMesh)
 	{
 		PlayerSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("PlayerSkeletalMesh"));
-		PlayerSkeletalMesh->SetupAttachment(GetRootComponent());
+		PlayerSkeletalMesh->SetupAttachment(PlayerMesh);
 	}
 
 	if(!InteractCollision)
@@ -67,6 +67,17 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
 	PEI->BindAction(InputActions->InputAbility, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityOne);
 	PEI->BindAction(InputActions->InputAbilityTwo, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityTwo);
+
+}
+
+void AAPlayerCharacter::UpdateMappings(FText DisplayName, FKey NewKey)
+{
+	// Update the mappings
+	APlayerController* PC = Cast<APlayerController>(GetController());
+	
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
+
+
 
 }
 
