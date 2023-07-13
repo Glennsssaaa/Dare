@@ -48,12 +48,6 @@ void AATankCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void AATankCharacter::TankCharge()
-{
-	// Show arrow that indicates direction player will charge
-
-	// Dash / Charge when key is released 
-}
 
 void AATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -72,7 +66,6 @@ void AATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 }
 
-
 void AATankCharacter::AbilityOne()
 {
 	Super::AbilityOne();
@@ -80,7 +73,6 @@ void AATankCharacter::AbilityOne()
 
 	if(!bIsAbility)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Begin")));
 		bCanPlayerMove = false;
 
 		DashAimArrowComponent->SetVisibility(true);
@@ -89,20 +81,14 @@ void AATankCharacter::AbilityOne()
 		{
 			bIsAbility = false;
 		}, 5.f, false);
-
-		AimCharge();
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("End")));
-
 		// 2. Do Dash
 		Charge();
 		bIsAbility = false;
 		bCanPlayerMove = true;
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Virtual")));
-
 }
 
 void AATankCharacter::AbilityTwo()
@@ -119,16 +105,6 @@ void AATankCharacter::AbilityTwo()
 	}
 }
 
-void AATankCharacter::Rebuild()
-{
-	
-}
-
-void AATankCharacter::AimCharge()
-{
-	
-}
-
 void AATankCharacter::Charge()
 {
 	// Disable Player Input to prevent player movement during dash
@@ -139,14 +115,14 @@ void AATankCharacter::Charge()
 	// Find the predicted location of the player after the dash
 	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * 2000.f) + GetActorLocation();
 
-	
+	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
 	{
 		DashAimArrowComponent->SetVisibility(false);
 		
 		FHitResult SweepHitResult;
 		
-		// Set actor location using interpolation and check if there is any collision in the way
+		// Set actor location using linear interpolation and check if there is any collision in the way
 		SetActorLocation(FMath::Lerp(GetActorLocation(), PredictedLocation, GetWorld()->GetDeltaSeconds() * DashSpeed), true, &SweepHitResult);
 
 		const FVector2D ActorLocation2D = FVector2D(GetActorLocation().X, GetActorLocation().Y);
@@ -162,13 +138,13 @@ void AATankCharacter::Charge()
 			
 			bIsPlayerDashing = false;
 		
-			// Only reset the cooldown
+			// Only reset the cooldown if the player has used all their dashes
 			if(DashCharges == DashChargesMax - 1)
 			{
 				DashCooldown = DashCooldownDefault;	
 			}
 		}
-	}, GetWorld()->DeltaTimeSeconds / 2.75, true, 0.0f);
+	}, GetWorld()->DeltaTimeSeconds, true, 0.0f);
 	
 }
 

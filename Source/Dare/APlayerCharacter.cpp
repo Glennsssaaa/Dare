@@ -21,15 +21,28 @@ AAPlayerCharacter::AAPlayerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
-	PlayerMesh->SetupAttachment(GetRootComponent());
+	
+	if(!PlayerMesh)
+	{
+		PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
+		PlayerMesh->SetupAttachment(GetRootComponent());
+		PlayerMesh->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnMeshOverlapBegin);
+	}
 
-	InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
-	InteractCollision->SetupAttachment(PlayerMesh);
-	InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
-	InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapBegin);
-	InteractCollision->OnComponentEndOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapEnd);
-	PlayerMesh->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnMeshOverlapBegin);
+	if(!PlayerSkeletalMesh)
+	{
+		PlayerSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("PlayerSkeletalMesh"));
+		PlayerSkeletalMesh->SetupAttachment(GetRootComponent());
+	}
+
+	if(!InteractCollision)
+	{
+		InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
+		InteractCollision->SetupAttachment(PlayerMesh);
+		InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
+		InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapBegin);
+		InteractCollision->OnComponentEndOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapEnd);
+	}
 }
 
 // Called to bind functionality to input
@@ -38,7 +51,7 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	APlayerController* PC = Cast<APlayerController>(GetController());
-	//print the controller index
+	// Print the controller index
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
 	//Subsystem->ClearAllMappings();
 	Subsystem->AddMappingContext(InputMapping,0);
@@ -46,7 +59,8 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	//Enhanced Input Setup
 	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
 	PC->SetShowMouseCursor(true);
-	//Input Binding
+	
+	// Input Bindings
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
     PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
@@ -66,12 +80,12 @@ void AAPlayerCharacter::BeginPlay()
 
 void AAPlayerCharacter::AbilityOne()
 {
-//	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("maybe")));
-
+	
 }
 
 void AAPlayerCharacter::AbilityTwo()
 {
+	
 }
 
 // Called every frame
@@ -79,8 +93,9 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(bUsingKeyboard){
-		//Player Direction Mouse Controls
+	if(bUsingKeyboard)
+	{
+		// Player Direction Mouse Controls
 		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorForObjects(mousehitObjs, false, MouseHit);
 		playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), MouseHit.Location);
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), FRotator(0,playerDirection.Yaw,0), DeltaTime*RotationSpeed));
@@ -114,9 +129,6 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 		}
 	}
 
-	// Print Dash Cooldown to screen
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Cooldown: %f"), DashCooldown));
-
 	// Print Dash Charges to screen
 	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
 }
@@ -129,7 +141,9 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 	MoveValue=Value.Get<FVector2D>();
 	//Add movement input
 	if(MoveValue.Y != 0)
+	{
 		AddMovementInput(GetActorForwardVector(), MoveValue.Y * MovementSpeed);
+	}
 
 	if(MoveValue.X!=0)
 	{
@@ -142,10 +156,12 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 	//Player look direction by controller value (Unused)
 	LookValue=Value.Get<FVector2D>();
 
-    if(LookValue.X==0){
-        LookValue.X=1;    
+    if(LookValue.X == 0)
+    {
+        LookValue.X = 1;    
     }
-        PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
+
+	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
 }
 
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
@@ -159,9 +175,10 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 	{
 		bToggleInteract=true;
 	}
-	if(overlappedObject!=nullptr)
+	
+	if(OverlappedObject)
 	{
-		overlappedObject->Interact();
+		OverlappedObject->Interact();
 	}
 
 }
@@ -188,7 +205,7 @@ void AAPlayerCharacter::PlayerDash()
 		// Set actor location using interpolation and check if there is any collision in the way
 		SetActorLocation(FMath::Lerp(GetActorLocation(), PredictedLocation, GetWorld()->GetDeltaSeconds() * DashSpeed), true, &SweepHitResult);
 
-		const FVector2D ActorLocation2D = FVector2D(GetActorLocation().X, GetActorLocation().Y);
+		const FVector2D ActorLocation2D		= FVector2D(GetActorLocation().X, GetActorLocation().Y);
 		const FVector2D PredictedLocation2D = FVector2D(PredictedLocation.X, PredictedLocation.Y);
 			
 		if (SweepHitResult.bBlockingHit || ActorLocation2D.Equals(PredictedLocation2D, 100.f))
@@ -201,7 +218,7 @@ void AAPlayerCharacter::PlayerDash()
 				
 			bIsPlayerDashing = false;
 
-			// Only reset the cooldowm
+			// Only reset the cooldown if the player has 1 dash charge left, otherwise cooldown stays as it is 
 			if(DashCharges == DashChargesMax - 1)
 			{
 				DashCooldown = DashCooldownDefault;
@@ -214,8 +231,8 @@ void AAPlayerCharacter::PlayerDash()
 void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	overlappedObject=Cast<AInteractableObject>(OtherActor);
-	if(overlappedObject!=nullptr)
+	OverlappedObject = Cast<AInteractableObject>(OtherActor);
+	if(OverlappedObject!=nullptr)
 	{
 	}
 	if(OtherActor->ActorHasTag("Respawn"))
@@ -231,9 +248,9 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 void AAPlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if(overlappedObject!=nullptr)
+	if(OverlappedObject != nullptr)
 	{
-		overlappedObject=nullptr;
+		OverlappedObject=nullptr;
 	}
 }
 
