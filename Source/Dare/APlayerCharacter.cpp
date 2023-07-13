@@ -25,7 +25,31 @@ AAPlayerCharacter::AAPlayerCharacter()
 	DirectionArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrowComponent"));
 	DirectionArrowComponent->SetupAttachment(PlayerMesh);
 	
+<<<<<<< Updated upstream
 	DirectionArrowComponent->SetHiddenInGame(false);
+=======
+	if(!PlayerMesh)
+	{
+		PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
+		PlayerMesh->SetupAttachment(GetRootComponent());
+		PlayerMesh->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnMeshOverlapBegin);
+	}
+
+	if(!PlayerSkeletalMesh)
+	{
+		PlayerSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("PlayerSkeletalMesh"));
+		PlayerSkeletalMesh->SetupAttachment(PlayerMesh);
+	}
+
+	if(!InteractCollision)
+	{
+		InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
+		InteractCollision->SetupAttachment(PlayerMesh);
+		InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
+		InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapBegin);
+		InteractCollision->OnComponentEndOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapEnd);
+	}
+>>>>>>> Stashed changes
 }
 
 // Called to bind functionality to input

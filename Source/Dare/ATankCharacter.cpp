@@ -175,7 +175,11 @@ void AATankCharacter::Charge()
 				DashCooldown = DashCooldownDefault;	
 			}
 		}
+<<<<<<< Updated upstream
 	}, GetWorld()->DeltaTimeSeconds / 2.75, true, 0.0f);
+=======
+	}, GetWorld()->DeltaTimeSeconds / 2.75f, true, 0.0f);
+>>>>>>> Stashed changes
 	
 }
 
