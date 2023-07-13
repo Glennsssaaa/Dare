@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "ObjectBase.h"
 #include "RebuildableBase.generated.h"
 
 UCLASS()
-class DARE_API ARebuildableBase : public AActor
+class DARE_API ARebuildableBase : public AObjectBase
 {
 	GENERATED_BODY()
 	

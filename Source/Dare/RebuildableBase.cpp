@@ -85,7 +85,7 @@ void ARebuildableBase::ToggleHouseDestruction()
 	{
 		RebuiltMesh->SetVisibility(true);
 		DestroyedMesh->SetVisibility(false);
-
+		UpdateGameMode();
 	}
 }
 

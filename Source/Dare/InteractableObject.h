@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "ObjectBase.h"
 #include "InteractableObject.generated.h"
 
 UENUM(BlueprintType)
@@ -14,7 +15,7 @@ enum class EobjectType : uint8
 };
 
 UCLASS()
-class DARE_API AInteractableObject : public AActor
+class DARE_API AInteractableObject : public AObjectBase
 {
 	GENERATED_BODY()
 

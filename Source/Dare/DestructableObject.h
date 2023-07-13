@@ -7,10 +7,11 @@
 #include "NiagaraComponent.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/Actor.h"
+#include "ObjectBase.h"
 #include "DestructableObject.generated.h"
 
 UCLASS()
-class DARE_API ADestructableObject : public AActor
+class DARE_API ADestructableObject : public AObjectBase
 {
 	GENERATED_BODY()
 	
