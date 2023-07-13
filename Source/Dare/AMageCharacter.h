@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "APlayerCharacter.h"
-#include "NiagaraSystem.h"
 #include "AMageCharacter.generated.h"
 
 /**
@@ -21,16 +20,13 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	UPROPERTY(EditAnywhere,Category="Water")
-	UNiagaraSystem* WaterEffect;
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	void Interact(const FInputActionValue& Value) override;
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void DrawFunc(AActor* hitActor, FVector2D hitUV);
+		void DrawFunc(AActor* hitActor, FVector2D hitUV);
 
 private:
 
@@ -38,8 +34,8 @@ private:
 	void LineTraceArc();
 	FVector GravityOffset;
 	FVector NextLocation;
-	float Gravity = -980.f;
-	bool bIsDrawing = false;
+	float gravity = -980;
+	bool isDrawing = false;
 	FTimerHandle lineTraceTimer; 
 	FCollisionQueryParams QueryParams;
 

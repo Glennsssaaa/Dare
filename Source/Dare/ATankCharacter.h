@@ -24,31 +24,42 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
+
+	// Input functions
+	UFUNCTION()
+	void TankCharge();
 
 	void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
-	// Tank Charge Ability
-	virtual void AbilityOne() override;
+	// UFUNCTION()
+	// void PlayerAbility() override;
 
-	// Tank Rebuild Ability
-	virtual void AbilityTwo() override;
-	
+	void AbilityOne() override;
+
+	void AbilityTwo() override;
+
+
+	UFUNCTION()
+	void AimCharge();
+
 	UFUNCTION()
 	void Charge();
 
-	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) override;
+	UFUNCTION()
+	void Rebuild();
+	
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) override;
 
-	virtual void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) override;
+	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) override;
 
 protected:
 	// Tank Charge Collision Hitbox
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	UBoxComponent* ChargeHitBox;
+	class UBoxComponent* ChargeHitBox;
 
 	// Used for player to aim the dash
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	UArrowComponent* DashAimArrowComponent;
+	class UArrowComponent* DashAimArrowComponent;
 
 	UPROPERTY()
 	float ChargeDistance = 1500.f;
@@ -56,7 +67,6 @@ protected:
 	UPROPERTY()
 	class ARebuildableBase* Rebuildable;
 
-	UPROPERTY()
 	bool bIsInRebuildZone;
 
 };

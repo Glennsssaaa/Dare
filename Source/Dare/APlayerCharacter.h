@@ -22,17 +22,11 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Input")
-	UInputMappingContext* InputMapping;
+		class UInputMappingContext* InputMapping;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Input")
-	class UInputConfigData* InputActions;
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = "Input")
+		class UInputConfigData* InputActions;
 
-	UFUNCTION()
-	virtual void AbilityOne();
-	
-	UFUNCTION()
-	virtual void AbilityTwo();
-	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -40,8 +34,12 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION()
+	virtual void AbilityOne();
 
-	// Control Variables 
+	UFUNCTION()
+	virtual void AbilityTwo();
+	 ///Control Variables 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float RotationSpeed = 5.0f;
 	
@@ -58,7 +56,7 @@ public:
 	TArray<TEnumAsByte<EObjectTypeQuery>> mousehitObjs;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	AActor* InteractableActor;
+	class AActor* InteractableActor;
 	
     FVector PlayerDirection;
 	FVector2D MoveValue;
@@ -67,36 +65,24 @@ public:
 	FRotator playerDirection;
 	FHitResult MouseHit;
 
-	FVector RespawnPos;
-	
-	int SelectedAbility=1;
-	
-	bool bToggleInteract = false;
+	int selectedAbility=1;
+	bool bToggleInteract=false;
 	
 	// Player Dash
-	UFUNCTION()
 	void PlayerDash();
-
-	// Player Keyboard movement
 	void KeyboardMove(const FInputActionValue& Value);
-	
 	virtual void Interact(const FInputActionValue& Value);
-	
 	void Aim(const FInputActionValue& Value);
-	
+
 	UFUNCTION()
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-	
 	UFUNCTION()
 	virtual void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	
-	UFUNCTION()
-	virtual void OnMeshOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-	
-	
+
 protected:
-	
-	// Dash Cooldown Timer
+
+	///Dash Variables
+	// Dash Timer
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashCooldown = 0.f;
 
@@ -116,7 +102,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashSpeed = 1.35f;
 
-	// Dash predicted location if there is no collision in the way
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	FVector PredictedLocation;
 
@@ -132,18 +117,10 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool bIsAbility = false;
 
-	// Components
+	///Components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* PlayerMesh;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	USkeletalMeshComponent* PlayerSkeletalMesh;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "Components", meta = (AllowPrivateAccess="true"))
-	class UBoxComponent* InteractCollision;
-
-private:
+	class UStaticMeshComponent* PlayerMesh;
 	
-	UPROPERTY()
-	class AInteractableObject* OverlappedObject;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	class UArrowComponent* DirectionArrowComponent;
 };
