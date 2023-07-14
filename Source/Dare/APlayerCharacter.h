@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "InputMappingContext.h"
 #include "EnhancedInputSubsystems.h"
+#include "EnhancedInput/Public/InputActionValue.h"
+#include "EnhancedInput/Public/EnhancedInputComponent.h"
 #include "APlayerCharacter.generated.h"
 
 UCLASS()
@@ -39,9 +41,16 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 	
-	void UpdateMappings(FText DisplayName, FKey NewKey);
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category= "Enhanced Input")
+	UInputMappingContext* InputMappingContext;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category= "Enhanced Input")
+	UInputMappingContext* DefaultMappingContext;
+	
+	// Array of enhanced action mappings
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Enhanced Input")
+	TArray<FEnhancedActionKeyMapping> EnhancedActionMappings;
 	
 	// Control Variables 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")

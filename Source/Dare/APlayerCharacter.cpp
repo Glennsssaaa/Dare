@@ -70,18 +70,6 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 }
 
-void AAPlayerCharacter::UpdateMappings(FText DisplayName, FKey NewKey)
-{
-	// Update the mappings
-	APlayerController* PC = Cast<APlayerController>(GetController());
-	
-	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
-
-
-
-}
-
-
 // Called when the game starts or when spawned
 void AAPlayerCharacter::BeginPlay()
 {
