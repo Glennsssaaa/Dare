@@ -32,6 +32,7 @@ protected:
 	
 	UFUNCTION()
 	virtual void AbilityTwo();
+
 	
 public:	
 	// Called every frame
@@ -83,7 +84,9 @@ public:
 	virtual void Interact(const FInputActionValue& Value);
 	
 	void Aim(const FInputActionValue& Value);
-	
+
+	void PickupItem();
+
 	UFUNCTION()
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 	
@@ -131,7 +134,7 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool bIsAbility = false;
-
+	
 	// Components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* PlayerMesh;
@@ -146,4 +149,8 @@ private:
 	
 	UPROPERTY()
 	class AInteractableObject* OverlappedObject;
+
+	class APickupItem* PickupableItem;
+	bool bIsHoldingItem;
+	FVector TargetLocation;
 };

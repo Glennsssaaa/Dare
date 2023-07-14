@@ -10,6 +10,7 @@
 #include "InputConfigData.h"
 #include "Components/ArrowComponent.h"
 #include "InteractableObject.h"
+#include "PickupItem.h"
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -129,6 +130,28 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 		}
 	}
 
+	if(PickupableItem)
+	{
+		if(bIsHoldingItem)
+		{
+			if(!PickupableItem->bHasLerped)
+			{
+				if(!TargetLocation.Equals(PickupableItem->GetActorLocation(),10) )
+				{
+					PickupableItem->SetActorLocation(FMath::Lerp(PickupableItem->GetActorLocation(),TargetLocation,DeltaTime*5));
+					UE_LOG(LogTemp,Warning,TEXT("AAAA"));
+				}
+				else
+				{
+					PickupableItem->bHasLerped=true;
+				}
+			}
+			else
+			{
+				PickupableItem->SetActorLocation((PlayerMesh->GetForwardVector()*600) + PlayerMesh->GetComponentLocation() + FVector(0,0,200));
+			}
+		}
+	}
 	// Print Dash Charges to screen
 	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
 }
@@ -164,6 +187,11 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
 }
 
+void AAPlayerCharacter::PickupItem()
+{
+	
+}
+
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 {
 	//Interact set to toggle
@@ -181,6 +209,27 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 		OverlappedObject->Interact();
 	}
 
+	if(PickupableItem!=nullptr)
+	{
+		if(bIsHoldingItem)
+		{
+			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+			bIsHoldingItem=false;
+			PickupableItem->SetActorEnableCollision(true);
+			PickupableItem->Mesh->SetSimulatePhysics(true);
+			PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
+			PickupableItem->bHasLerped=false;
+		}
+		else
+		{
+			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+			PickupableItem->Mesh->SetSimulatePhysics(false);
+			PickupableItem->SetActorEnableCollision(false);
+			bIsHoldingItem=true;
+			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
+
+		}
+	}
 }
 
 void AAPlayerCharacter::PlayerDash()
@@ -231,6 +280,7 @@ void AAPlayerCharacter::PlayerDash()
 void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+
 	OverlappedObject = Cast<AInteractableObject>(OtherActor);
 	if(OverlappedObject!=nullptr)
 	{
@@ -242,6 +292,11 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 	if(OtherActor->ActorHasTag("Kill"))
 	{
 		SetActorLocation(RespawnPos);
+	}
+	if(OtherActor->IsA(APickupItem::StaticClass()))
+	{
+		UE_LOG(LogTemp,Warning,TEXT("Pickupabablelasldas"));
+		PickupableItem = Cast<APickupItem>(OtherActor);
 	}
 }
 
