@@ -24,7 +24,6 @@ void AAMageCharacter::BeginPlay()
 	bUsingKeyboard=true;
 	AbilitySelected=1;
 	NiagaraComp = UNiagaraFunctionLibrary::SpawnSystemAttached(WaterEffect,PlayerMesh,NAME_None,FVector(0,0,0), FRotator(0,0,0), EAttachLocation::Type::KeepRelativeOffset,true);
-	NiagaraComp->SetVectorParameter(FName("StartLocation"),PlayerMesh->GetComponentLocation());
 
 }
 
@@ -67,6 +66,7 @@ void AAMageCharacter::Interact(const FInputActionValue& Value)
 			NextLocation.Z = GetActorLocation().Z + 200;
 			isDrawing = true;
 			GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AAMageCharacter::LineTraceArc, 0.01f, true);
+			NiagaraComp->SetVectorParameter(FName("StartLocation"),PlayerMesh->GetComponentLocation());
 
 		}
 	}
