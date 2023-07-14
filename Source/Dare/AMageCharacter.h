@@ -38,10 +38,12 @@ private:
 	void LineTraceArc();
 	FVector GravityOffset;
 	FVector NextLocation;
+	FVector VFXLocation;
 	float gravity = -980;
 	bool isDrawing = false;
 	FTimerHandle lineTraceTimer; 
 	FCollisionQueryParams QueryParams;
 
 	int AbilitySelected = 0;
+	UNiagaraComponent* NiagaraComp;
 };
