@@ -32,7 +32,7 @@ AAPlayerCharacter::AAPlayerCharacter()
 	if(!PlayerSkeletalMesh)
 	{
 		PlayerSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("PlayerSkeletalMesh"));
-		PlayerSkeletalMesh->SetupAttachment(GetRootComponent());
+		PlayerSkeletalMesh->SetupAttachment(PlayerMesh);
 	}
 
 	if(!InteractCollision)
