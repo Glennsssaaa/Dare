@@ -54,9 +54,9 @@ void AATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	APlayerController* PC = Cast<APlayerController>(GetController());
-	//print the controller index
+	// Print the controller index
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
-	//Subsystem->ClearAllMappings();
+	// Subsystem->ClearAllMappings();
 	Subsystem->AddMappingContext(InputMapping,0);
 
 	//Enhanced Input Setup
@@ -144,8 +144,7 @@ void AATankCharacter::Charge()
 				DashCooldown = DashCooldownDefault;	
 			}
 		}
-	}, GetWorld()->DeltaTimeSeconds, true, 0.0f);
-	
+	}, GetWorld()->DeltaTimeSeconds / 2.75f, true, 0.0f);
 }
 
 
@@ -164,22 +163,15 @@ void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 
 	if(OtherComp->ComponentHasTag("Rebuild"))
 	{
-
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Rebuild")));
-		// ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
-		// OverlappedCharacter->ToggleHouseDestruction();
 		Rebuildable = Cast<ARebuildableBase>(OtherActor);
 		bIsInRebuildZone = true;
-		
-		
 	}
 
 	if(OtherComp->ComponentHasTag("HouseCollision"))
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Destory")));
 		ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
 
-		if(OverlappedCharacter->GetIsDestroyed() == false)
+		if(OverlappedCharacter->GetIsDestroyed() == false && bIsPlayerDashing)
 		{
 			OverlappedCharacter->ToggleHouseDestruction();
 		}
