@@ -77,7 +77,7 @@ void AAPlayerCharacter::UpdateMappings(FText DisplayName, FKey NewKey)
 	
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
 
-
+	
 
 }
 
