@@ -41,6 +41,8 @@ public:
 
 	virtual void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) override;
 
+	virtual void Interact(const FInputActionValue& Value);
+
 protected:
 	// Tank Charge Collision Hitbox
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
@@ -59,4 +61,8 @@ protected:
 	UPROPERTY()
 	bool bIsInRebuildZone;
 
+private:
+	class AAMageCharacter* PickupablePlayer;
+
+	void ThrowItem();
 };

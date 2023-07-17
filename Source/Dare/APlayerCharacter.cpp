@@ -3,6 +3,7 @@
 
 #include "APlayerCharacter.h"
 
+#include "AMageCharacter.h"
 #include "DareGameModeBase.h"
 #include "Components/CapsuleComponent.h"
 #include "EnhancedInput/Public/EnhancedInputComponent.h"
@@ -136,10 +137,9 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 		{
 			if(!PickupableItem->bHasLerped)
 			{
-				if(!TargetLocation.Equals(PickupableItem->GetActorLocation(),10) )
+				if(!TargetLocation.Equals(PickupableItem->GetActorLocation(),50) )
 				{
-					PickupableItem->SetActorLocation(FMath::Lerp(PickupableItem->GetActorLocation(),TargetLocation,DeltaTime*5));
-					UE_LOG(LogTemp,Warning,TEXT("AAAA"));
+					PickupableItem->SetActorLocation(FMath::Lerp(PickupableItem->GetActorLocation(),TargetLocation,DeltaTime*50));
 				}
 				else
 				{
@@ -187,9 +187,35 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
 }
 
-void AAPlayerCharacter::PickupItem()
+void AAPlayerCharacter::ThrowItem()
 {
-	
+	if(PickupableItem!=nullptr)
+	{
+		if(bIsHoldingItem)
+		{
+			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+			bIsHoldingItem=false;
+			PickupableItem->SetActorEnableCollision(true);
+			PickupableItem->Mesh->SetSimulatePhysics(true);
+			if(GetVelocity().Length()<=5)
+			{
+				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector());
+			}
+			else
+			{
+				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
+			}
+			PickupableItem->bHasLerped=false;
+		}
+		else
+		{
+			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+			PickupableItem->Mesh->SetSimulatePhysics(false);
+			PickupableItem->SetActorEnableCollision(false);
+			bIsHoldingItem=true;
+			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
+		}
+	}
 }
 
 void AAPlayerCharacter::Interact(const FInputActionValue& Value)
@@ -211,24 +237,7 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 
 	if(PickupableItem!=nullptr)
 	{
-		if(bIsHoldingItem)
-		{
-			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
-			bIsHoldingItem=false;
-			PickupableItem->SetActorEnableCollision(true);
-			PickupableItem->Mesh->SetSimulatePhysics(true);
-			PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
-			PickupableItem->bHasLerped=false;
-		}
-		else
-		{
-			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
-			PickupableItem->Mesh->SetSimulatePhysics(false);
-			PickupableItem->SetActorEnableCollision(false);
-			bIsHoldingItem=true;
-			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
-
-		}
+		ThrowItem();
 	}
 }
 
@@ -295,8 +304,11 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 	}
 	if(OtherActor->IsA(APickupItem::StaticClass()))
 	{
-		UE_LOG(LogTemp,Warning,TEXT("Pickupabablelasldas"));
 		PickupableItem = Cast<APickupItem>(OtherActor);
+		if(PickupableItem==nullptr)
+		{
+			PickupableItem=Cast<APickupItem>(OtherActor);
+		}
 	}
 }
 

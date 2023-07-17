@@ -5,6 +5,7 @@
 #include "EnhancedInputComponent.h"
 #include "InputConfigData.h"
 #include "RebuildableBase.h"
+#include "AMageCharacter.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -46,6 +47,30 @@ void AATankCharacter::BeginPlay()
 void AATankCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(PickupablePlayer)
+	{
+		if(bIsHoldingItem)
+		{
+			if(!PickupablePlayer->bHasLerped)
+			{
+				if(!TargetLocation.Equals(PickupablePlayer->GetActorLocation(),50) )
+				{
+					PickupablePlayer->SetActorLocation(FMath::Lerp(PickupablePlayer->GetActorLocation(),TargetLocation,DeltaTime*5));
+					UE_LOG(LogTemp,Warning,TEXT("AAAA"));
+				}
+				else
+				{
+					PickupablePlayer->bHasLerped=true;
+				}
+			}
+			else
+			{
+				PickupablePlayer->SetActorLocation((PlayerMesh->GetForwardVector()*600) + PlayerMesh->GetComponentLocation() + FVector(0,0,200));
+			}
+		}
+	}
+	
 }
 
 
@@ -153,6 +178,7 @@ void AATankCharacter::Charge()
 
 void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
 	if (OtherActor->ActorHasTag("Destruct") && bIsPlayerDashing)
 	{
 		// Smoke fog function at some point
@@ -184,6 +210,11 @@ void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 			OverlappedCharacter->ToggleHouseDestruction();
 		}
 	}
+
+	if(OtherActor->IsA(AAMageCharacter::StaticClass()))
+	{
+		PickupablePlayer= Cast<AAMageCharacter>(OtherActor);
+	}
 	
 }
 
@@ -199,5 +230,36 @@ void AATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* 
 		Rebuildable->SetIsRebuilding(false);
 		Rebuildable = nullptr;
 		bIsInRebuildZone = false;
+	}
+}
+
+void AATankCharacter::Interact(const FInputActionValue& Value)
+{
+	Super::Interact(Value);
+	if(PickupablePlayer!=nullptr)
+	{
+		ThrowItem();
+	}
+}
+
+void AATankCharacter::ThrowItem()
+{
+	if(bIsHoldingItem)
+	{
+		PickupablePlayer->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+		bIsHoldingItem=false;
+		PickupablePlayer->SetActorEnableCollision(true);
+		PickupablePlayer->PlayerMesh->SetSimulatePhysics(true);
+		PickupablePlayer->PlayerMesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
+		PickupablePlayer->bHasLerped=false;
+		UE_LOG(LogTemp,Warning,TEXT("Thrown"));
+	}
+	else
+	{
+		PickupablePlayer->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+		PickupablePlayer->PlayerMesh->SetSimulatePhysics(false);
+		PickupablePlayer->SetActorEnableCollision(false);
+		bIsHoldingItem=true;
+		TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
 	}
 }

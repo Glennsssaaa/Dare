@@ -32,6 +32,7 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 		void DrawFunc(AActor* hitActor, FVector2D hitUV);
 
+	bool bHasLerped;
 private:
 
 	//Line Trace Variables

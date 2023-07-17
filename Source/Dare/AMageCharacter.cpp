@@ -112,8 +112,6 @@ void AAMageCharacter::LineTraceArc() {
 		NextLocation = TraceEnd;
 		VFXLocation=NextLocation;
 		NiagaraComp->SetVectorParameter(FName("TargetVector"),VFXLocation);
-		UE_LOG(LogTemp, Error, TEXT("PhysicsHandle working %s"), *VFXLocation.ToString());
-
 	}
 	
 	//NiagaraComp->SetVectorParameter(FName("TargetVector"),PlayerMesh->GetComponentLocation() + PlayerMesh->GetForwardVector()*500);

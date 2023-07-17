@@ -84,9 +84,9 @@ public:
 	virtual void Interact(const FInputActionValue& Value);
 	
 	void Aim(const FInputActionValue& Value);
-
-	void PickupItem();
-
+	
+	void ThrowItem();
+	
 	UFUNCTION()
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 	
@@ -95,7 +95,11 @@ public:
 	
 	UFUNCTION()
 	virtual void OnMeshOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-	
+
+	// Components
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* PlayerMesh;
+
 	
 protected:
 	
@@ -135,9 +139,6 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool bIsAbility = false;
 	
-	// Components
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* PlayerMesh;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USkeletalMeshComponent* PlayerSkeletalMesh;
@@ -145,12 +146,15 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "Components", meta = (AllowPrivateAccess="true"))
 	class UBoxComponent* InteractCollision;
 
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
+	bool bIsHoldingItem;
+	
+	FVector TargetLocation;
 private:
 	
 	UPROPERTY()
 	class AInteractableObject* OverlappedObject;
 
 	class APickupItem* PickupableItem;
-	bool bIsHoldingItem;
-	FVector TargetLocation;
+
 };
