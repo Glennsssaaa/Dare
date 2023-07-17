@@ -2,8 +2,6 @@
 
 
 #include "AMageCharacter.h"
-#include "NiagaraFunctionLibrary.h"
-#include "NiagaraComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 
@@ -23,8 +21,6 @@ void AAMageCharacter::BeginPlay()
 	QueryParams.bReturnFaceIndex=true;
 	bUsingKeyboard=true;
 	AbilitySelected=1;
-	NiagaraComp = UNiagaraFunctionLibrary::SpawnSystemAttached(WaterEffect,PlayerMesh,NAME_None,FVector(0,0,0), FRotator(0,0,0), EAttachLocation::Type::KeepRelativeOffset,true);
-
 }
 
 // Called every frame
@@ -54,6 +50,7 @@ void AAMageCharacter::Interact(const FInputActionValue& Value)
 		//Clears water ability timer
 		GetWorldTimerManager().ClearTimer(lineTraceTimer);
 		GravityOffset = FVector::ZeroVector;
+		bEnableWaterVFX=false;
 	}
 	else
 	{
@@ -61,13 +58,10 @@ void AAMageCharacter::Interact(const FInputActionValue& Value)
 		if(AbilitySelected==1)
 		{
 			//Calculates next position and calls function by timer
-			NextLocation.X = GetActorLocation().X;
-			NextLocation.Y = GetActorLocation().Y;
-			NextLocation.Z = GetActorLocation().Z + 200;
+			NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 200);
 			isDrawing = true;
+			bEnableWaterVFX=true;
 			GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AAMageCharacter::LineTraceArc, 0.01f, true);
-			NiagaraComp->SetVectorParameter(FName("StartLocation"),PlayerMesh->GetComponentLocation());
-
 		}
 	}
 	Super::Interact(Value);
@@ -107,12 +101,9 @@ void AAMageCharacter::LineTraceArc() {
 		FVector2D hitUV;
 		UGameplayStatics::FindCollisionUV(Hit,0,hitUV);
 		DrawFunc(Hit.GetActor(),hitUV);
+		WaterHitPosition = Hit.Location;
 	}
 	else {
 		NextLocation = TraceEnd;
-		VFXLocation=NextLocation;
-		NiagaraComp->SetVectorParameter(FName("TargetVector"),VFXLocation);
 	}
-	
-	//NiagaraComp->SetVectorParameter(FName("TargetVector"),PlayerMesh->GetComponentLocation() + PlayerMesh->GetForwardVector()*500);
 }

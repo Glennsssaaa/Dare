@@ -139,7 +139,6 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool bIsAbility = false;
 	
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USkeletalMeshComponent* PlayerSkeletalMesh;
 
@@ -147,9 +146,13 @@ protected:
 	class UBoxComponent* InteractCollision;
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
-	bool bIsHoldingItem;
-	
+	bool bIsHoldingItem = false;
+
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 	FVector TargetLocation;
+
+	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
+	bool bPlayerFrozen;
 private:
 	
 	UPROPERTY()

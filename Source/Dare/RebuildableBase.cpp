@@ -5,7 +5,6 @@
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
 #include "Components/BoxComponent.h"
-#include "Components/WidgetComponent.h"
 
 // Sets default values
 ARebuildableBase::ARebuildableBase()

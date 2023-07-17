@@ -32,6 +32,12 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 		void DrawFunc(AActor* hitActor, FVector2D hitUV);
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FVector WaterHitPosition;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	bool bEnableWaterVFX;
+	
 	bool bHasLerped;
 private:
 
@@ -39,12 +45,10 @@ private:
 	void LineTraceArc();
 	FVector GravityOffset;
 	FVector NextLocation;
-	FVector VFXLocation;
 	float gravity = -980;
 	bool isDrawing = false;
 	FTimerHandle lineTraceTimer; 
 	FCollisionQueryParams QueryParams;
 
 	int AbilitySelected = 0;
-	UNiagaraComponent* NiagaraComp;
 };

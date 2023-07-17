@@ -159,7 +159,7 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 {
 	// Player can't move during certain actions, for example if they are aiming the tank's charge attack
-	if(!bCanPlayerMove) { return; }
+	if(!bCanPlayerMove || bPlayerFrozen) { return; }
 	
 	MoveValue=Value.Get<FVector2D>();
 	//Add movement input
@@ -177,14 +177,17 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 
 void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 	//Player look direction by controller value (Unused)
+	if(bPlayerFrozen) { return; }
+
 	LookValue=Value.Get<FVector2D>();
 
-    if(LookValue.X == 0)
-    {
-        LookValue.X = 1;    
-    }
+	if(LookValue.X == 0)
+	{
+		LookValue.X = 1;    
+	}
 
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
+
 }
 
 void AAPlayerCharacter::ThrowItem()
@@ -233,6 +236,7 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 	if(OverlappedObject)
 	{
 		OverlappedObject->Interact();
+		bPlayerFrozen = OverlappedObject->bFreezePlayer;
 	}
 
 	if(PickupableItem!=nullptr)

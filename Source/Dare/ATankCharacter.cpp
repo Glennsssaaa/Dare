@@ -47,30 +47,6 @@ void AATankCharacter::BeginPlay()
 void AATankCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	if(PickupablePlayer)
-	{
-		if(bIsHoldingItem)
-		{
-			if(!PickupablePlayer->bHasLerped)
-			{
-				if(!TargetLocation.Equals(PickupablePlayer->GetActorLocation(),50) )
-				{
-					PickupablePlayer->SetActorLocation(FMath::Lerp(PickupablePlayer->GetActorLocation(),TargetLocation,DeltaTime*5));
-					UE_LOG(LogTemp,Warning,TEXT("AAAA"));
-				}
-				else
-				{
-					PickupablePlayer->bHasLerped=true;
-				}
-			}
-			else
-			{
-				PickupablePlayer->SetActorLocation((PlayerMesh->GetForwardVector()*600) + PlayerMesh->GetComponentLocation() + FVector(0,0,200));
-			}
-		}
-	}
-	
 }
 
 
@@ -252,7 +228,6 @@ void AATankCharacter::ThrowItem()
 		PickupablePlayer->PlayerMesh->SetSimulatePhysics(true);
 		PickupablePlayer->PlayerMesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
 		PickupablePlayer->bHasLerped=false;
-		UE_LOG(LogTemp,Warning,TEXT("Thrown"));
 	}
 	else
 	{
