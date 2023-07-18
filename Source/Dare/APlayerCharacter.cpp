@@ -64,6 +64,8 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	// Input Bindings
 	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
     PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
+	PEI->BindAction(InputActions->InputAim, ETriggerEvent::Completed, this, &AAPlayerCharacter::SetIsRotating);
+
 	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
 	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
 	PEI->BindAction(InputActions->InputAbility, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityOne);
@@ -158,29 +160,40 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 	if(MoveValue.Y != 0)
 	{
 		AddMovementInput(GetActorForwardVector(), MoveValue.Y * MovementSpeed);
+		
+		if(!bIsPlayerRotating)
+		{
+			PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds * RotationSpeed));
+		}
 	}
 
 	if(MoveValue.X!=0)
 	{
 		AddMovementInput(GetActorRightVector(), MoveValue.X * MovementSpeed);
+
+		if(!bIsPlayerRotating)
+		{
+			PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds * RotationSpeed));
+		}
 	}
 	PlayerDirection = FVector(MoveValue.Y,MoveValue.X,0);
-	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds));
 
 }
-
 void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 	//Player look direction by controller value (Unused)
 	if(bPlayerFrozen) { return; }
 
+	if(!bIsPlayerRotating) { bIsPlayerRotating = true; }
+	
 	LookValue=Value.Get<FVector2D>();
 
-	if(LookValue.X == 0)
+	if(LookValue.X == 0.f)
 	{
-		LookValue.X = 1;    
+		LookValue.X = 1.f;    
 	}
-
+	
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
+	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds * (RotationSpeed * 4.f)));
 
 }
 
@@ -242,47 +255,42 @@ void AAPlayerCharacter::Interact(const FInputActionValue& Value)
 
 void AAPlayerCharacter::PlayerDash()
 {
-	// Check if the player is already dashing or if the dash is on cooldown
-	if(bIsPlayerDashing || DashCharges == 0) return;
-
 	// Disable Player Input to prevent player movement during dash
-	DisableInput(UGameplayStatics::GetPlayerController(GetWorld(), 0));
-	UE_LOG(LogTemp, Warning, TEXT("Dash"));
+	bCanPlayerMove = false;
 	
 	bIsPlayerDashing = true;
+	
 	// Find the predicted location of the player after the dash
 	PredictedLocation = (PlayerMesh->GetForwardVector() * DashDistance) + GetActorLocation();
 
-	DashCharges--;
-	
+	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
 	{
+		
 		FHitResult SweepHitResult;
-			
-		// Set actor location using interpolation and check if there is any collision in the way
+		
+		// Set actor location using linear interpolation and check if there is any collision in the way
 		SetActorLocation(FMath::Lerp(GetActorLocation(), PredictedLocation, GetWorld()->GetDeltaSeconds() * DashSpeed), true, &SweepHitResult);
 
-		const FVector2D ActorLocation2D		= FVector2D(GetActorLocation().X, GetActorLocation().Y);
+		const FVector2D ActorLocation2D = FVector2D(GetActorLocation().X, GetActorLocation().Y);
 		const FVector2D PredictedLocation2D = FVector2D(PredictedLocation.X, PredictedLocation.Y);
 			
 		if (SweepHitResult.bBlockingHit || ActorLocation2D.Equals(PredictedLocation2D, 100.f))
 		{
 			// Location reached, activate dash cooldown, re-enable input and camera lag
-			EnableInput(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+			bCanPlayerMove = true;
+			bIsPlayerDashing = false;
 
 			// Clear Dash timer to stop function running every frame
 			GetWorld()->GetTimerManager().ClearTimer(DashCooldownTimerHandle);
-				
-			bIsPlayerDashing = false;
-
-			// Only reset the cooldown if the player has 1 dash charge left, otherwise cooldown stays as it is 
+			
+			// Only reset the cooldown if the player has used all their dashes
 			if(DashCharges == DashChargesMax - 1)
 			{
-				DashCooldown = DashCooldownDefault;
+				DashCooldown = DashCooldownDefault;	
 			}
 		}
-	}, GetWorld()->DeltaTimeSeconds / 2.75, true, 0.0f);
-	
+	}, GetWorld()->DeltaTimeSeconds / 3.f, true, 0.0f);
 }
 
 void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,

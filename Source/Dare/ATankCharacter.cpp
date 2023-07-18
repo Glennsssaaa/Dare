@@ -114,7 +114,7 @@ void AATankCharacter::Charge()
 	bIsPlayerDashing = true;
 	
 	// Find the predicted location of the player after the dash
-	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * 2000.f) + GetActorLocation();
+	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * 1500.f) + GetActorLocation();
 
 	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
@@ -133,19 +133,18 @@ void AATankCharacter::Charge()
 		{
 			// Location reached, activate dash cooldown, re-enable input and camera lag
 			bCanPlayerMove = true;
+			bIsPlayerDashing = false;
 
 			// Clear Dash timer to stop function running every frame
 			GetWorld()->GetTimerManager().ClearTimer(DashCooldownTimerHandle);
 			
-			bIsPlayerDashing = false;
-		
 			// Only reset the cooldown if the player has used all their dashes
 			if(DashCharges == DashChargesMax - 1)
 			{
 				DashCooldown = DashCooldownDefault;	
 			}
 		}
-	}, GetWorld()->DeltaTimeSeconds, true, 0.0f);
+	}, GetWorld()->DeltaTimeSeconds / 3.f, true, 0.0f);
 	
 }
 
@@ -181,7 +180,7 @@ void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Destory")));
 		ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
 
-		if(OverlappedCharacter->GetIsDestroyed() == false)
+		if(OverlappedCharacter->GetIsDestroyed() == false && bIsPlayerDashing)
 		{
 			OverlappedCharacter->ToggleHouseDestruction();
 		}
