@@ -106,20 +106,15 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(bUsingKeyboard)
+	/*if(bUsingKeyboard)
 	{
 		// Player Direction Mouse Controls
 		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorForObjects(mousehitObjs, false, MouseHit);
 		playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), MouseHit.Location);
 		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), FRotator(0,playerDirection.Yaw,0), DeltaTime*RotationSpeed));
-	}
+	}*/
 	// lerp the player's direction to the direction variable
-	else if(LookValue.Y !=0 || LookValue.X!=0 && !bUsingKeyboard)
-	{
-		PlayerDirection = FVector(-LookValue.Y,LookValue.X,0);
-		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), DeltaTime * RotationSpeed));
-	}
-
+	
 	
 	// Reduce Dash timer if needed
 	if(DashCooldown > 0.f)
@@ -183,7 +178,9 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 	{
 		AddMovementInput(GetActorRightVector(), MoveValue.X * MovementSpeed);
 	}
-	
+	PlayerDirection = FVector(MoveValue.Y,MoveValue.X,0);
+	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds));
+
 }
 
 void AAPlayerCharacter::Aim(const FInputActionValue& Value){
@@ -308,6 +305,9 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 	OverlappedObject = Cast<AInteractableObject>(OtherActor);
 	if(OverlappedObject!=nullptr)
 	{
+		TArray<UPrimitiveComponent*> Components;
+		OverlappedObject->GetComponents<UPrimitiveComponent>(Components);
+		Components[0]->SetRenderCustomDepth(true);
 	}
 	if(OtherActor->ActorHasTag("Respawn"))
 	{
