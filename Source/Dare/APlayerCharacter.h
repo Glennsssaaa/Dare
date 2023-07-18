@@ -102,6 +102,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* PlayerMesh;
 
+	void SetIsRotating(){bIsPlayerRotating = false;}
 	
 protected:
 	
@@ -120,10 +121,10 @@ protected:
 	int DashChargesMax = 3;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
-	float DashDistance = 650.0f;
+	float DashDistance = 1000.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
-	float DashSpeed = 1.35f;
+	float DashSpeed = 1.75f;
 
 	// Dash predicted location if there is no collision in the way
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
@@ -149,6 +150,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 	bool bIsHoldingItem = false;
+
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
+	bool bIsPlayerRotating = false;
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 	FVector TargetLocation;
