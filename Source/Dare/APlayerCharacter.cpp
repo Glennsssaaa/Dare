@@ -28,7 +28,6 @@ AAPlayerCharacter::AAPlayerCharacter()
 	{
 		PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
 		PlayerMesh->SetupAttachment(GetRootComponent());
-		PlayerMesh->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnMeshOverlapBegin);
 	}
 
 	if(!PlayerSkeletalMesh)
@@ -78,9 +77,6 @@ void AAPlayerCharacter::UpdateMappings(FText DisplayName, FKey NewKey)
 	APlayerController* PC = Cast<APlayerController>(GetController());
 	
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
-
-	
-
 }
 
 
@@ -105,16 +101,6 @@ void AAPlayerCharacter::AbilityTwo()
 void AAPlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	/*if(bUsingKeyboard)
-	{
-		// Player Direction Mouse Controls
-		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorForObjects(mousehitObjs, false, MouseHit);
-		playerDirection = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), MouseHit.Location);
-		PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), FRotator(0,playerDirection.Yaw,0), DeltaTime*RotationSpeed));
-	}*/
-	// lerp the player's direction to the direction variable
-	
 	
 	// Reduce Dash timer if needed
 	if(DashCooldown > 0.f)
@@ -136,7 +122,7 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 			}
 		}
 	}
-
+	
 	if(PickupableItem)
 	{
 		if(bIsHoldingItem)
@@ -217,6 +203,7 @@ void AAPlayerCharacter::ThrowItem()
 				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
 			}
 			PickupableItem->bHasLerped=false;
+			PickupableItem=nullptr;
 		}
 		else
 		{
@@ -305,9 +292,7 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 	OverlappedObject = Cast<AInteractableObject>(OtherActor);
 	if(OverlappedObject!=nullptr)
 	{
-		TArray<UPrimitiveComponent*> Components;
-		OverlappedObject->GetComponents<UPrimitiveComponent>(Components);
-		Components[0]->SetRenderCustomDepth(true);
+		
 	}
 	if(OtherActor->ActorHasTag("Respawn"))
 	{
@@ -335,14 +320,3 @@ void AAPlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor
 		OverlappedObject=nullptr;
 	}
 }
-
-void AAPlayerCharacter::OnMeshOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-
-}
-
-
-
-
-	
