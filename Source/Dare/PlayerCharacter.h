@@ -6,16 +6,16 @@
 #include "GameFramework/Character.h"
 #include "InputMappingContext.h"
 #include "EnhancedInputSubsystems.h"
-#include "APlayerCharacter.generated.h"
+#include "PlayerCharacter.generated.h"
 
 UCLASS()
-class DARE_API AAPlayerCharacter : public ACharacter
+class DARE_API APlayerCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	AAPlayerCharacter();
+	APlayerCharacter();
 
 protected:
 	// Called when the game starts or when spawned
@@ -75,6 +75,7 @@ public:
 	int SelectedAbility=1;
 	
 	bool bToggleInteract = false;
+	bool bCanInteract=true;
 	
 	// Player Dash
 	UFUNCTION()

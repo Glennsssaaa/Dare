@@ -3,20 +3,20 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "APlayerCharacter.h"
+#include "PlayerCharacter.h"
 #include "NiagaraComponent.h"
-#include "ATankCharacter.generated.h"
+#include "TankCharacter.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class DARE_API AATankCharacter : public AAPlayerCharacter
+class DARE_API ATankCharacter : public APlayerCharacter
 {
 	GENERATED_BODY()
 public:
 	// Sets default values for this character's properties
-	AATankCharacter();
+	ATankCharacter();
 
 protected:
 	// Called when the game starts or when spawned
@@ -62,7 +62,7 @@ protected:
 	bool bIsInRebuildZone;
 
 private:
-	class AAMageCharacter* PickupablePlayer;
+	class AMageCharacter* PickupablePlayer;
 
 	void ThrowItem();
 };

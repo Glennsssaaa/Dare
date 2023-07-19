@@ -1,75 +1,82 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "AMageCharacter.h"
+#include "MageCharacter.h"
 #include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
-AAMageCharacter::AAMageCharacter()
+AMageCharacter::AMageCharacter()
 {
 }
 
 
 
 // Called when the game starts or when spawned
-void AAMageCharacter::BeginPlay()
+void AMageCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	QueryParams.bTraceComplex = true;
 	QueryParams.AddIgnoredActor(this);
 	QueryParams.bReturnFaceIndex=true;
 	bUsingKeyboard=true;
-	AbilitySelected=1;
 }
 
 // Called every frame
-void AAMageCharacter::Tick(float DeltaTime)
+void AMageCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	if(bToggleInteract)
-	{
-		if(AbilitySelected==1)
-		{
-
-		}
-	}
-	else
-	{
-	
-	}
 }
 
 
-void AAMageCharacter::Interact(const FInputActionValue& Value)
+void AMageCharacter::Interact(const FInputActionValue& Value)
 {
+
+	Super::Interact(Value);
+
+}
+
+//Water Spell
+void AMageCharacter::AbilityOne()
+{
+	Super::AbilityOne();
 	//Interact toggle 
-	if(bToggleInteract)
+	if(bToggleWater)
 	{
 		//Clears water ability timer
 		GetWorldTimerManager().ClearTimer(lineTraceTimer);
 		GravityOffset = FVector::ZeroVector;
 		bEnableWaterVFX=false;
+		bToggleWater=false;
+		bCanInteract=true;
 	}
-	else
+	else if(!bToggleWater && !bToggleEarth && !bIsHoldingItem)
 	{
-		//Water ability
-		if(AbilitySelected==1)
-		{
-			//Calculates next position and calls function by timer
-			NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 200);
-			isDrawing = true;
-			bEnableWaterVFX=true;
-			GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AAMageCharacter::LineTraceArc, 0.01f, true);
-		}
+		//Calculates next position and calls function by timer
+		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 200);
+		isDrawing = true;
+		bEnableWaterVFX=true;
+		GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
+		bToggleWater=true;
+		bCanInteract=false;
 	}
-	Super::Interact(Value);
-	
+}
+
+//Earth spell
+void AMageCharacter::AbilityTwo()
+{
+	Super::AbilityTwo();
+	if(bToggleEarth){
+		bToggleEarth=false;
+	}
+	else if(!bToggleEarth && !bToggleWater && !bIsHoldingItem)
+	{
+		bToggleEarth=true;
+	}
 }
 
 //Trace in arc for water spell
-void AAMageCharacter::LineTraceArc() {
+void AMageCharacter::LineTraceArc() {
 	//Trajectory calculation to move in arc
 	float mouseDist = FVector::Distance(PlayerMesh->GetComponentLocation(), MouseHit.Location);
 	GravityOffset = GravityOffset + FVector(0,0,gravity * 0.1);

@@ -1,17 +1,17 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "ATankCharacter.h"
+#include "TankCharacter.h"
 #include "DestructableObject.h"
 #include "EnhancedInputComponent.h"
 #include "InputConfigData.h"
 #include "RebuildableBase.h"
-#include "AMageCharacter.h"
+#include "MageCharacter.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
-AATankCharacter::AATankCharacter()
+ATankCharacter::ATankCharacter()
 {
 	if(!ChargeHitBox)
 	{
@@ -34,23 +34,23 @@ AATankCharacter::AATankCharacter()
 
 
 // Called when the game starts or when spawned
-void AATankCharacter::BeginPlay()
+void ATankCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	DashAimArrowComponent->SetVisibility(false);
-	ChargeHitBox->OnComponentBeginOverlap.AddDynamic(this, &AATankCharacter::OnOverlapBegin);
+	ChargeHitBox->OnComponentBeginOverlap.AddDynamic(this, &ATankCharacter::OnOverlapBegin);
 	DashDistance = 1350.f;
 
 }
 
 // Called every frame
-void AATankCharacter::Tick(float DeltaTime)
+void ATankCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
 
 
-void AATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
@@ -67,46 +67,52 @@ void AATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 }
 
-void AATankCharacter::AbilityOne()
+void ATankCharacter::AbilityOne()
 {
 	Super::AbilityOne();
 	// Do ability
 
-	if(!bIsAbility)
+	if(!bIsHoldingItem)
 	{
-		bCanPlayerMove = false;
-
-		DashAimArrowComponent->SetVisibility(true);
-		bIsAbility = true;
-		GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+		if(!bIsAbility)
 		{
+			bCanPlayerMove = false;
+
+			DashAimArrowComponent->SetVisibility(true);
+			bIsAbility = true;
+			GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+			{
+				bIsAbility = false;
+			}, 5.f, false);
+		}
+		else
+		{
+			// 2. Do Dash
+			Charge();
 			bIsAbility = false;
-		}, 5.f, false);
-	}
-	else
-	{
-		// 2. Do Dash
-		Charge();
-		bIsAbility = false;
-		bCanPlayerMove = true;
+			bCanPlayerMove = true;
+		}
 	}
 }
 
-void AATankCharacter::AbilityTwo()
+void ATankCharacter::AbilityTwo()
 {
 	Super::AbilityTwo();
-	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Rebuild Input")));
-
-	// If building destroyed, rebuild it
-	if(!Rebuildable) return;
-
-	if(bIsInRebuildZone && Rebuildable->GetIsDestroyed())
+	if(!bIsHoldingItem)
 	{
-		Rebuildable->SetIsRebuilding(true);	
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Rebuild Input")));
+
+		// If building destroyed, rebuild it
+		if(!Rebuildable) return;
+
+		if(bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem)
+		{
+			Rebuildable->SetIsRebuilding(true);	
+		}
 	}
 }
 
-void AATankCharacter::Charge()
+void ATankCharacter::Charge()
 {
 	// Disable Player Input to prevent player movement during dash
 	bCanPlayerMove = false;
@@ -151,7 +157,7 @@ void AATankCharacter::Charge()
 
 
 
-void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
 	if (OtherActor->ActorHasTag("Destruct") && bIsPlayerDashing)
@@ -186,14 +192,14 @@ void AATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 		}
 	}
 
-	if(OtherActor->IsA(AAMageCharacter::StaticClass()))
+	if(OtherActor->IsA(AMageCharacter::StaticClass()))
 	{
-		PickupablePlayer= Cast<AAMageCharacter>(OtherActor);
+		PickupablePlayer= Cast<AMageCharacter>(OtherActor);
 	}
 	
 }
 
-void AATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+void ATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
@@ -208,7 +214,7 @@ void AATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* 
 	}
 }
 
-void AATankCharacter::Interact(const FInputActionValue& Value)
+void ATankCharacter::Interact(const FInputActionValue& Value)
 {
 	Super::Interact(Value);
 	if(PickupablePlayer!=nullptr)
@@ -217,8 +223,10 @@ void AATankCharacter::Interact(const FInputActionValue& Value)
 	}
 }
 
-void AATankCharacter::ThrowItem()
+void ATankCharacter::ThrowItem()
 {
+	Super::ThrowItem();
+	/*
 	if(bIsHoldingItem)
 	{
 		PickupablePlayer->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
@@ -235,5 +243,5 @@ void AATankCharacter::ThrowItem()
 		PickupablePlayer->SetActorEnableCollision(false);
 		bIsHoldingItem=true;
 		TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
-	}
+	}*/
 }

@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "APlayerCharacter.h"
+#include "PlayerCharacter.h"
 
-#include "AMageCharacter.h"
+#include "MageCharacter.h"
 #include "DareGameModeBase.h"
 #include "Components/CapsuleComponent.h"
 #include "EnhancedInput/Public/EnhancedInputComponent.h"
@@ -19,7 +19,7 @@
 
 
 // Sets default values
-AAPlayerCharacter::AAPlayerCharacter()
+APlayerCharacter::APlayerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -41,13 +41,13 @@ AAPlayerCharacter::AAPlayerCharacter()
 		InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
 		InteractCollision->SetupAttachment(PlayerMesh);
 		InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
-		InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapBegin);
-		InteractCollision->OnComponentEndOverlap.AddDynamic(this, &AAPlayerCharacter::OnOverlapEnd);
+		InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnOverlapBegin);
+		InteractCollision->OnComponentEndOverlap.AddDynamic(this, &APlayerCharacter::OnOverlapEnd);
 	}
 }
 
 // Called to bind functionality to input
-void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
@@ -62,18 +62,18 @@ void AAPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PC->SetShowMouseCursor(true);
 	
 	// Input Bindings
-	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &AAPlayerCharacter::KeyboardMove);
-    PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &AAPlayerCharacter::Aim);
-	PEI->BindAction(InputActions->InputAim, ETriggerEvent::Completed, this, &AAPlayerCharacter::SetIsRotating);
+	PEI->BindAction(InputActions->InputKeyboardMove, ETriggerEvent::Triggered, this, &APlayerCharacter::KeyboardMove);
+    PEI->BindAction(InputActions->InputAim, ETriggerEvent::Triggered, this, &APlayerCharacter::Aim);
+	PEI->BindAction(InputActions->InputAim, ETriggerEvent::Completed, this, &APlayerCharacter::SetIsRotating);
 
-	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &AAPlayerCharacter::Interact);
-	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &AAPlayerCharacter::PlayerDash);
-	PEI->BindAction(InputActions->InputAbility, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityOne);
-	PEI->BindAction(InputActions->InputAbilityTwo, ETriggerEvent::Started, this, &AAPlayerCharacter::AbilityTwo);
+	PEI->BindAction(InputActions->InputInteract, ETriggerEvent::Started, this, &APlayerCharacter::Interact);
+	PEI->BindAction(InputActions->InputDash, ETriggerEvent::Started, this, &APlayerCharacter::PlayerDash);
+	PEI->BindAction(InputActions->InputAbility, ETriggerEvent::Started, this, &APlayerCharacter::AbilityOne);
+	PEI->BindAction(InputActions->InputAbilityTwo, ETriggerEvent::Started, this, &APlayerCharacter::AbilityTwo);
 
 }
 
-void AAPlayerCharacter::UpdateMappings(FText DisplayName, FKey NewKey)
+void APlayerCharacter::UpdateMappings(FText DisplayName, FKey NewKey)
 {
 	// Update the mappings
 	APlayerController* PC = Cast<APlayerController>(GetController());
@@ -83,24 +83,24 @@ void AAPlayerCharacter::UpdateMappings(FText DisplayName, FKey NewKey)
 
 
 // Called when the game starts or when spawned
-void AAPlayerCharacter::BeginPlay()
+void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-void AAPlayerCharacter::AbilityOne()
+void APlayerCharacter::AbilityOne()
 {
 	
 }
 
-void AAPlayerCharacter::AbilityTwo()
+void APlayerCharacter::AbilityTwo()
 {
 	
 }
 
 // Called every frame
-void AAPlayerCharacter::Tick(float DeltaTime)
+void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
@@ -150,7 +150,7 @@ void AAPlayerCharacter::Tick(float DeltaTime)
 	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
 }
 
-void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
+void APlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 {
 	// Player can't move during certain actions, for example if they are aiming the tank's charge attack
 	if(!bCanPlayerMove || bPlayerFrozen) { return; }
@@ -179,7 +179,7 @@ void AAPlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 	PlayerDirection = FVector(MoveValue.Y,MoveValue.X,0);
 
 }
-void AAPlayerCharacter::Aim(const FInputActionValue& Value){
+void APlayerCharacter::Aim(const FInputActionValue& Value){
 	//Player look direction by controller value (Unused)
 	if(bPlayerFrozen) { return; }
 
@@ -197,7 +197,7 @@ void AAPlayerCharacter::Aim(const FInputActionValue& Value){
 
 }
 
-void AAPlayerCharacter::ThrowItem()
+void APlayerCharacter::ThrowItem()
 {
 	if(PickupableItem!=nullptr)
 	{
@@ -229,31 +229,34 @@ void AAPlayerCharacter::ThrowItem()
 	}
 }
 
-void AAPlayerCharacter::Interact(const FInputActionValue& Value)
+void APlayerCharacter::Interact(const FInputActionValue& Value)
 {
-	//Interact set to toggle
-	if(bToggleInteract)
+	if(bCanInteract)
 	{
-		bToggleInteract=false;
-	}
-	else
-	{
-		bToggleInteract=true;
-	}
+		//Interact set to toggle
+		if(bToggleInteract)
+		{
+			bToggleInteract=false;
+		}
+		else 
+		{
+			bToggleInteract=true;
+		}
 	
-	if(OverlappedObject)
-	{
-		OverlappedObject->Interact();
-		bPlayerFrozen = OverlappedObject->bFreezePlayer;
-	}
+		if(OverlappedObject)
+		{
+			OverlappedObject->Interact();
+			bPlayerFrozen = OverlappedObject->bFreezePlayer;
+		}
 
-	if(PickupableItem!=nullptr)
-	{
-		ThrowItem();
+		if(PickupableItem!=nullptr)
+		{
+			ThrowItem();
+		}
 	}
 }
 
-void AAPlayerCharacter::PlayerDash()
+void APlayerCharacter::PlayerDash()
 {
 	// Disable Player Input to prevent player movement during dash
 	bCanPlayerMove = false;
@@ -293,7 +296,7 @@ void AAPlayerCharacter::PlayerDash()
 	}, GetWorld()->DeltaTimeSeconds / 3.f, true, 0.0f);
 }
 
-void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 
@@ -320,7 +323,7 @@ void AAPlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 	}
 }
 
-void AAPlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	if(OverlappedObject != nullptr)

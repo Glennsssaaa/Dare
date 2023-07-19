@@ -3,20 +3,20 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "APlayerCharacter.h"
+#include "PlayerCharacter.h"
 #include "NiagaraSystem.h"
-#include "AMageCharacter.generated.h"
+#include "MageCharacter.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class DARE_API AAMageCharacter : public AAPlayerCharacter
+class DARE_API AMageCharacter : public APlayerCharacter
 {
 	GENERATED_BODY()
 public:
 	// Sets default values for this character's properties
-	AAMageCharacter();
+	AMageCharacter();
 
 protected:
 	// Called when the game starts or when spawned
@@ -28,10 +28,14 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	void Interact(const FInputActionValue& Value) override;
-
+	virtual void AbilityOne() override;
+	virtual void AbilityTwo() override;
+	
+	
 	UFUNCTION(BlueprintImplementableEvent)
 		void DrawFunc(AActor* hitActor, FVector2D hitUV);
 
+	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	FVector WaterHitPosition;
 
@@ -50,5 +54,7 @@ private:
 	FTimerHandle lineTraceTimer; 
 	FCollisionQueryParams QueryParams;
 
+	bool bToggleWater;
+	bool bToggleEarth;
 	int AbilitySelected = 0;
 };
