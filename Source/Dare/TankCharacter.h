@@ -55,11 +55,16 @@ protected:
 	UPROPERTY()
 	float ChargeDistance = 1500.f;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float ChargeSpeed = 1.f;
+	
 	UPROPERTY()
 	class ARebuildableBase* Rebuildable;
 
 	UPROPERTY()
 	bool bIsInRebuildZone;
+
+
 
 private:
 	class AMageCharacter* PickupablePlayer;

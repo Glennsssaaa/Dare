@@ -120,7 +120,7 @@ void ATankCharacter::Charge()
 	bIsPlayerDashing = true;
 	
 	// Find the predicted location of the player after the dash
-	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * 1500.f) + GetActorLocation();
+	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * ChargeDistance) + GetActorLocation();
 
 	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
@@ -130,7 +130,7 @@ void ATankCharacter::Charge()
 		FHitResult SweepHitResult;
 		
 		// Set actor location using linear interpolation and check if there is any collision in the way
-		SetActorLocation(FMath::Lerp(GetActorLocation(), PredictedLocation, GetWorld()->GetDeltaSeconds() * DashSpeed), true, &SweepHitResult);
+		SetActorLocation(FMath::Lerp(GetActorLocation(), PredictedLocation, GetWorld()->GetDeltaSeconds() * ChargeSpeed), true, &SweepHitResult);
 
 		const FVector2D ActorLocation2D = FVector2D(GetActorLocation().X, GetActorLocation().Y);
 		const FVector2D PredictedLocation2D = FVector2D(PredictedLocation.X, PredictedLocation.Y);
