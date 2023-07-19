@@ -56,5 +56,7 @@ public:
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	bool bFreezePlayer;
-	
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	bool bFinished;
 };

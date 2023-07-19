@@ -7,6 +7,7 @@
 AGrowingObject::AGrowingObject()
 {
 	bFreezePlayer=true;
+	bInteracted=false;
 }
 
 void AGrowingObject::Tick(float DeltaTime)
@@ -16,8 +17,9 @@ void AGrowingObject::Tick(float DeltaTime)
 
 void AGrowingObject::Interact()
 {
-	Super::Interact();
-	if(bInteracted)
+	//Super::Interact();
+	UE_LOG(LogTemp,Warning,TEXT("Growing"));
+	if(bInteracted || bFinished)
 	{
 		bInteracted=false;
 		GetWorldTimerManager().ClearTimer(growthTimer);
@@ -27,15 +29,15 @@ void AGrowingObject::Interact()
 		GetWorldTimerManager().SetTimer(growthTimer, this, &AGrowingObject::Grow, 0.01f, true);
 		bInteracted=true;
 	}
-
 }
 
 void AGrowingObject::Grow()
 {
 
-	if(ObjectMesh->GetRelativeScale3D().Length()>5)
+	if(ObjectMesh->GetRelativeScale3D().Length()>1)
 	{
 		GetWorldTimerManager().ClearTimer(growthTimer);
+		bFinished=true;
 	}
 	else
 	{

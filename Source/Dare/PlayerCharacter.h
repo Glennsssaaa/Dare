@@ -158,8 +158,7 @@ protected:
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
 	bool bPlayerFrozen;
-private:
-	
+
 	UPROPERTY()
 	class AInteractableObject* OverlappedObject;
 

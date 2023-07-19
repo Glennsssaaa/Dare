@@ -5,6 +5,7 @@
 
 #include "MageCharacter.h"
 #include "DareGameModeBase.h"
+#include "GrowingObject.h"
 #include "Components/CapsuleComponent.h"
 #include "EnhancedInput/Public/EnhancedInputComponent.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -245,8 +246,11 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 	
 		if(OverlappedObject)
 		{
-			OverlappedObject->Interact();
-			bPlayerFrozen = OverlappedObject->bFreezePlayer;
+			if(!OverlappedObject->IsA(AGrowingObject::StaticClass()))
+			{
+				OverlappedObject->Interact();
+				bPlayerFrozen = OverlappedObject->bFreezePlayer;
+			}
 		}
 
 		if(PickupableItem!=nullptr)
