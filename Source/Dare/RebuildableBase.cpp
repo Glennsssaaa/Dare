@@ -78,12 +78,17 @@ void ARebuildableBase::ToggleHouseDestruction()
 		RebuiltMesh->SetVisibility(false);
 		DestroyedMesh->SetVisibility(true);
 		RebuildProgress = 0.f;
-
+		Points=-Points;
+		UpdateGameMode();
 	}
 	else
 	{
 		RebuiltMesh->SetVisibility(true);
 		DestroyedMesh->SetVisibility(false);
+		if(Points<0)
+		{
+			Points=-Points;
+		}
 		UpdateGameMode();
 	}
 }

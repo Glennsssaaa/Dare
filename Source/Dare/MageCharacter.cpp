@@ -2,6 +2,9 @@
 
 
 #include "MageCharacter.h"
+
+#include "GrowingObject.h"
+#include "InteractableObject.h"
 #include "Kismet/GameplayStatics.h"
 
 
@@ -19,7 +22,6 @@ void AMageCharacter::BeginPlay()
 	QueryParams.bTraceComplex = true;
 	QueryParams.AddIgnoredActor(this);
 	QueryParams.bReturnFaceIndex=true;
-	bUsingKeyboard=true;
 }
 
 // Called every frame
@@ -68,10 +70,24 @@ void AMageCharacter::AbilityTwo()
 	Super::AbilityTwo();
 	if(bToggleEarth){
 		bToggleEarth=false;
+		bPlayerFrozen=false;
 	}
-	else if(!bToggleEarth && !bToggleWater && !bIsHoldingItem)
+	else if(!bToggleEarth && !bToggleWater && !bIsHoldingItem && OverlappedObject)
 	{
-		bToggleEarth=true;
+		if(OverlappedObject->IsA(AGrowingObject::StaticClass()))
+		{
+			if(OverlappedObject->bFinished)
+			{
+				bPlayerFrozen=false;
+				bToggleEarth=false;
+			}
+			else
+			{
+				bToggleEarth=true;
+				OverlappedObject->Interact();
+				bPlayerFrozen=true;
+			}
+		}
 	}
 }
 
