@@ -186,11 +186,11 @@ void APlayerCharacter::Aim(const FInputActionValue& Value){
 
 	if(!bIsPlayerRotating) { bIsPlayerRotating = true; }
 	
-	LookValue=Value.Get<FVector2D>();
+	FVector2D TempLookValue=Value.Get<FVector2D>();
 
-	if(LookValue.X == 0.f)
+	if(TempLookValue.X != 0.f)
 	{
-		LookValue.X = 1.f;    
+		LookValue=TempLookValue;
 	}
 	
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
@@ -312,10 +312,12 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 	if(OtherActor->ActorHasTag("Respawn"))
 	{
 		RespawnPos = this->GetActorLocation();
+		UE_LOG(LogTemp,Warning,TEXT("RespawnVol"));
 	}
-	if(OtherActor->ActorHasTag("Kill"))
+	if(OtherComp->ComponentHasTag("Kill"))
 	{
 		SetActorLocation(RespawnPos);
+		UE_LOG(LogTemp,Warning,TEXT("Respawn"));
 	}
 	if(OtherActor->IsA(APickupItem::StaticClass()))
 	{

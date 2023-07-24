@@ -43,6 +43,10 @@ public:
 	bool bEnableWaterVFX;
 	
 	bool bHasLerped;
+
+	
+	bool bToggleWater;
+	bool bToggleEarth;
 private:
 
 	//Line Trace Variables
@@ -54,7 +58,5 @@ private:
 	FTimerHandle lineTraceTimer; 
 	FCollisionQueryParams QueryParams;
 
-	bool bToggleWater;
-	bool bToggleEarth;
 	int AbilitySelected = 0;
 };

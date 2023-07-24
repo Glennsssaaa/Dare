@@ -103,6 +103,9 @@ public:
 
 	void SetIsRotating(){bIsPlayerRotating = false;}
 	
+	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
+	bool bPlayerFrozen;
+	
 protected:
 	
 	// Dash Cooldown Timer
@@ -155,9 +158,7 @@ protected:
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 	FVector TargetLocation;
-
-	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
-	bool bPlayerFrozen;
+	
 
 	UPROPERTY()
 	class AInteractableObject* OverlappedObject;

@@ -22,7 +22,6 @@ void AMageCharacter::BeginPlay()
 	QueryParams.bTraceComplex = true;
 	QueryParams.AddIgnoredActor(this);
 	QueryParams.bReturnFaceIndex=true;
-	bUsingKeyboard=true;
 }
 
 // Called every frame

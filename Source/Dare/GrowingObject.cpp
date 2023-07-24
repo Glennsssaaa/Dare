@@ -3,6 +3,9 @@
 
 #include "GrowingObject.h"
 #include "Components/BoxComponent.h"
+#include "MageCharacter.h"
+#include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 AGrowingObject::AGrowingObject()
 {
@@ -38,6 +41,14 @@ void AGrowingObject::Grow()
 	{
 		GetWorldTimerManager().ClearTimer(growthTimer);
 		bFinished=true;
+		TArray<AActor*> FoundActors;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), AMageCharacter::StaticClass(), FoundActors);
+		AMageCharacter* TempChar = Cast<AMageCharacter>(FoundActors[0]);
+		if(TempChar!=nullptr)
+		{
+			TempChar->bPlayerFrozen=false;
+			TempChar->bToggleEarth=false;
+		}
 	}
 	else
 	{
