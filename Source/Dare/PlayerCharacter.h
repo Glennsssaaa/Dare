@@ -137,6 +137,12 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	FTimerHandle DashCooldownTimerHandle;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	FTimerHandle DashTestHandle;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	bool bCanPlayerDash = true;
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool bCanPlayerMove = true;
