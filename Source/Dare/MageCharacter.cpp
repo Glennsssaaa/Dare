@@ -51,6 +51,7 @@ void AMageCharacter::AbilityOne()
 		bEnableWaterVFX=false;
 		bToggleWater=false;
 		bCanInteract=true;
+		MovementSpeed=5.0f;
 	}
 	else if(!bToggleWater && !bToggleEarth && !bIsHoldingItem)
 	{
@@ -61,6 +62,7 @@ void AMageCharacter::AbilityOne()
 		GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
 		bToggleWater=true;
 		bCanInteract=false;
+		MovementSpeed=0.5f;
 	}
 }
 
