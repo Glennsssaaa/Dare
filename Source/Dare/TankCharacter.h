@@ -26,7 +26,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	
 
-	void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
+	//void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
 	// Tank Charge Ability
 	virtual void AbilityOne() override;

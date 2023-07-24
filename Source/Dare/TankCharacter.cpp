@@ -49,7 +49,7 @@ void ATankCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-
+/*
 void ATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -65,7 +65,7 @@ void ATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PC->SetShowMouseCursor(true);
 	
 
-}
+}*/
 
 void ATankCharacter::AbilityOne()
 {
@@ -93,11 +93,13 @@ void ATankCharacter::AbilityOne()
 			bCanPlayerMove = true;
 		}
 	}
+	
 }
 
 void ATankCharacter::AbilityTwo()
 {
 	Super::AbilityTwo();
+	
 	if(!bIsHoldingItem)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Rebuild Input")));
@@ -110,6 +112,7 @@ void ATankCharacter::AbilityTwo()
 			Rebuildable->SetIsRebuilding(true);	
 		}
 	}
+	
 }
 
 void ATankCharacter::Charge()
@@ -151,7 +154,7 @@ void ATankCharacter::Charge()
 			}
 		}
 	}, GetWorld()->DeltaTimeSeconds / 3.f, true, 0.0f);
-	
+
 }
 
 
@@ -226,7 +229,7 @@ void ATankCharacter::Interact(const FInputActionValue& Value)
 void ATankCharacter::ThrowItem()
 {
 	Super::ThrowItem();
-	/*
+	
 	if(bIsHoldingItem)
 	{
 		PickupablePlayer->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
@@ -243,5 +246,5 @@ void ATankCharacter::ThrowItem()
 		PickupablePlayer->SetActorEnableCollision(false);
 		bIsHoldingItem=true;
 		TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
-	}*/
+	}
 }

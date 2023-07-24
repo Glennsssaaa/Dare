@@ -20,5 +20,4 @@ public:
 	void Grow();
 private:
 	FTimerHandle growthTimer; 
-
 };
