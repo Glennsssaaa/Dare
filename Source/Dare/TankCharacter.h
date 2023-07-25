@@ -25,9 +25,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	
-
-	//void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
-
 	// Tank Charge Ability
 	virtual void AbilityOne() override;
 
@@ -63,7 +60,6 @@ protected:
 
 	UPROPERTY()
 	bool bIsInRebuildZone;
-
 
 
 private:
