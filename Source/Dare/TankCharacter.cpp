@@ -113,6 +113,7 @@ void ATankCharacter::Charge()
 
 	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+		
 	{
 		DashAimArrowComponent->SetVisibility(false);
 		
