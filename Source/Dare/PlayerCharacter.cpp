@@ -25,22 +25,17 @@ APlayerCharacter::APlayerCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
+
 	if(!PlayerMesh)
 	{
-		PlayerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
+		PlayerMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("PlayerSkeletalMesh"));
 		PlayerMesh->SetupAttachment(GetRootComponent());
-	}
-
-	if(!PlayerSkeletalMesh)
-	{
-		PlayerSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("PlayerSkeletalMesh"));
-		PlayerSkeletalMesh->SetupAttachment(PlayerMesh);
 	}
 
 	if(!InteractCollision)
 	{
 		InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
-		InteractCollision->SetupAttachment(PlayerMesh);
+		InteractCollision->SetupAttachment(RootComponent);
 		InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
 		InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnOverlapBegin);
 		InteractCollision->OnComponentEndOverlap.AddDynamic(this, &APlayerCharacter::OnOverlapEnd);

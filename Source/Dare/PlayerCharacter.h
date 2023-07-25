@@ -95,13 +95,15 @@ public:
 	
 	UFUNCTION()
 	virtual void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	
+
+	void SetIsRotating(){bIsPlayerRotating = false;}
 
 	// Components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* PlayerMesh;
+	USkeletalMeshComponent* PlayerMesh;
 
-	void SetIsRotating(){bIsPlayerRotating = false;}
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "Components", meta = (AllowPrivateAccess="true"))
+	class UBoxComponent* InteractCollision;
 	
 	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
 	bool bPlayerFrozen;
@@ -115,16 +117,20 @@ protected:
 	// Default Dash Cooldown
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashCooldownDefault = 3.f;
-	
+
+	// Starting amount of charges
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	int DashCharges = 3;
-	
+
+	// Maximum amount of charges that can be stored
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	int DashChargesMax = 3;
-	
+
+	// Maximum distance a player will dash before they stop
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashDistance = 1000.0f;
-	
+
+	// Speed at which a player will dash
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
 	float DashSpeed = 1.75f;
 
@@ -148,13 +154,9 @@ protected:
 	bool bCanPlayerMove = true;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	bool bIsAbility = false;
+	bool bHasAimedAbility = false;
 	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	USkeletalMeshComponent* PlayerSkeletalMesh;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "Components", meta = (AllowPrivateAccess="true"))
-	class UBoxComponent* InteractCollision;
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 	bool bIsHoldingItem = false;
@@ -166,9 +168,11 @@ protected:
 	FVector TargetLocation;
 	
 
+
 	UPROPERTY()
 	class AInteractableObject* OverlappedObject;
 
+	UPROPERTY()
 	class APickupItem* PickupableItem;
 
 };
