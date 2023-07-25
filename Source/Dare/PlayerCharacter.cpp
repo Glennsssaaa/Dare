@@ -209,7 +209,7 @@ void APlayerCharacter::ThrowItem()
 			}
 			else
 			{
-				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
+				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector() * 250000);
 			}
 			PickupableItem->bHasLerped=false;
 			PickupableItem=nullptr;
@@ -258,17 +258,28 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 void APlayerCharacter::PlayerDash()
 {
 	// Disable Player Input to prevent player movement during dash
+	if(!bCanPlayerDash)
+	{
+		return;
+	}
+
+	bCanPlayerDash = false;
 	bCanPlayerMove = false;
-	
 	bIsPlayerDashing = true;
-	
 	// Find the predicted location of the player after the dash
 	PredictedLocation = (PlayerMesh->GetForwardVector() * DashDistance) + GetActorLocation();
-
+	DashCharges--;
+	
+	GetWorldTimerManager().SetTimer(DashTestHandle, [this]()
+	{
+		bCanPlayerDash = true;
+		UE_LOG(LogTemp,Warning,TEXT("recharge"));
+	}, 1.0f, false, 1.0f);
+	
+	
 	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
 	{
-		
 		FHitResult SweepHitResult;
 		
 		// Set actor location using linear interpolation and check if there is any collision in the way
