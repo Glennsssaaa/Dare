@@ -72,47 +72,35 @@ void ATankCharacter::Tick(float DeltaTime)
 	}
 }
 
-/*
-void ATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-	APlayerController* PC = Cast<APlayerController>(GetController());
-	//print the controller index
-	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
-	//Subsystem->ClearAllMappings();
-	Subsystem->AddMappingContext(InputMapping,0);
-
-	//Enhanced Input Setup
-	UEnhancedInputComponent* PEI = Cast<UEnhancedInputComponent>(PlayerInputComponent);
-	PC->SetShowMouseCursor(true);
-	
-
-}*/
-
 void ATankCharacter::AbilityOne()
 {
 	Super::AbilityOne();
-	// Do ability
 
+	// Make sure tank isn't currently holding an object
 	if(!bIsHoldingItem)
 	{
-		if(!bIsAbility)
+		if(!bHasAimedAbility)
 		{
+			// Step 1: First time input has been pressed, player now aims the charge
+			
+			// Player can't move 
 			bCanPlayerMove = false;
 
 			DashAimArrowComponent->SetVisibility(true);
-			bIsAbility = true;
+			bHasAimedAbility = true;
 			GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
 			{
-				bIsAbility = false;
+				bHasAimedAbility = false;
 			}, 5.f, false);
 		}
 		else
 		{
-			// 2. Do Dash
+			// Step 2: If player presses input again within 5 seconds, they will
+			// charge forward in the direction they are aiming
+			
 			Charge();
-			bIsAbility = false;
+			
+			bHasAimedAbility = false;
 			bCanPlayerMove = true;
 		}
 	}
@@ -125,8 +113,6 @@ void ATankCharacter::AbilityTwo()
 	
 	if(!bIsHoldingItem)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Rebuild Input")));
-
 		// If building destroyed, rebuild it
 		if(!Rebuildable) return;
 
