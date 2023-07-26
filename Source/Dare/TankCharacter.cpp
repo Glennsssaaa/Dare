@@ -8,6 +8,7 @@
 #include "MageCharacter.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -47,6 +48,28 @@ void ATankCharacter::BeginPlay()
 void ATankCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(PickupablePlayer)
+	{
+		if(bIsHoldingItem)
+		{
+			if(!PickupablePlayer->bHasLerped)
+			{
+				if(!TargetLocation.Equals(PickupablePlayer->GetActorLocation(),50) )
+				{
+					PickupablePlayer->SetActorLocation(FMath::Lerp(PickupablePlayer->GetActorLocation(),TargetLocation,DeltaTime*50));
+				}
+				else
+				{
+					PickupablePlayer->bHasLerped=true;
+				}
+			}
+			else
+			{
+				PickupablePlayer->SetActorLocation((PlayerMesh->GetForwardVector()*600) + PlayerMesh->GetComponentLocation() + FVector(0,0,200));
+			}
+		}
+	}
 }
 
 void ATankCharacter::AbilityOne()
@@ -222,16 +245,16 @@ void ATankCharacter::ThrowItem()
 		PickupablePlayer->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 		bIsHoldingItem=false;
 		PickupablePlayer->SetActorEnableCollision(true);
-		PickupablePlayer->PlayerMesh->SetSimulatePhysics(true);
-		PickupablePlayer->PlayerMesh->AddImpulse(PlayerMesh->GetForwardVector()*250000);
+	//	PickupablePlayer->GetCapsuleComponent()->SetSimulatePhysics(true);
+		//PickupablePlayer->GetCapsuleComponent()->AddImpulse(PlayerMesh->GetForwardVector()*250000);
 		PickupablePlayer->bHasLerped=false;
 	}
 	else
 	{
 		PickupablePlayer->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
-		PickupablePlayer->PlayerMesh->SetSimulatePhysics(false);
+		PickupablePlayer->GetCapsuleComponent()->SetSimulatePhysics(false);
 		PickupablePlayer->SetActorEnableCollision(false);
 		bIsHoldingItem=true;
-		TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
+		TargetLocation = (PlayerMesh->GetForwardVector()*6000)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
 	}
 }

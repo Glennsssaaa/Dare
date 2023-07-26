@@ -51,6 +51,7 @@ void AMageCharacter::AbilityOne()
 		bEnableWaterVFX=false;
 		bToggleWater=false;
 		bCanInteract=true;
+		MovementSpeed=5.0f;
 	}
 	else if(!bToggleWater && !bToggleEarth && !bIsHoldingItem)
 	{
@@ -61,6 +62,7 @@ void AMageCharacter::AbilityOne()
 		GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
 		bToggleWater=true;
 		bCanInteract=false;
+		MovementSpeed=0.5f;
 	}
 }
 
@@ -118,14 +120,14 @@ void AMageCharacter::LineTraceArc() {
 	
 	float next = pow((offset*0.01),2) / (offset / 1000);
 	FVector vec = PlayerMesh->GetForwardVector() * next;
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Look Value: %f"), LookValue.Length()));
+	//GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Look Value: %f"), LookValue.Length()));
 
 	FHitResult Hit;
 	FVector TraceStart = NextLocation;
 	FVector TraceEnd = (vec + NextLocation) + GravityOffset;
 	//Trace against the floor
 	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_GameTraceChannel1 , QueryParams);
-	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 5.0f, 0, 10.f);
+	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
 	//If hit, call the drawfunc from blueprints with the hit actor and UV locations
 	if (Hit.bBlockingHit) {
 		NextLocation.X = GetActorLocation().X;
