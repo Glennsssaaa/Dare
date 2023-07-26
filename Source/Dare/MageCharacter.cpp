@@ -109,6 +109,7 @@ void AMageCharacter::LineTraceArc() {
 		offset = LookValue.Length()*5000;
 	}
 */
+	/*
 	if(LookValue.Length()==0)
 	{
 		offset = 0.5*5000;
@@ -116,8 +117,9 @@ void AMageCharacter::LineTraceArc() {
 	else
 	{
 		offset = LookValue.Length()*5000;
-	}
-	
+	}*/
+	offset = LookValue.Length()*5000;
+
 	float next = pow((offset*0.01),2) / (offset / 1000);
 	FVector vec = PlayerMesh->GetForwardVector() * next;
 	//GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Look Value: %f"), LookValue.Length()));
@@ -126,8 +128,8 @@ void AMageCharacter::LineTraceArc() {
 	FVector TraceStart = NextLocation;
 	FVector TraceEnd = (vec + NextLocation) + GravityOffset;
 	//Trace against the floor
-	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_GameTraceChannel1 , QueryParams);
-	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
+	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_WorldStatic , QueryParams);
+	//DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
 	//If hit, call the drawfunc from blueprints with the hit actor and UV locations
 	if (Hit.bBlockingHit) {
 		NextLocation.X = GetActorLocation().X;

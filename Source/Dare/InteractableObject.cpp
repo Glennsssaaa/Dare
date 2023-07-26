@@ -37,8 +37,11 @@ void AInteractableObject::Tick(float DeltaTime)
 void AInteractableObject::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	ObjectMesh->SetRenderCustomDepth(true);
-
+	if(!bFinished &&!bInteracted)
+	{
+		UE_LOG(LogTemp,Warning,TEXT("AAAAA"));
+		ObjectMesh->SetRenderCustomDepth(true);
+	}
 }
 
 void AInteractableObject::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -49,7 +52,6 @@ void AInteractableObject::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AAct
 
 void AInteractableObject::Interact()
 {
-	UE_LOG(LogTemp,Warning,TEXT("Interact"));
 	bInteracted=true;
 	UpdateGameMode();
 }
