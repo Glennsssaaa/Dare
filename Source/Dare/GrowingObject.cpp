@@ -49,6 +49,7 @@ void AGrowingObject::Grow()
 			TempChar->bPlayerFrozen=false;
 			TempChar->bToggleEarth=false;
 		}
+		hasGrown=true;
 	}
 	else
 	{

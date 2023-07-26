@@ -25,7 +25,8 @@ public:
 
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	float currentPoints=0;
-	
+
+	UFUNCTION(BlueprintCallable)
 	void UpdateScore(float objPoints);
 
 	UFUNCTION(BlueprintImplementableEvent)

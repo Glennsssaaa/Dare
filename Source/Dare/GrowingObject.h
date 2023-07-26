@@ -18,6 +18,10 @@ public:
 	virtual void Tick(float DeltaTime);
 	virtual void Interact();
 	void Grow();
+
+	UPROPERTY(BlueprintReadOnly)
+	bool hasGrown;
+	
 private:
 	FTimerHandle growthTimer; 
 };

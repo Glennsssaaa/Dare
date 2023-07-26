@@ -314,230 +314,230 @@
 "../../../Engine/Content/EngineSounds/Master.uexp" 313
 "../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset" 314
 "../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uexp" 315
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.ubulk" 316
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 317
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uexp" 318
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 319
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uexp" 320
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 321
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uexp" 322
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset" 323
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uexp" 324
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset" 325
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uexp" 326
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 327
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uexp" 328
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uasset" 329
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uexp" 330
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uasset" 331
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uexp" 332
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 333
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uexp" 334
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 335
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uexp" 336
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 337
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uexp" 338
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uasset" 339
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uexp" 340
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/EmptyNormal.uasset" 341
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/EmptyNormal.uexp" 342
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/Empty.uasset" 343
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/Empty.uexp" 344
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uasset" 345
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uexp" 346
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uasset" 347
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uexp" 348
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uasset" 349
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uexp" 350
-"../../../Engine/Plugins/Animation/ControlRig/Content/M_Manip.uasset" 351
-"../../../Engine/Plugins/Animation/ControlRig/Content/M_Manip.uexp" 352
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/DefaultGizmoLibraryNormalized.uasset" 353
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/DefaultGizmoLibraryNormalized.uexp" 354
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_solid.ubulk" 355
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_solid.uasset" 356
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_solid.uexp" 357
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_3mm.ubulk" 358
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_3mm.uasset" 359
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_3mm.uexp" 360
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_1mm.ubulk" 361
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_1mm.uasset" 362
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_1mm.uexp" 363
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_solid.ubulk" 364
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_solid.uasset" 365
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_solid.uexp" 366
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_3mm.ubulk" 367
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_3mm.uasset" 368
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_3mm.uexp" 369
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_1mm.ubulk" 370
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_1mm.uasset" 371
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_1mm.uexp" 372
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_solid.ubulk" 373
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_solid.uasset" 374
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_solid.uexp" 375
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_3mm.ubulk" 376
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_3mm.uasset" 377
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_3mm.uexp" 378
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_1mm.ubulk" 379
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_1mm.uasset" 380
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_1mm.uexp" 381
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_solid.ubulk" 382
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_solid.uasset" 383
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_solid.uexp" 384
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_3mm.ubulk" 385
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_3mm.uasset" 386
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_3mm.uexp" 387
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_1mm.ubulk" 388
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_1mm.uasset" 389
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_1mm.uexp" 390
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_solid.ubulk" 391
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_solid.uasset" 392
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_solid.uexp" 393
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_3mm.ubulk" 394
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_3mm.uasset" 395
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_3mm.uexp" 396
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_1mm.ubulk" 397
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_1mm.uasset" 398
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_1mm.uexp" 399
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_solid.ubulk" 400
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_solid.uasset" 401
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_solid.uexp" 402
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_3mm.ubulk" 403
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_3mm.uasset" 404
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_3mm.uexp" 405
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_1mm.ubulk" 406
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_1mm.uasset" 407
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_1mm.uexp" 408
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_solid.ubulk" 409
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_solid.uasset" 410
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_solid.uexp" 411
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_3mm.ubulk" 412
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_3mm.uasset" 413
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_3mm.uexp" 414
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_1mm.ubulk" 415
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_1mm.uasset" 416
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_1mm.uexp" 417
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_solid.ubulk" 418
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_solid.uasset" 419
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_solid.uexp" 420
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_3mm.ubulk" 421
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_3mm.uasset" 422
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_3mm.uexp" 423
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_1mm.ubulk" 424
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_1mm.uasset" 425
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_1mm.uexp" 426
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_solid.ubulk" 427
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_solid.uasset" 428
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_solid.uexp" 429
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_3mm.ubulk" 430
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_3mm.uasset" 431
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_3mm.uexp" 432
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_1mm.ubulk" 433
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_1mm.uasset" 434
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_1mm.uexp" 435
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_solid.ubulk" 436
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_solid.uasset" 437
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_solid.uexp" 438
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_3mm.ubulk" 439
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_3mm.uasset" 440
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_3mm.uexp" 441
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_1mm.ubulk" 442
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_1mm.uasset" 443
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_1mm.uexp" 444
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_solid.ubulk" 445
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_solid.uasset" 446
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_solid.uexp" 447
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_3mm.ubulk" 448
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_3mm.uasset" 449
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_3mm.uexp" 450
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_1mm.ubulk" 451
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_1mm.uasset" 452
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_1mm.uexp" 453
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_solid.ubulk" 454
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_solid.uasset" 455
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_solid.uexp" 456
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_3mm.ubulk" 457
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_3mm.uasset" 458
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_3mm.uexp" 459
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_1mm.ubulk" 460
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_1mm.uasset" 461
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_1mm.uexp" 462
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_solid.ubulk" 463
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_solid.uasset" 464
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_solid.uexp" 465
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_3mm.ubulk" 466
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_3mm.uasset" 467
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_3mm.uexp" 468
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_1mm.ubulk" 469
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_1mm.uasset" 470
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_1mm.uexp" 471
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_solid.ubulk" 472
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_solid.uasset" 473
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_solid.uexp" 474
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_3mm.ubulk" 475
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_3mm.uasset" 476
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_3mm.uexp" 477
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_1mm.ubulk" 478
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_1mm.uasset" 479
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_1mm.uexp" 480
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_solid.ubulk" 481
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_solid.uasset" 482
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_solid.uexp" 483
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_3mm.ubulk" 484
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_3mm.uasset" 485
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_3mm.uexp" 486
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_1mm.ubulk" 487
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_1mm.uasset" 488
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_1mm.uexp" 489
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_solid.ubulk" 490
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_solid.uasset" 491
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_solid.uexp" 492
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_3mm.ubulk" 493
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_3mm.uasset" 494
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_3mm.uexp" 495
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_1mm.ubulk" 496
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_1mm.uasset" 497
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_1mm.uexp" 498
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_solid.ubulk" 499
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_solid.uasset" 500
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_solid.uexp" 501
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_3mm.ubulk" 502
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_3mm.uasset" 503
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_3mm.uexp" 504
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_1mm.ubulk" 505
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_1mm.uasset" 506
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_1mm.uexp" 507
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_solid.ubulk" 508
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_solid.uasset" 509
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_solid.uexp" 510
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_3mm.ubulk" 511
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_3mm.uasset" 512
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_3mm.uexp" 513
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_1mm.ubulk" 514
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_1mm.uasset" 515
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_1mm.uexp" 516
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigXRayMaterial.uasset" 517
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigXRayMaterial.uexp" 518
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigGizmoMaterial.uasset" 519
-"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigGizmoMaterial.uexp" 520
-"../../../Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.ubulk" 521
-"../../../Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 522
-"../../../Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uexp" 523
-"../../../Engine/Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 524
-"../../../Engine/Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uexp" 525
-"../../../Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 526
-"../../../Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uexp" 527
-"../../../Engine/Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 528
-"../../../Engine/Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uexp" 529
-"../../../Engine/Plugins/2D/Paper2D/Content/DummySprite.uasset" 530
-"../../../Engine/Plugins/2D/Paper2D/Content/DummySprite.uexp" 531
-"../../../Engine/Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 532
-"../../../Engine/Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uexp" 533
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 534
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uexp" 535
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 536
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uexp" 537
-"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 538
-"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uexp" 539
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 316
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uexp" 317
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 318
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uexp" 319
+"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 320
+"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uexp" 321
+"../../../Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.ubulk" 322
+"../../../Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 323
+"../../../Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uexp" 324
+"../../../Engine/Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 325
+"../../../Engine/Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uexp" 326
+"../../../Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 327
+"../../../Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uexp" 328
+"../../../Engine/Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 329
+"../../../Engine/Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uexp" 330
+"../../../Engine/Plugins/2D/Paper2D/Content/DummySprite.uasset" 331
+"../../../Engine/Plugins/2D/Paper2D/Content/DummySprite.uexp" 332
+"../../../Engine/Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 333
+"../../../Engine/Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uexp" 334
+"../../../Engine/Plugins/Animation/ControlRig/Content/M_Manip.uasset" 335
+"../../../Engine/Plugins/Animation/ControlRig/Content/M_Manip.uexp" 336
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/DefaultGizmoLibraryNormalized.uasset" 337
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/DefaultGizmoLibraryNormalized.uexp" 338
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_solid.ubulk" 339
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_solid.uasset" 340
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_solid.uexp" 341
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_3mm.ubulk" 342
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_3mm.uasset" 343
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_3mm.uexp" 344
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_1mm.ubulk" 345
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_1mm.uasset" 346
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Wedge_1mm.uexp" 347
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_solid.ubulk" 348
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_solid.uasset" 349
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_solid.uexp" 350
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_3mm.ubulk" 351
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_3mm.uasset" 352
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_3mm.uexp" 353
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_1mm.ubulk" 354
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_1mm.uasset" 355
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Triangle_1mm.uexp" 356
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_solid.ubulk" 357
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_solid.uasset" 358
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_solid.uexp" 359
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_3mm.ubulk" 360
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_3mm.uasset" 361
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_3mm.uexp" 362
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_1mm.ubulk" 363
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_1mm.uasset" 364
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Star4_1mm.uexp" 365
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_solid.ubulk" 366
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_solid.uasset" 367
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_solid.uexp" 368
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_3mm.ubulk" 369
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_3mm.uasset" 370
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_3mm.uexp" 371
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_1mm.ubulk" 372
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_1mm.uasset" 373
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Square_1mm.uexp" 374
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_solid.ubulk" 375
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_solid.uasset" 376
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_solid.uexp" 377
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_3mm.ubulk" 378
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_3mm.uasset" 379
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_3mm.uexp" 380
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_1mm.ubulk" 381
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_1mm.uasset" 382
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Sphere_1mm.uexp" 383
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_solid.ubulk" 384
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_solid.uasset" 385
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_solid.uexp" 386
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_3mm.ubulk" 387
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_3mm.uasset" 388
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_3mm.uexp" 389
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_1mm.ubulk" 390
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_1mm.uasset" 391
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedTriangle_1mm.uexp" 392
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_solid.ubulk" 393
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_solid.uasset" 394
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_solid.uexp" 395
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_3mm.ubulk" 396
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_3mm.uasset" 397
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_3mm.uexp" 398
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_1mm.ubulk" 399
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_1mm.uasset" 400
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_RoundedSquare_1mm.uexp" 401
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_solid.ubulk" 402
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_solid.uasset" 403
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_solid.uexp" 404
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_3mm.ubulk" 405
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_3mm.uasset" 406
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_3mm.uexp" 407
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_1mm.ubulk" 408
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_1mm.uasset" 409
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_QuarterCircle_1mm.uexp" 410
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_solid.ubulk" 411
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_solid.uasset" 412
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_solid.uexp" 413
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_3mm.ubulk" 414
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_3mm.uasset" 415
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_3mm.uexp" 416
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_1mm.ubulk" 417
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_1mm.uasset" 418
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Pyramid_1mm.uexp" 419
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_solid.ubulk" 420
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_solid.uasset" 421
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_solid.uexp" 422
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_3mm.ubulk" 423
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_3mm.uasset" 424
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_3mm.uexp" 425
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_1mm.ubulk" 426
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_1mm.uasset" 427
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Octagon_1mm.uexp" 428
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_solid.ubulk" 429
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_solid.uasset" 430
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_solid.uexp" 431
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_3mm.ubulk" 432
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_3mm.uasset" 433
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_3mm.uexp" 434
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_1mm.ubulk" 435
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_1mm.uasset" 436
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Hexagon_1mm.uexp" 437
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_solid.ubulk" 438
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_solid.uasset" 439
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_solid.uexp" 440
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_3mm.ubulk" 441
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_3mm.uasset" 442
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_3mm.uexp" 443
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_1mm.ubulk" 444
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_1mm.uasset" 445
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_HalfCircle_1mm.uexp" 446
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_solid.ubulk" 447
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_solid.uasset" 448
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_solid.uexp" 449
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_3mm.ubulk" 450
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_3mm.uasset" 451
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_3mm.uexp" 452
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_1mm.ubulk" 453
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_1mm.uasset" 454
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Diamond_1mm.uexp" 455
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_solid.ubulk" 456
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_solid.uasset" 457
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_solid.uexp" 458
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_3mm.ubulk" 459
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_3mm.uasset" 460
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_3mm.uexp" 461
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_1mm.ubulk" 462
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_1mm.uasset" 463
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Circle_1mm.uexp" 464
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_solid.ubulk" 465
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_solid.uasset" 466
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_solid.uexp" 467
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_3mm.ubulk" 468
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_3mm.uasset" 469
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_3mm.uexp" 470
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_1mm.ubulk" 471
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_1mm.uasset" 472
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Box_1mm.uexp" 473
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_solid.ubulk" 474
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_solid.uasset" 475
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_solid.uexp" 476
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_3mm.ubulk" 477
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_3mm.uasset" 478
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_3mm.uexp" 479
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_1mm.ubulk" 480
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_1mm.uasset" 481
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow_1mm.uexp" 482
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_solid.ubulk" 483
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_solid.uasset" 484
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_solid.uexp" 485
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_3mm.ubulk" 486
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_3mm.uasset" 487
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_3mm.uexp" 488
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_1mm.ubulk" 489
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_1mm.uasset" 490
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow4_1mm.uexp" 491
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_solid.ubulk" 492
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_solid.uasset" 493
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_solid.uexp" 494
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_3mm.ubulk" 495
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_3mm.uasset" 496
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_3mm.uexp" 497
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_1mm.ubulk" 498
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_1mm.uasset" 499
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRig_Arrow2_1mm.uexp" 500
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigXRayMaterial.uasset" 501
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigXRayMaterial.uexp" 502
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigGizmoMaterial.uasset" 503
+"../../../Engine/Plugins/Animation/ControlRig/Content/Controls/ControlRigGizmoMaterial.uexp" 504
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.ubulk" 505
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 506
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uexp" 507
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 508
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uexp" 509
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 510
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uexp" 511
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset" 512
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uexp" 513
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset" 514
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uexp" 515
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 516
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uexp" 517
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uasset" 518
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uexp" 519
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uasset" 520
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uexp" 521
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 522
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uexp" 523
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 524
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uexp" 525
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 526
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uexp" 527
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uasset" 528
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uexp" 529
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/EmptyNormal.uasset" 530
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/EmptyNormal.uexp" 531
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/Empty.uasset" 532
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/Empty.uexp" 533
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uasset" 534
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uexp" 535
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uasset" 536
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uexp" 537
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uasset" 538
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uexp" 539
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.uasset" 540
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.uexp" 541
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.uasset" 542
@@ -1084,200 +1084,222 @@
 "../../../Engine/Content/EngineSky/SM_SkySphere.ubulk" 1083
 "../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1084
 "../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 1085
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uasset" 1086
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uexp" 1087
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uasset" 1088
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uexp" 1089
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uasset" 1090
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uexp" 1091
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.ubulk" 1092
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" 1093
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uexp" 1094
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uasset" 1095
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uexp" 1096
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uasset" 1097
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uexp" 1098
-"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 1099
-"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uexp" 1100
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.ubulk" 1101
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uasset" 1102
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uexp" 1103
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.ubulk" 1104
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uasset" 1105
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uexp" 1106
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uasset" 1107
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uexp" 1108
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uasset" 1109
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uexp" 1110
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.ubulk" 1111
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.uasset" 1112
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.uexp" 1113
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.ubulk" 1114
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uasset" 1115
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uexp" 1116
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_House.uasset" 1117
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_House.uexp" 1118
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.ubulk" 1119
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uasset" 1120
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uexp" 1121
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uasset" 1122
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uexp" 1123
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uasset" 1124
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uexp" 1125
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.ubulk" 1126
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" 1127
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uexp" 1128
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.ubulk" 1129
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" 1130
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uexp" 1131
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.ubulk" 1132
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.uasset" 1133
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.uexp" 1134
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.ubulk" 1135
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.uasset" 1136
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.uexp" 1137
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/Materials/M_Rock.uasset" 1138
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/Materials/M_Rock.uexp" 1139
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.ubulk" 1140
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.uasset" 1141
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.uexp" 1142
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.ubulk" 1143
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.uasset" 1144
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.uexp" 1145
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_BasicUI.uasset" 1146
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_BasicUI.uexp" 1147
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uasset" 1148
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uexp" 1149
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.ubulk" 1150
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.uasset" 1151
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.uexp" 1152
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uasset" 1153
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uexp" 1154
-"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uasset" 1155
-"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uexp" 1156
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/TutorialLevel.uexp" 1157
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/TutorialLevel.umap" 1158
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Key_art_WIP_blur.uasset" 1159
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Key_art_WIP_blur.uexp" 1160
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Trailer_3_-_Posed_Normal.uasset" 1161
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Trailer_3_-_Posed_Normal.uexp" 1162
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/dmg_control_with_hat_and_horns_outline.uasset" 1163
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/dmg_control_with_hat_and_horns_outline.uexp" 1164
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/UI_Text_Box_4.uasset" 1165
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/UI_Text_Box_4.uexp" 1166
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uasset" 1167
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uexp" 1168
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.uexp" 1169
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.umap" 1170
-"../../../Engine/Content/BasicShapes/Cylinder.ubulk" 1171
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 1172
-"../../../Engine/Content/BasicShapes/Cylinder.uexp" 1173
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track_Cue.uasset" 1174
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track_Cue.uexp" 1175
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.ubulk" 1176
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" 1177
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uexp" 1178
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.ubulk" 1179
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" 1180
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uexp" 1181
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_MacroVariation.uasset" 1182
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_MacroVariation.uexp" 1183
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Rust.uasset" 1184
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Rust.uexp" 1185
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.ubulk" 1186
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.uasset" 1187
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.uexp" 1188
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uasset" 1189
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uexp" 1190
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uasset" 1191
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uexp" 1192
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Tunnel.ubulk" 1193
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Tunnel.uasset" 1194
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Tunnel.uexp" 1195
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uasset" 1196
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uexp" 1197
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.ubulk" 1198
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uasset" 1199
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uexp" 1200
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert18.uasset" 1201
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert18.uexp" 1202
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.ubulk" 1203
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.uasset" 1204
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.uexp" 1205
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.ubulk" 1206
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uasset" 1207
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uexp" 1208
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.ubulk" 1209
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uasset" 1210
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uexp" 1211
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.ubulk" 1212
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uasset" 1213
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uexp" 1214
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uasset" 1215
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uexp" 1216
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uasset" 1217
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uexp" 1218
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.ubulk" 1219
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uasset" 1220
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uexp" 1221
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Tree.uasset" 1222
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Tree.uexp" 1223
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.ubulk" 1224
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uasset" 1225
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uexp" 1226
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT.uasset" 1227
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT.uexp" 1228
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uasset" 1229
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uexp" 1230
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.ubulk" 1231
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.uasset" 1232
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.uexp" 1233
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.ubulk" 1234
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uasset" 1235
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uexp" 1236
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uasset" 1237
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uexp" 1238
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uasset" 1239
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uexp" 1240
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.ubulk" 1241
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.uasset" 1242
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.uexp" 1243
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.ubulk" 1244
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" 1245
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uexp" 1246
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.ubulk" 1247
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" 1248
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uexp" 1249
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Steel.uasset" 1250
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Steel.uexp" 1251
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.ubulk" 1252
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" 1253
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uexp" 1254
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.ubulk" 1255
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" 1256
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uexp" 1257
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" 1258
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uexp" 1259
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.ubulk" 1260
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.uasset" 1261
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.uexp" 1262
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uasset" 1263
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uexp" 1264
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Tree_opacity-01.uasset" 1265
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Tree_opacity-01.uexp" 1266
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uasset" 1267
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uexp" 1268
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/bushes.uasset" 1269
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/bushes.uexp" 1270
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.ubulk" 1271
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.uasset" 1272
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.uexp" 1273
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Textures/cracktemp.uasset" 1274
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Textures/cracktemp.uexp" 1275
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/cracktemp_Mat.uasset" 1276
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/cracktemp_Mat.uexp" 1277
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Pothole.ubulk" 1278
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Pothole.uasset" 1279
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Pothole.uexp" 1280
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.uexp" 1281
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.umap" 1282
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uasset" 1086
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uexp" 1087
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uexp" 1088
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uasset" 1089
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.ufont" 1090
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uasset" 1091
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uexp" 1092
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uasset" 1093
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uexp" 1094
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uasset" 1095
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uexp" 1096
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uasset" 1097
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uexp" 1098
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uasset" 1099
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uexp" 1100
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.ubulk" 1101
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" 1102
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uexp" 1103
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uasset" 1104
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uexp" 1105
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uasset" 1106
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uexp" 1107
+"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 1108
+"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uexp" 1109
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.ubulk" 1110
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uasset" 1111
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uexp" 1112
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.ubulk" 1113
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uasset" 1114
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uexp" 1115
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uasset" 1116
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uexp" 1117
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uasset" 1118
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uexp" 1119
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.ubulk" 1120
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.uasset" 1121
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.uexp" 1122
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.ubulk" 1123
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uasset" 1124
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uexp" 1125
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_House.uasset" 1126
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_House.uexp" 1127
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.ubulk" 1128
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uasset" 1129
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uexp" 1130
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uasset" 1131
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uexp" 1132
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uasset" 1133
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uexp" 1134
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.ubulk" 1135
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" 1136
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uexp" 1137
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.ubulk" 1138
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" 1139
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uexp" 1140
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.ubulk" 1141
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.uasset" 1142
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.uexp" 1143
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.ubulk" 1144
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.uasset" 1145
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.uexp" 1146
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/Materials/M_Rock.uasset" 1147
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/Materials/M_Rock.uexp" 1148
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.ubulk" 1149
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.uasset" 1150
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.uexp" 1151
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.ubulk" 1152
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.uasset" 1153
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.uexp" 1154
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Yellow_Sparkles.uasset" 1155
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Yellow_Sparkles.uexp" 1156
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Flame2.uasset" 1157
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Flame2.uexp" 1158
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_BasicUI.uasset" 1159
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_BasicUI.uexp" 1160
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uasset" 1161
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uexp" 1162
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.ubulk" 1163
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.uasset" 1164
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.uexp" 1165
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uasset" 1166
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uexp" 1167
+"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uasset" 1168
+"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uexp" 1169
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/TutorialLevel.uexp" 1170
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/TutorialLevel.umap" 1171
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Key_art_WIP_blur.uasset" 1172
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Key_art_WIP_blur.uexp" 1173
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/UI_Text_Box_4.uasset" 1174
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/UI_Text_Box_4.uexp" 1175
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Trailer_3_-_Posed_Normal.uasset" 1176
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Trailer_3_-_Posed_Normal.uexp" 1177
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/dmg_control_with_hat_and_horns_outline.uasset" 1178
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/dmg_control_with_hat_and_horns_outline.uexp" 1179
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uasset" 1180
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uexp" 1181
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.uexp" 1182
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.umap" 1183
+"../../../Engine/Content/BasicShapes/Cylinder.ubulk" 1184
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 1185
+"../../../Engine/Content/BasicShapes/Cylinder.uexp" 1186
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track_Cue.uasset" 1187
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track_Cue.uexp" 1188
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.ubulk" 1189
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" 1190
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uexp" 1191
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.ubulk" 1192
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" 1193
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uexp" 1194
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_MacroVariation.uasset" 1195
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_MacroVariation.uexp" 1196
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Rust.uasset" 1197
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Rust.uexp" 1198
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.ubulk" 1199
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.uasset" 1200
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.uexp" 1201
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uasset" 1202
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uexp" 1203
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uasset" 1204
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uexp" 1205
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uasset" 1206
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uexp" 1207
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.ubulk" 1208
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uasset" 1209
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uexp" 1210
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert18.uasset" 1211
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert18.uexp" 1212
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.ubulk" 1213
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.uasset" 1214
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.uexp" 1215
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.ubulk" 1216
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uasset" 1217
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uexp" 1218
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.ubulk" 1219
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uasset" 1220
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uexp" 1221
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.ubulk" 1222
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uasset" 1223
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uexp" 1224
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uasset" 1225
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uexp" 1226
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uasset" 1227
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uexp" 1228
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.ubulk" 1229
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uasset" 1230
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uexp" 1231
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.ubulk" 1232
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uasset" 1233
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uexp" 1234
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT.uasset" 1235
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT.uexp" 1236
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uasset" 1237
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uexp" 1238
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.ubulk" 1239
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.uasset" 1240
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.uexp" 1241
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.ubulk" 1242
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uasset" 1243
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uexp" 1244
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uasset" 1245
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uexp" 1246
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uasset" 1247
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uexp" 1248
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.ubulk" 1249
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.uasset" 1250
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.uexp" 1251
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Leaf.ubulk" 1252
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Leaf.uasset" 1253
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Leaf.uexp" 1254
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_Leaf.uasset" 1255
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_Leaf.uexp" 1256
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Leaf.uasset" 1257
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Leaf.uexp" 1258
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.ubulk" 1259
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.uasset" 1260
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.uexp" 1261
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.ubulk" 1262
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.uasset" 1263
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.uexp" 1264
+"../../../Engine/Content/EngineMaterials/T_Default_Normal.ubulk" 1265
+"../../../Engine/Content/EngineMaterials/T_Default_Normal.uasset" 1266
+"../../../Engine/Content/EngineMaterials/T_Default_Normal.uexp" 1267
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Tree.uasset" 1268
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Tree.uexp" 1269
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_1_.ubulk" 1270
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_1_.uasset" 1271
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_1_.uexp" 1272
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.ubulk" 1273
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" 1274
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uexp" 1275
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.ubulk" 1276
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" 1277
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uexp" 1278
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Steel.uasset" 1279
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Steel.uexp" 1280
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.ubulk" 1281
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" 1282
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uexp" 1283
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.ubulk" 1284
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" 1285
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uexp" 1286
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" 1287
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uexp" 1288
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.ubulk" 1289
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.uasset" 1290
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.uexp" 1291
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uasset" 1292
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uexp" 1293
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Tree_opacity-01.uasset" 1294
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Tree_opacity-01.uexp" 1295
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uasset" 1296
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uexp" 1297
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/bushes.uasset" 1298
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/bushes.uexp" 1299
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.ubulk" 1300
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.uasset" 1301
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.uexp" 1302
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.uexp" 1303
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.umap" 1304

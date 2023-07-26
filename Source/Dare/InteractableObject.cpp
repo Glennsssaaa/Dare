@@ -39,7 +39,6 @@ void AInteractableObject::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AA
 {
 	if(!bFinished &&!bInteracted)
 	{
-		UE_LOG(LogTemp,Warning,TEXT("AAAAA"));
 		ObjectMesh->SetRenderCustomDepth(true);
 	}
 }

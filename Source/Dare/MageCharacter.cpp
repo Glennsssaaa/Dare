@@ -92,6 +92,20 @@ void AMageCharacter::AbilityTwo()
 				bPlayerFrozen=true;
 			}
 		}
+		else if(OverlappedObject->IsA(AInteractableObject::StaticClass()) && OverlappedObject->ActorHasTag("Bridge"))
+		{
+			if(OverlappedObject->bFinished)
+			{
+				bPlayerFrozen=false;
+				bToggleEarth=false;
+			}
+			else
+			{
+				bToggleEarth=true;
+				OverlappedObject->Interact();
+				bPlayerFrozen=true;
+			}
+		}
 	}
 }
 
@@ -132,7 +146,7 @@ void AMageCharacter::LineTraceArc() {
 
 	//Trace against the floor
 	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_WorldStatic , QueryParams);
-	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
+	//DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
 	
 	//If hit, call the drawfunc from blueprints with the hit actor and UV locations
 	if (Hit.bBlockingHit) {

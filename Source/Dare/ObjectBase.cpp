@@ -32,6 +32,8 @@ void AObjectBase::UpdateGameMode()
 
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(),ADareGameModeBase::StaticClass(),FoundActors);
 
+	if(FoundActors.IsEmpty()){return;}
+	
 	if(FoundActors[0]!=nullptr)
 	{
 		ADareGameModeBase* GameMode = Cast<ADareGameModeBase>(FoundActors[0]);
