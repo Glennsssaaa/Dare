@@ -21,7 +21,7 @@ void AGrowingObject::Tick(float DeltaTime)
 void AGrowingObject::Interact()
 {
 	//Super::Interact();
-	UE_LOG(LogTemp,Warning,TEXT("Growing"));
+	ObjectMesh->SetRenderCustomDepth(false);
 	if(bInteracted || bFinished)
 	{
 		bInteracted=false;
