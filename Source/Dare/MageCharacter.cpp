@@ -28,6 +28,7 @@ void AMageCharacter::BeginPlay()
 void AMageCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Trace Start: %f"), NextLocation.Length()));
 }
 
 
@@ -42,7 +43,8 @@ void AMageCharacter::Interact(const FInputActionValue& Value)
 void AMageCharacter::AbilityOne()
 {
 	Super::AbilityOne();
-	//Interact toggle 
+
+	//Interact toggle
 	if(bToggleWater)
 	{
 		//Clears water ability timer
@@ -99,6 +101,7 @@ void AMageCharacter::LineTraceArc() {
 	float mouseDist = FVector::Distance(PlayerMesh->GetComponentLocation(), MouseHit.Location);
 	GravityOffset = GravityOffset + FVector(0,0,gravity * 0.1);
 	float offset;
+
 	//Position modified by mouse position
 /*	if(bUsingKeyboard)
 	{
@@ -122,14 +125,15 @@ void AMageCharacter::LineTraceArc() {
 
 	float next = pow((offset*0.01),2) / (offset / 1000);
 	FVector vec = PlayerMesh->GetForwardVector() * next;
-	//GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Look Value: %f"), LookValue.Length()));
 
 	FHitResult Hit;
 	FVector TraceStart = NextLocation;
 	FVector TraceEnd = (vec + NextLocation) + GravityOffset;
+
 	//Trace against the floor
 	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_WorldStatic , QueryParams);
-	//DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
+	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
+	
 	//If hit, call the drawfunc from blueprints with the hit actor and UV locations
 	if (Hit.bBlockingHit) {
 		NextLocation.X = GetActorLocation().X;
@@ -142,6 +146,13 @@ void AMageCharacter::LineTraceArc() {
 		WaterHitPosition = Hit.Location;
 	}
 	else {
-		NextLocation = TraceEnd;
+		if(TraceEnd!=FVector::Zero())
+		{
+			NextLocation = TraceEnd;
+		}
+		else
+		{
+			NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 200);
+		}
 	}
 }

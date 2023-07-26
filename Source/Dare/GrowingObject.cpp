@@ -52,7 +52,7 @@ void AGrowingObject::Grow()
 	}
 	else
 	{
-		FVector NewScale = ObjectMesh->GetRelativeScale3D() + FVector(0.01,0.01,0.01);
+		FVector NewScale = ObjectMesh->GetRelativeScale3D() + FVector(0.003,0.003,0.003);
 		ObjectMesh->SetRelativeScale3D(NewScale);
 	}
 }

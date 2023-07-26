@@ -4,6 +4,8 @@
 #include "RebuildableBase.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "TankCharacter.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -58,7 +60,7 @@ void ARebuildableBase::Tick(float DeltaTime)
 
 	if(bIsRebuilding)
 	{
-		RebuildProgress += DeltaTime * 30.f;
+		RebuildProgress += DeltaTime * 60.f;
 		if(RebuildProgress >= 100.f)
 		{
 			RebuildProgress = 100.f;
@@ -85,6 +87,14 @@ void ARebuildableBase::ToggleHouseDestruction()
 	{
 		RebuiltMesh->SetVisibility(true);
 		DestroyedMesh->SetVisibility(false);
+		TArray<AActor*> FoundActors;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATankCharacter::StaticClass(), FoundActors);
+		ATankCharacter* TempChar = Cast<ATankCharacter>(FoundActors[0]);
+		if(TempChar!=nullptr)
+		{
+			TempChar->bPlayerFrozen=false;
+			TempChar->bToggleInteract=false;
+		}
 		if(Points<0)
 		{
 			Points=-Points;

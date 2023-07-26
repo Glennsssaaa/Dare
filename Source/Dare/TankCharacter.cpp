@@ -85,7 +85,7 @@ void ATankCharacter::AbilityOne()
 			
 			// Player can't move 
 			bCanPlayerMove = false;
-
+			
 			DashAimArrowComponent->SetVisibility(true);
 			bHasAimedAbility = true;
 			GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
@@ -116,9 +116,17 @@ void ATankCharacter::AbilityTwo()
 		// If building destroyed, rebuild it
 		if(!Rebuildable) return;
 
-		if(bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem)
+		if(bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem && !bToggleInteract)
 		{
-			Rebuildable->SetIsRebuilding(true);	
+			Rebuildable->SetIsRebuilding(true);
+			bToggleInteract=true;
+			bPlayerFrozen=true;
+		}
+		else if(bToggleInteract && bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem)
+		{
+			bPlayerFrozen=false;
+			bToggleInteract=false;
+			Rebuildable->SetIsRebuilding(false);
 		}
 	}
 	
