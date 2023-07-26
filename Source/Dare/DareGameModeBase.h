@@ -19,8 +19,9 @@ protected:
 
 	float points;
 public:
+	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	float totalPoints=0;
+	float MaxPoints=0;
 
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	float currentPoints=0;

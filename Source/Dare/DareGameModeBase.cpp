@@ -17,7 +17,7 @@ void ADareGameModeBase::BeginPlay()
 	for (auto FoundActor : (FoundActors))
 	{
 		AObjectBase* ActorCast = Cast<AObjectBase>(FoundActor);
-		totalPoints+=ActorCast->Points;
+		MaxPoints+=ActorCast->Points;
 		UE_LOG(LogTemp,Warning,TEXT("Casted"));
 	}
 	
@@ -27,7 +27,7 @@ void ADareGameModeBase::UpdateScore(float objPoints)
 {
 	currentPoints += objPoints;
 	
-	if(totalPoints<=currentPoints)
+	if(MaxPoints<=currentPoints)
 	{
 		UE_LOG(LogTemp,Warning,TEXT("You win!"));
 	}
