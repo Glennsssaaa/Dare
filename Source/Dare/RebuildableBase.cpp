@@ -58,7 +58,7 @@ void ARebuildableBase::Tick(float DeltaTime)
 
 	if(bIsRebuilding)
 	{
-		RebuildProgress += DeltaTime * 30.f;
+		RebuildProgress += DeltaTime * 60.f;
 		if(RebuildProgress >= 100.f)
 		{
 			RebuildProgress = 100.f;
