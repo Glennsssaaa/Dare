@@ -61,7 +61,10 @@ protected:
 	UPROPERTY()
 	bool bIsInRebuildZone;
 
+	UPROPERTY()
+	bool bIsCharging = false;
 
+	
 private:
 	class AMageCharacter* PickupablePlayer;
 

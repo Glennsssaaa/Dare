@@ -137,7 +137,7 @@ void ATankCharacter::Charge()
 	// Disable Player Input to prevent player movement during dash
 	bCanPlayerMove = false;
 	
-	bIsPlayerDashing = true;
+	bIsCharging = true;
 	
 	// Find the predicted location of the player after the dash
 	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * ChargeDistance) + GetActorLocation();
@@ -181,7 +181,7 @@ void ATankCharacter::Charge()
 void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-	if (OtherActor->ActorHasTag("Destruct") && bIsPlayerDashing)
+	if (OtherActor->ActorHasTag("Destruct") && bIsCharging)
 	{
 		// Smoke fog function at some point
 		//dynamic_cast<ADestructableObject>(OtherActor).DoSomethingReallyCoolLater;
