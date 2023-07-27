@@ -77,7 +77,7 @@ void AMageCharacter::AbilityTwo()
 		bToggleEarth=false;
 		bPlayerFrozen=false;
 	}
-	else if(!bToggleEarth && !bToggleWater && !bIsHoldingItem && OverlappedObject)
+	else if(!bToggleEarth && !bIsHoldingItem && OverlappedObject)
 	{
 
 		if(OverlappedObject->IsA(AGrowingObject::StaticClass()))
