@@ -59,9 +59,18 @@ protected:
 	class ARebuildableBase* Rebuildable;
 
 	UPROPERTY()
+	FTimerHandle ChargeTestTimer;
+
+	UPROPERTY()
 	bool bIsInRebuildZone;
 
+	UPROPERTY()
+	bool bIsCharging = false;
 
+	UPROPERTY()
+	bool bCanPlayerCharge = true;
+
+	
 private:
 	class AMageCharacter* PickupablePlayer;
 
