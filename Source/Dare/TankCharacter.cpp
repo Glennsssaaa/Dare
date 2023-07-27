@@ -172,7 +172,7 @@ void ATankCharacter::Charge()
 		{
 			// Location reached, activate dash cooldown, re-enable input and camera lag
 			bCanPlayerMove = true;
-			bIsPlayerDashing = false;
+			bIsCharging = false;
 
 			// Clear Dash timer to stop function running every frame
 			GetWorld()->GetTimerManager().ClearTimer(DashCooldownTimerHandle);
@@ -193,10 +193,9 @@ void ATankCharacter::Charge()
 void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-	if (OtherActor->ActorHasTag("Destruct") && bIsCharging)
+	if (OtherActor->ActorHasTag("Destruct") && bIsCharging && !bCanPlayerCharge)
 	{
 		// Smoke fog function at some point
-		//dynamic_cast<ADestructableObject>(OtherActor).DoSomethingReallyCoolLater;
 
 		// Instead do this for now
 		OtherActor->Destroy();
@@ -214,12 +213,12 @@ void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor*
 		
 	}
 
-	if(OtherComp->ComponentHasTag("HouseCollision"))
+	if(OtherComp->ComponentHasTag("HouseCollision") && bIsCharging && !bCanPlayerCharge)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Destory")));
 		ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
 
-		if(OverlappedCharacter->GetIsDestroyed() == false && bIsPlayerDashing)
+		if(OverlappedCharacter->GetIsDestroyed() == false && bIsCharging)
 		{
 			OverlappedCharacter->ToggleHouseDestruction();
 		}
