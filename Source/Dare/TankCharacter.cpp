@@ -76,6 +76,7 @@ void ATankCharacter::AbilityOne()
 {
 	Super::AbilityOne();
 
+	if(!bCanPlayerCharge) { return; }
 	// Make sure tank isn't currently holding an object
 	if(!bIsHoldingItem)
 	{
@@ -135,12 +136,23 @@ void ATankCharacter::AbilityTwo()
 void ATankCharacter::Charge()
 {
 	// Disable Player Input to prevent player movement during dash
+	if(!bCanPlayerCharge)
+	{
+		return;
+	}
+
+	bCanPlayerCharge = false;
 	bCanPlayerMove = false;
-	
-	bIsPlayerDashing = true;
-	
+	bIsCharging = true;
 	// Find the predicted location of the player after the dash
-	PredictedLocation = (DashAimArrowComponent->GetForwardVector() * ChargeDistance) + GetActorLocation();
+	PredictedLocation = (PlayerMesh->GetForwardVector() * DashDistance) + GetActorLocation();
+	
+	GetWorldTimerManager().SetTimer(ChargeTestTimer, [this]()
+	{
+		bCanPlayerCharge = true;
+		UE_LOG(LogTemp,Warning,TEXT("recharge"));
+	}, 2.0f, false, 1.0f);
+	
 
 	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
@@ -181,7 +193,7 @@ void ATankCharacter::Charge()
 void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-	if (OtherActor->ActorHasTag("Destruct") && bIsPlayerDashing)
+	if (OtherActor->ActorHasTag("Destruct") && bIsCharging)
 	{
 		// Smoke fog function at some point
 		//dynamic_cast<ADestructableObject>(OtherActor).DoSomethingReallyCoolLater;
