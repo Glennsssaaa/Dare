@@ -72,12 +72,14 @@ void AMageCharacter::AbilityOne()
 void AMageCharacter::AbilityTwo()
 {
 	Super::AbilityTwo();
+	
 	if(bToggleEarth){
 		bToggleEarth=false;
 		bPlayerFrozen=false;
 	}
 	else if(!bToggleEarth && !bToggleWater && !bIsHoldingItem && OverlappedObject)
 	{
+
 		if(OverlappedObject->IsA(AGrowingObject::StaticClass()))
 		{
 			if(OverlappedObject->bFinished)

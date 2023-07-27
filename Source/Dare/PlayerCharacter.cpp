@@ -247,11 +247,11 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 				bPlayerFrozen = OverlappedObject->bFreezePlayer;
 			}
 		}
-
+		/*
 		if(PickupableItem!=nullptr)
 		{
 			ThrowItem();
-		}
+		}*/
 	}
 }
 
@@ -313,7 +313,6 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 	OverlappedObject = Cast<AInteractableObject>(OtherActor);
 	if(OverlappedObject!=nullptr)
 	{
-		
 	}
 	if(OtherActor->ActorHasTag("Respawn"))
 	{

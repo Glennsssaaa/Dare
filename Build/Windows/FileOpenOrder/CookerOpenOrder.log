@@ -538,768 +538,772 @@
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uexp" 537
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uasset" 538
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uexp" 539
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.uasset" 540
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.uexp" 541
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.uasset" 542
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.uexp" 543
-"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/T_Bayer64_Grayscale_64px.uasset" 544
-"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/T_Bayer64_Grayscale_64px.uexp" 545
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Temporal_Blur.uasset" 546
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Temporal_Blur.uexp" 547
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Fresnel_DS.uasset" 548
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Fresnel_DS.uexp" 549
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_Transmission.uasset" 550
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_Transmission.uexp" 551
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_OrenNayerView.uasset" 552
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_OrenNayerView.uexp" 553
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_SchlickApprox.uasset" 554
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_SchlickApprox.uexp" 555
-"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/New_LUT.uasset" 556
-"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/New_LUT.uexp" 557
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Math/RemapValueRange.uasset" 558
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Math/RemapValueRange.uexp" 559
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_Iridescence.uasset" 560
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_Iridescence.uexp" 561
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_StandardSurface.uasset" 562
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_StandardSurface.uexp" 563
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_TransmissionSurface.uasset" 564
-"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_TransmissionSurface.uexp" 565
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uasset" 566
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uexp" 567
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/V2/ObjectScale.uasset" 568
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/V2/ObjectScale.uexp" 569
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransmissionOpacity.uasset" 570
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransmissionOpacity.uexp" 571
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateV2.uasset" 572
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateV2.uexp" 573
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransformUVs.uasset" 574
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransformUVs.uexp" 575
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_srgb.uasset" 576
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_srgb.uexp" 577
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_BaseColor.uasset" 578
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_BaseColor.uexp" 579
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_DiffuseSpecGloss.uasset" 580
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_DiffuseSpecGloss.uexp" 581
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_Linear.uasset" 582
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_Linear.uexp" 583
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_MetallicRoughness.uasset" 584
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_MetallicRoughness.uexp" 585
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Transmission.uasset" 586
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Transmission.uexp" 587
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Occlusion.uasset" 588
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Occlusion.uexp" 589
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Specular.uasset" 590
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Specular.uexp" 591
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_IOR.uasset" 592
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_IOR.uexp" 593
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.uasset" 594
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.uexp" 595
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.uasset" 596
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.uexp" 597
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateNormals_TS.uasset" 598
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateNormals_TS.uexp" 599
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Generic_N.uasset" 600
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Generic_N.uexp" 601
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Normals.uasset" 602
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Normals.uexp" 603
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_PerceivedBrightness.uasset" 604
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_PerceivedBrightness.uexp" 605
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_SpecGlossToMetalRoughness.uasset" 606
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_SpecGlossToMetalRoughness.uexp" 607
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Transmission.uasset" 608
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Transmission.uexp" 609
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission_TS.uasset" 610
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission_TS.uexp" 611
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission.uasset" 612
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission.uexp" 613
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Clearcoat.uasset" 614
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Clearcoat.uexp" 615
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Emissive.uasset" 616
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Emissive.uexp" 617
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Translucent.uasset" 618
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Translucent.uexp" 619
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_TS.uasset" 620
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_TS.uexp" 621
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat_TS.uasset" 622
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat_TS.uexp" 623
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat.uasset" 624
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat.uexp" 625
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent.uasset" 626
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent.uexp" 627
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Unlit.uasset" 628
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Unlit.uexp" 629
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit_TS.uasset" 630
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit_TS.uexp" 631
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit.uasset" 632
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit.uexp" 633
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Opaque.uasset" 634
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Opaque.uexp" 635
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_TS.uasset" 636
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_TS.uexp" 637
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Sheen.uasset" 638
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Sheen.uexp" 639
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/FuzzyShading.uasset" 640
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/FuzzyShading.uexp" 641
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Sheen.uasset" 642
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Sheen.uexp" 643
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen_TS.uasset" 644
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen_TS.uexp" 645
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen.uasset" 646
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen.uexp" 647
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat_TS.uasset" 648
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat_TS.uexp" 649
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat.uasset" 650
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat.uexp" 651
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque.uasset" 652
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque.uexp" 653
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission_TS.uasset" 654
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission_TS.uexp" 655
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission.uasset" 656
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission.uexp" 657
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_TS.uasset" 658
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_TS.uexp" 659
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat_TS.uasset" 660
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat_TS.uexp" 661
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat.uasset" 662
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat.uexp" 663
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent.uasset" 664
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent.uexp" 665
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_TS.uasset" 666
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_TS.uexp" 667
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen_TS.uasset" 668
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen_TS.uexp" 669
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen.uasset" 670
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen.uexp" 671
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat_TS.uasset" 672
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat_TS.uexp" 673
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat.uasset" 674
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat.uexp" 675
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque.uasset" 676
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque.uexp" 677
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Gray_Linear.uasset" 678
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Gray_Linear.uexp" 679
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Black_srgb.uasset" 680
-"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Black_srgb.uexp" 681
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/UnlitMaterial.uasset" 682
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/UnlitMaterial.uexp" 683
-"../../../Engine/Content/EngineMaterials/DefaultNormal.ubulk" 684
-"../../../Engine/Content/EngineMaterials/DefaultNormal.uasset" 685
-"../../../Engine/Content/EngineMaterials/DefaultNormal.uexp" 686
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrScalarFunction.uasset" 687
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrScalarFunction.uexp" 688
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrLinearColorFunction.uasset" 689
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrLinearColorFunction.uexp" 690
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrColorFunction.uasset" 691
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrColorFunction.uexp" 692
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/CommonMaterial.uasset" 693
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/CommonMaterial.uexp" 694
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceFunction.uasset" 695
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceFunction.uexp" 696
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ThinTranslucentMaterial.uasset" 697
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ThinTranslucentMaterial.uexp" 698
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SubsurfaceMaterial.uasset" 699
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SubsurfaceMaterial.uexp" 700
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SheenMaterial.uasset" 701
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SheenMaterial.uexp" 702
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 703
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uexp" 704
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PhongSurfaceMaterial.uasset" 705
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PhongSurfaceMaterial.uexp" 706
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceMaterial.uasset" 707
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceMaterial.uexp" 708
-"../../../Engine/Content/EngineMaterials/FlatNormal.uasset" 709
-"../../../Engine/Content/EngineMaterials/FlatNormal.uexp" 710
-"../../../Engine/Content/EditorLandscapeResources/WhiteSquareTexture.uasset" 711
-"../../../Engine/Content/EditorLandscapeResources/WhiteSquareTexture.uexp" 712
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/OrenNayerMaterial.uasset" 713
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/OrenNayerMaterial.uexp" 714
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/LambertSurfaceMaterial.uasset" 715
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/LambertSurfaceMaterial.uexp" 716
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ClearCoatMaterial.uasset" 717
-"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ClearCoatMaterial.uexp" 718
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultTexturePipeline.uasset" 719
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultTexturePipeline.uexp" 720
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneLevelPipeline.uasset" 721
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneLevelPipeline.uexp" 722
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneAssetsPipeline.uasset" 723
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneAssetsPipeline.uexp" 724
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultMaterialPipeline.uasset" 725
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultMaterialPipeline.uexp" 726
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultAssetsPipeline.uasset" 727
-"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultAssetsPipeline.uexp" 728
-"../../../Engine/Plugins/Runtime/MeshModelingToolset/Content/Materials/M_DynamicMeshComponentVtxColor.uasset" 729
-"../../../Engine/Plugins/Runtime/MeshModelingToolset/Content/Materials/M_DynamicMeshComponentVtxColor.uexp" 730
-"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 731
-"../../../Engine/Content/Maps/Entry_BuiltData.uexp" 732
-"../../../Engine/Content/Maps/Entry.uexp" 733
-"../../../Engine/Content/Maps/Entry.umap" 734
-"../../../Engine/Content/BasicShapes/Cube.ubulk" 735
-"../../../Engine/Content/BasicShapes/Cube.uasset" 736
-"../../../Engine/Content/BasicShapes/Cube.uexp" 737
-"../../../Engine/Content/BasicShapes/Plane.ubulk" 738
-"../../../Engine/Content/BasicShapes/Plane.uasset" 739
-"../../../Engine/Content/BasicShapes/Plane.uexp" 740
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_Interact.uasset" 741
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_Interact.uexp" 742
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_PlayerAbility.uasset" 743
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_PlayerAbility.uexp" 744
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_Aim.uasset" 745
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_Aim.uexp" 746
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_PlayerDash.uasset" 747
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_PlayerDash.uexp" 748
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_PlayerAbilityTwo.uasset" 749
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_PlayerAbilityTwo.uexp" 750
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_KeyboardMove.uasset" 751
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_KeyboardMove.uexp" 752
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/PlayerMovementMapping.uasset" 753
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/PlayerMovementMapping.uexp" 754
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_AbilityRelease.uasset" 755
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_AbilityRelease.uexp" 756
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_ControllerMove.uasset" 757
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/IA_ControllerMove.uexp" 758
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/InputConfig.uasset" 759
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/InputAxis/InputConfig.uexp" 760
-"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uasset" 761
-"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uexp" 762
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_rig_01_Skeleton.uasset" 763
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_rig_01_Skeleton.uexp" 764
-"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 765
-"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uexp" 766
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/stationary_charge_01.uasset" 767
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/stationary_charge_01.uexp" 768
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_idle_01__1_.uasset" 769
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_idle_01__1_.uexp" 770
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_run_02__1_.uasset" 771
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_run_02__1_.uexp" 772
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/TankAnimBP.uasset" 773
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/TankAnimBP.uexp" 774
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_rig_01_PhysicsAsset.uasset" 775
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_rig_01_PhysicsAsset.uexp" 776
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/lambert2.uasset" 777
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/lambert2.uexp" 778
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_rig_01.uasset" 779
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Tank/tank_rig_01.uexp" 780
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_MuscleCharacter.uasset" 781
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_MuscleCharacter.uexp" 782
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MaterialFunctions/UVTiling.uasset" 783
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MaterialFunctions/UVTiling.uexp" 784
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uasset" 785
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uexp" 786
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Water_N.ubulk" 787
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Water_N.uasset" 788
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Water_N.uexp" 789
-"../../../Engine/Content/EngineMaterials/BlendFunc_DefBlend.uasset" 790
-"../../../Engine/Content/EngineMaterials/BlendFunc_DefBlend.uexp" 791
-"../../../Engine/Content/EngineMaterials/BlendFunc_DefBase.uasset" 792
-"../../../Engine/Content/EngineMaterials/BlendFunc_DefBase.uexp" 793
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Screen.uasset" 794
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Screen.uexp" 795
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/WindWaker_T.ubulk" 796
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/WindWaker_T.uasset" 797
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/WindWaker_T.uexp" 798
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/testWave.ubulk" 799
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/testWave.uasset" 800
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/testWave.uexp" 801
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Water.uasset" 802
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Water.uexp" 803
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Water_Inst.uasset" 804
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Water_Inst.uexp" 805
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/CellShader.uasset" 806
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/CellShader.uexp" 807
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/CellShader_Inst.uasset" 808
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/CellShader_Inst.uexp" 809
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert21.uasset" 810
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert21.uexp" 811
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Bush.ubulk" 812
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Bush.uasset" 813
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Bush.uexp" 814
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/standardSurface1.uasset" 815
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/standardSurface1.uexp" 816
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Terrain.ubulk" 817
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Terrain.uasset" 818
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Terrain.uexp" 819
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_ORM.ubulk" 820
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_ORM.uasset" 821
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_ORM.uexp" 822
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.uasset" 823
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.uexp" 824
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_ground_Moss_D.ubulk" 825
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_ground_Moss_D.uasset" 826
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_ground_Moss_D.uexp" 827
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageBake_low_lambert1_Normal.uasset" 828
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageBake_low_lambert1_Normal.uexp" 829
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MaterialFunctions/NormalStrength.uasset" 830
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MaterialFunctions/NormalStrength.uexp" 831
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.uasset" 832
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.uexp" 833
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Master.uasset" 834
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Master.uexp" 835
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_BaseColor.ubulk" 836
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_BaseColor.uasset" 837
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_BaseColor.uexp" 838
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_OcclusionRoughnessMetallic.ubulk" 839
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_OcclusionRoughnessMetallic.uasset" 840
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_OcclusionRoughnessMetallic.uexp" 841
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_Normal.ubulk" 842
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_Normal.uasset" 843
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA_lambert2_Normal.uexp" 844
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Lilypad.uasset" 845
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Lilypad.uexp" 846
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA.ubulk" 847
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA.uasset" 848
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/LilypadA.uexp" 849
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Basic_Wall.uasset" 850
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Basic_Wall.uexp" 851
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.ubulk" 852
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.uasset" 853
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.uexp" 854
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.ubulk" 855
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uasset" 856
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uexp" 857
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 858
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uexp" 859
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uasset" 860
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uexp" 861
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/M_Lilypad.uasset" 862
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/M_Lilypad.uexp" 863
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/M_TempLilypad.uasset" 864
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/M_TempLilypad.uexp" 865
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_Skeleton.uasset" 866
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_Skeleton.uexp" 867
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/pickup1loop.uasset" 868
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/pickup1loop.uexp" 869
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/WalkCastLoop.uasset" 870
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/WalkCastLoop.uexp" 871
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_PhysicsAsset.uasset" 872
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_PhysicsAsset.uexp" 873
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/lambert1.uasset" 874
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/lambert1.uexp" 875
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5.uasset" 876
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5.uexp" 877
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/pickup1start.uasset" 878
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/pickup1start.uexp" 879
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/walk1.uasset" 880
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/walk1.uexp" 881
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/waterstart1.uasset" 882
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/waterstart1.uexp" 883
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/pickup1end.uasset" 884
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/pickup1end.uexp" 885
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/idle1.uasset" 886
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/idle1.uexp" 887
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/MageAnimBP.uasset" 888
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/MageAnimBP.uexp" 889
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_MassInitializationMode.uasset" 890
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_MassInitializationMode.uexp" 891
-"../../../Engine/Plugins/FX/Niagara/Content/DefaultAssets/DefaultRIbbonMaterial.uasset" 892
-"../../../Engine/Plugins/FX/Niagara/Content/DefaultAssets/DefaultRIbbonMaterial.uexp" 893
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_PositionInitializationMode.uasset" 894
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_PositionInitializationMode.uexp" 895
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitSpeed.uasset" 896
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitSpeed.uexp" 897
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_RotationalSolve.uasset" 898
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_RotationalSolve.uexp" 899
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitAccel.uasset" 900
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitAccel.uexp" 901
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SizeScaleMode.uasset" 902
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SizeScaleMode.uexp" 903
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_UVFlippingMode.uasset" 904
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_UVFlippingMode.uexp" 905
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 906
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uexp" 907
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessEvaluation.uasset" 908
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessEvaluation.uexp" 909
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSetRandom.uasset" 910
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSetRandom.uexp" 911
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_LifetimeMode.uasset" 912
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_LifetimeMode.uexp" 913
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSet.uasset" 914
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSet.uexp" 915
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SpriteRotationMode.uasset" 916
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SpriteRotationMode.uexp" 917
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_ColorInitializationMode.uasset" 918
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_ColorInitializationMode.uexp" 919
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraChannelCorrelation.uasset" 920
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraChannelCorrelation.uexp" 921
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterLifeCycleMode.uasset" 922
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterLifeCycleMode.uexp" 923
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_InfiniteLoopDuration.uasset" 924
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_InfiniteLoopDuration.uexp" 925
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_EmitterStateOptions.uasset" 926
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_EmitterStateOptions.uexp" 927
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraInactiveMode.uasset" 928
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraInactiveMode.uexp" 929
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExecutionStateManagement.uasset" 930
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExecutionStateManagement.uexp" 931
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode_Limited.uasset" 932
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode_Limited.uexp" 933
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSystemInactiveMode.uasset" 934
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSystemInactiveMode.uexp" 935
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Particle_InfiniteLife.uasset" 936
-"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Particle_InfiniteLife.uexp" 937
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Water.uasset" 938
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Water.uexp" 939
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert22.uasset" 940
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert22.uexp" 941
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/brown.uasset" 942
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/brown.uexp" 943
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/darkest_green.uasset" 944
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/darkest_green.uexp" 945
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Tree.ubulk" 946
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Tree.uasset" 947
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Tree.uexp" 948
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/SpriteRenderer/ENiagara_ScaleSpriteSize.uasset" 949
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/SpriteRenderer/ENiagara_ScaleSpriteSize.uexp" 950
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSphereDistributionMode.uasset" 951
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSphereDistributionMode.uexp" 952
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraTorusDistributionMode.uasset" 953
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraTorusDistributionMode.uexp" 954
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_LocationShapes.uasset" 955
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_LocationShapes.uexp" 956
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_CylinderMode.uasset" 957
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_CylinderMode.uexp" 958
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_IntegerConversion.uasset" 959
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_IntegerConversion.uexp" 960
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_ScaleMode.uasset" 961
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_ScaleMode.uexp" 962
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_LWCConvertPosToVec.uasset" 963
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_LWCConvertPosToVec.uexp" 964
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraVector4_Channels.uasset" 965
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraVector4_Channels.uexp" 966
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Angles/ENiagara_AngleInput.uasset" 967
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Angles/ENiagara_AngleInput.uexp" 968
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_VelocityMode.uasset" 969
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_VelocityMode.uexp" 970
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_RotationMode.uasset" 971
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_RotationMode.uexp" 972
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_ConeMode.uasset" 973
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_ConeMode.uexp" 974
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_AttributeSamplingApplyOutput.uasset" 975
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_AttributeSamplingApplyOutput.uexp" 976
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_OffsetMode.uasset" 977
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_OffsetMode.uexp" 978
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_BoxPlaneMode.uasset" 979
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_BoxPlaneMode.uexp" 980
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Smoke.ubulk" 981
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Smoke.uasset" 982
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Smoke.uexp" 983
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_Poof.uasset" 984
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_Poof.uexp" 985
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformOrder.uasset" 986
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformOrder.uexp" 987
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagaraRingDiscMode.uasset" 988
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagaraRingDiscMode.uexp" 989
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraShapeTorusMode.uasset" 990
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraShapeTorusMode.uexp" 991
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 992
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uexp" 993
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformType.uasset" 994
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformType.uexp" 995
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Poof.uasset" 996
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Poof.uexp" 997
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/darkbrown.uasset" 998
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/darkbrown.uexp" 999
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject.uasset" 1000
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject.uexp" 1001
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RT_DirtObject.uasset" 1002
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RT_DirtObject.uexp" 1003
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterSpray.uasset" 1004
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterSpray.uexp" 1005
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Normal.ubulk" 1006
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Normal.uasset" 1007
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Normal.uexp" 1008
-"../../../Engine/Content/EngineResources/AICON-Green_Low.uasset" 1009
-"../../../Engine/Content/EngineResources/AICON-Green_Low.uexp" 1010
-"../../../Engine/Content/EngineResources/Black_Low.uasset" 1011
-"../../../Engine/Content/EngineResources/Black_Low.uexp" 1012
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uasset" 1013
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uexp" 1014
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uasset" 1015
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uexp" 1016
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uasset" 1017
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uexp" 1018
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset" 1019
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uexp" 1020
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uasset" 1021
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uexp" 1022
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 1023
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uexp" 1024
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uasset" 1025
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uexp" 1026
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_DirtObject.uasset" 1027
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_DirtObject.uexp" 1028
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_WaterTestObject.uasset" 1029
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_WaterTestObject.uexp" 1030
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_ParticleBase.uasset" 1031
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_ParticleBase.uexp" 1032
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/fireMesh.ubulk" 1033
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/fireMesh.uasset" 1034
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/fireMesh.uexp" 1035
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Fire.uasset" 1036
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Fire.uexp" 1037
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_Extinguishable.uasset" 1038
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_Extinguishable.uexp" 1039
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageBake_low_lambert1_BaseColor.uasset" 1040
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageBake_low_lambert1_BaseColor.uexp" 1041
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageBake_low_lambert1_OcclusionRoughnessMetallic.uasset" 1042
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageBake_low_lambert1_OcclusionRoughnessMetallic.uexp" 1043
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageMat.uasset" 1044
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Characters/MageMat.uexp" 1045
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/pasted__pasted__lambert2.uasset" 1046
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/pasted__pasted__lambert2.uexp" 1047
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/pasted__lambert2.uasset" 1048
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/pasted__lambert2.uexp" 1049
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_PhysicsAsset.uasset" 1050
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_PhysicsAsset.uexp" 1051
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_Skeleton.uasset" 1052
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_Skeleton.uexp" 1053
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2.uasset" 1054
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2.uexp" 1055
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_BaseColor.uasset" 1056
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_BaseColor.uexp" 1057
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_OcclusionRoughnessMetallic.uasset" 1058
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_OcclusionRoughnessMetallic.uexp" 1059
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_Normal.uasset" 1060
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_Normal.uexp" 1061
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/M_Broom.uasset" 1062
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/M_Broom.uexp" 1063
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/BP_Broom.uasset" 1064
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Characters/Witch/Broom/BP_Broom.uexp" 1065
-"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 1066
-"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uexp" 1067
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_MageCharacter.uasset" 1068
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_MageCharacter.uexp" 1069
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uasset" 1070
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uexp" 1071
-"../../../Engine/Content/EngineSky/T_Sky_Stars.ubulk" 1072
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 1073
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uexp" 1074
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.ubulk" 1075
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 1076
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uexp" 1077
-"../../../Engine/Content/EngineSky/T_Sky_Blue.ubulk" 1078
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 1079
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uexp" 1080
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 1081
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uexp" 1082
-"../../../Engine/Content/EngineSky/SM_SkySphere.ubulk" 1083
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1084
-"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 1085
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uasset" 1086
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uexp" 1087
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uexp" 1088
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uasset" 1089
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.ufont" 1090
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uasset" 1091
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uexp" 1092
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uasset" 1093
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uexp" 1094
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uasset" 1095
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uexp" 1096
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uasset" 1097
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uexp" 1098
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uasset" 1099
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uexp" 1100
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.ubulk" 1101
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" 1102
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uexp" 1103
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uasset" 1104
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uexp" 1105
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uasset" 1106
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uexp" 1107
-"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 1108
-"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uexp" 1109
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.ubulk" 1110
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uasset" 1111
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uexp" 1112
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.ubulk" 1113
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uasset" 1114
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uexp" 1115
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uasset" 1116
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uexp" 1117
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uasset" 1118
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uexp" 1119
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.ubulk" 1120
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.uasset" 1121
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/BrokenHouseA.uexp" 1122
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.ubulk" 1123
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uasset" 1124
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uexp" 1125
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_House.uasset" 1126
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Textures/M_House.uexp" 1127
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.ubulk" 1128
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uasset" 1129
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uexp" 1130
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uasset" 1131
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uexp" 1132
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uasset" 1133
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uexp" 1134
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.ubulk" 1135
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" 1136
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uexp" 1137
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.ubulk" 1138
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" 1139
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uexp" 1140
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.ubulk" 1141
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.uasset" 1142
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_N.uexp" 1143
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.ubulk" 1144
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.uasset" 1145
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_RockMesh_M.uexp" 1146
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/Materials/M_Rock.uasset" 1147
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/Materials/M_Rock.uexp" 1148
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.ubulk" 1149
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.uasset" 1150
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Props/SM_Rock.uexp" 1151
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.ubulk" 1152
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.uasset" 1153
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track.uexp" 1154
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Yellow_Sparkles.uasset" 1155
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Yellow_Sparkles.uexp" 1156
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Flame2.uasset" 1157
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/ProgressBar/Flame2.uexp" 1158
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_BasicUI.uasset" 1159
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_BasicUI.uexp" 1160
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uasset" 1161
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uexp" 1162
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.ubulk" 1163
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.uasset" 1164
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/lindas_tutorial_track.uexp" 1165
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uasset" 1166
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uexp" 1167
-"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uasset" 1168
-"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uexp" 1169
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/TutorialLevel.uexp" 1170
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/TutorialLevel.umap" 1171
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Key_art_WIP_blur.uasset" 1172
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Key_art_WIP_blur.uexp" 1173
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/UI_Text_Box_4.uasset" 1174
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/UI_Text_Box_4.uexp" 1175
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Trailer_3_-_Posed_Normal.uasset" 1176
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/Trailer_3_-_Posed_Normal.uexp" 1177
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/dmg_control_with_hat_and_horns_outline.uasset" 1178
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/dmg_control_with_hat_and_horns_outline.uexp" 1179
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uasset" 1180
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uexp" 1181
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.uexp" 1182
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.umap" 1183
-"../../../Engine/Content/BasicShapes/Cylinder.ubulk" 1184
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 1185
-"../../../Engine/Content/BasicShapes/Cylinder.uexp" 1186
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track_Cue.uasset" 1187
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/linda_playing_track_Cue.uexp" 1188
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.ubulk" 1189
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" 1190
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uexp" 1191
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.ubulk" 1192
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" 1193
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uexp" 1194
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_MacroVariation.uasset" 1195
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_MacroVariation.uexp" 1196
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Rust.uasset" 1197
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Rust.uexp" 1198
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.ubulk" 1199
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.uasset" 1200
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Signpost.uexp" 1201
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uasset" 1202
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uexp" 1203
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uasset" 1204
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uexp" 1205
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uasset" 1206
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uexp" 1207
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.ubulk" 1208
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uasset" 1209
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uexp" 1210
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert18.uasset" 1211
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert18.uexp" 1212
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.ubulk" 1213
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.uasset" 1214
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Flower.uexp" 1215
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.ubulk" 1216
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uasset" 1217
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uexp" 1218
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.ubulk" 1219
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uasset" 1220
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uexp" 1221
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.ubulk" 1222
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uasset" 1223
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uexp" 1224
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uasset" 1225
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uexp" 1226
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uasset" 1227
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uexp" 1228
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.ubulk" 1229
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uasset" 1230
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uexp" 1231
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.ubulk" 1232
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uasset" 1233
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uexp" 1234
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT.uasset" 1235
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT.uexp" 1236
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uasset" 1237
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uexp" 1238
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.ubulk" 1239
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.uasset" 1240
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/RVTgrass.uexp" 1241
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.ubulk" 1242
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uasset" 1243
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uexp" 1244
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uasset" 1245
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uexp" 1246
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uasset" 1247
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uexp" 1248
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.ubulk" 1249
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.uasset" 1250
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Trunk.uexp" 1251
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Leaf.ubulk" 1252
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Leaf.uasset" 1253
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/Textures/T_Leaf.uexp" 1254
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_Leaf.uasset" 1255
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/M_Leaf.uexp" 1256
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Leaf.uasset" 1257
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_Leaf.uexp" 1258
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.ubulk" 1259
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.uasset" 1260
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.uexp" 1261
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.ubulk" 1262
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.uasset" 1263
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.uexp" 1264
+"../../../Engine/Plugins/Runtime/MeshModelingToolset/Content/Materials/M_DynamicMeshComponentVtxColor.uasset" 540
+"../../../Engine/Plugins/Runtime/MeshModelingToolset/Content/Materials/M_DynamicMeshComponentVtxColor.uexp" 541
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultTexturePipeline.uasset" 542
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultTexturePipeline.uexp" 543
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneLevelPipeline.uasset" 544
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneLevelPipeline.uexp" 545
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneAssetsPipeline.uasset" 546
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultSceneAssetsPipeline.uexp" 547
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultMaterialPipeline.uasset" 548
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultMaterialPipeline.uexp" 549
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultAssetsPipeline.uasset" 550
+"../../../Engine/Plugins/Interchange/Runtime/Content/Pipelines/DefaultAssetsPipeline.uexp" 551
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/UnlitMaterial.uasset" 552
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/UnlitMaterial.uexp" 553
+"../../../Engine/Content/EngineMaterials/DefaultNormal.ubulk" 554
+"../../../Engine/Content/EngineMaterials/DefaultNormal.uasset" 555
+"../../../Engine/Content/EngineMaterials/DefaultNormal.uexp" 556
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrScalarFunction.uasset" 557
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrScalarFunction.uexp" 558
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrLinearColorFunction.uasset" 559
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrLinearColorFunction.uexp" 560
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrColorFunction.uasset" 561
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/MapOrColorFunction.uexp" 562
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/CommonMaterial.uasset" 563
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/CommonMaterial.uexp" 564
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceFunction.uasset" 565
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceFunction.uexp" 566
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ThinTranslucentMaterial.uasset" 567
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ThinTranslucentMaterial.uexp" 568
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SubsurfaceMaterial.uasset" 569
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SubsurfaceMaterial.uexp" 570
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SheenMaterial.uasset" 571
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/SheenMaterial.uexp" 572
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 573
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uexp" 574
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PhongSurfaceMaterial.uasset" 575
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PhongSurfaceMaterial.uexp" 576
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceMaterial.uasset" 577
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/PBRSurfaceMaterial.uexp" 578
+"../../../Engine/Content/EngineMaterials/FlatNormal.uasset" 579
+"../../../Engine/Content/EngineMaterials/FlatNormal.uexp" 580
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_OrenNayerView.uasset" 581
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_OrenNayerView.uexp" 582
+"../../../Engine/Content/EditorLandscapeResources/WhiteSquareTexture.uasset" 583
+"../../../Engine/Content/EditorLandscapeResources/WhiteSquareTexture.uexp" 584
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_SchlickApprox.uasset" 585
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_SchlickApprox.uexp" 586
+"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/New_LUT.uasset" 587
+"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/New_LUT.uexp" 588
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Math/RemapValueRange.uasset" 589
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Math/RemapValueRange.uexp" 590
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_Iridescence.uasset" 591
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MF_Iridescence.uexp" 592
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/OrenNayerMaterial.uasset" 593
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/OrenNayerMaterial.uexp" 594
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/LambertSurfaceMaterial.uasset" 595
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/LambertSurfaceMaterial.uexp" 596
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ClearCoatMaterial.uasset" 597
+"../../../Engine/Plugins/Interchange/Runtime/Content/Materials/ClearCoatMaterial.uexp" 598
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Gray_Linear.uasset" 599
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Gray_Linear.uexp" 600
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Black_srgb.uasset" 601
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Black_srgb.uexp" 602
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateV2.uasset" 603
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateV2.uexp" 604
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransformUVs.uasset" 605
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransformUVs.uexp" 606
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_srgb.uasset" 607
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_srgb.uexp" 608
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_BaseColor.uasset" 609
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_BaseColor.uexp" 610
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_DiffuseSpecGloss.uasset" 611
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_DiffuseSpecGloss.uexp" 612
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_Linear.uasset" 613
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_White_Linear.uexp" 614
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_MetallicRoughness.uasset" 615
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_MetallicRoughness.uexp" 616
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Transmission.uasset" 617
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Transmission.uexp" 618
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Occlusion.uasset" 619
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Occlusion.uexp" 620
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.uasset" 621
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.uexp" 622
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.uasset" 623
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.uexp" 624
+"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/T_Bayer64_Grayscale_64px.uasset" 625
+"../../../Engine/Plugins/Interchange/Runtime/Content/Utilities/T_Bayer64_Grayscale_64px.uexp" 626
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Temporal_Blur.uasset" 627
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Temporal_Blur.uexp" 628
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Specular.uasset" 629
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Specular.uexp" 630
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_IOR.uasset" 631
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_IOR.uexp" 632
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Fresnel_DS.uasset" 633
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Fresnel_DS.uexp" 634
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.uasset" 635
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.uexp" 636
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.uasset" 637
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.uexp" 638
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateNormals_TS.uasset" 639
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_RotateNormals_TS.uexp" 640
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Generic_N.uasset" 641
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/Textures/T_Generic_N.uexp" 642
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Normals.uasset" 643
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Normals.uexp" 644
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uasset" 645
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uexp" 646
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_PerceivedBrightness.uasset" 647
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_PerceivedBrightness.uexp" 648
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_SpecGlossToMetalRoughness.uasset" 649
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_SpecGlossToMetalRoughness.uexp" 650
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Transmission.uasset" 651
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Transmission.uexp" 652
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission_TS.uasset" 653
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission_TS.uexp" 654
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission.uasset" 655
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Transmission.uexp" 656
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Clearcoat.uasset" 657
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Clearcoat.uexp" 658
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Emissive.uasset" 659
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Emissive.uexp" 660
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Translucent.uasset" 661
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Translucent.uexp" 662
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_TS.uasset" 663
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_TS.uexp" 664
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat_TS.uasset" 665
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat_TS.uexp" 666
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat.uasset" 667
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent_ClearCoat.uexp" 668
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent.uasset" 669
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Translucent.uexp" 670
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Opaque.uasset" 671
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Opaque.uexp" 672
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_TS.uasset" 673
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_TS.uexp" 674
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Sheen.uasset" 675
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_Sheen.uexp" 676
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/FuzzyShading.uasset" 677
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/FuzzyShading.uexp" 678
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Sheen.uasset" 679
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Sheen.uexp" 680
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen_TS.uasset" 681
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen_TS.uexp" 682
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen.uasset" 683
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_Sheen.uexp" 684
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat_TS.uasset" 685
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat_TS.uexp" 686
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat.uasset" 687
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque_ClearCoat.uexp" 688
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque.uasset" 689
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_SG/MI_Opaque.uexp" 690
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission_TS.uasset" 691
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission_TS.uexp" 692
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission.uasset" 693
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Transmission.uexp" 694
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_TS.uasset" 695
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_TS.uexp" 696
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat_TS.uasset" 697
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat_TS.uexp" 698
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat.uasset" 699
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent_ClearCoat.uexp" 700
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent.uasset" 701
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Translucent.uexp" 702
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Unlit.uasset" 703
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/M_Unlit.uexp" 704
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit_TS.uasset" 705
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit_TS.uexp" 706
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit.uasset" 707
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Unlit.uexp" 708
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_TS.uasset" 709
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_TS.uexp" 710
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen_TS.uasset" 711
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen_TS.uexp" 712
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen.uasset" 713
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_Sheen.uexp" 714
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat_TS.uasset" 715
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat_TS.uexp" 716
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat.uasset" 717
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque_ClearCoat.uexp" 718
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque.uasset" 719
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialInstances_MR/MI_Opaque.uexp" 720
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/V2/ObjectScale.uasset" 721
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/V2/ObjectScale.uexp" 722
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransmissionOpacity.uasset" 723
+"../../../Engine/Plugins/Interchange/Runtime/Content/gltf/MaterialFunctions/MF_TransmissionOpacity.uexp" 724
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_Transmission.uasset" 725
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_Transmission.uexp" 726
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_StandardSurface.uasset" 727
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_StandardSurface.uexp" 728
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_TransmissionSurface.uasset" 729
+"../../../Engine/Plugins/Interchange/Runtime/Content/Functions/MX_TransmissionSurface.uexp" 730
+"../../../Engine/Content/BasicShapes/Cube.ubulk" 731
+"../../../Engine/Content/BasicShapes/Cube.uasset" 732
+"../../../Engine/Content/BasicShapes/Cube.uexp" 733
+"../../../Engine/Content/BasicShapes/Plane.ubulk" 734
+"../../../Engine/Content/BasicShapes/Plane.uasset" 735
+"../../../Engine/Content/BasicShapes/Plane.uexp" 736
+"C:/Dare/Content/InputAxis/IA_Interact.uasset" 737
+"C:/Dare/Content/InputAxis/IA_Interact.uexp" 738
+"C:/Dare/Content/InputAxis/IA_PlayerAbility.uasset" 739
+"C:/Dare/Content/InputAxis/IA_PlayerAbility.uexp" 740
+"C:/Dare/Content/InputAxis/IA_Aim.uasset" 741
+"C:/Dare/Content/InputAxis/IA_Aim.uexp" 742
+"C:/Dare/Content/InputAxis/IA_PlayerDash.uasset" 743
+"C:/Dare/Content/InputAxis/IA_PlayerDash.uexp" 744
+"C:/Dare/Content/InputAxis/IA_PlayerAbilityTwo.uasset" 745
+"C:/Dare/Content/InputAxis/IA_PlayerAbilityTwo.uexp" 746
+"C:/Dare/Content/InputAxis/IA_KeyboardMove.uasset" 747
+"C:/Dare/Content/InputAxis/IA_KeyboardMove.uexp" 748
+"C:/Dare/Content/InputAxis/PlayerMovementMapping.uasset" 749
+"C:/Dare/Content/InputAxis/PlayerMovementMapping.uexp" 750
+"C:/Dare/Content/InputAxis/IA_AbilityRelease.uasset" 751
+"C:/Dare/Content/InputAxis/IA_AbilityRelease.uexp" 752
+"C:/Dare/Content/InputAxis/IA_ControllerMove.uasset" 753
+"C:/Dare/Content/InputAxis/IA_ControllerMove.uexp" 754
+"C:/Dare/Content/InputAxis/InputConfig.uasset" 755
+"C:/Dare/Content/InputAxis/InputConfig.uexp" 756
+"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uasset" 757
+"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uexp" 758
+"C:/Dare/Content/Assets/Characters/Tank/tank_rig_01_Skeleton.uasset" 759
+"C:/Dare/Content/Assets/Characters/Tank/tank_rig_01_Skeleton.uexp" 760
+"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 761
+"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uexp" 762
+"C:/Dare/Content/Assets/Characters/Tank/stationary_charge_01.uasset" 763
+"C:/Dare/Content/Assets/Characters/Tank/stationary_charge_01.uexp" 764
+"C:/Dare/Content/Assets/Characters/Tank/tank_idle_01__1_.uasset" 765
+"C:/Dare/Content/Assets/Characters/Tank/tank_idle_01__1_.uexp" 766
+"C:/Dare/Content/Assets/Characters/Tank/tank_run_02__1_.uasset" 767
+"C:/Dare/Content/Assets/Characters/Tank/tank_run_02__1_.uexp" 768
+"C:/Dare/Content/Blueprints/PlayerCharacters/TankAnimBP.uasset" 769
+"C:/Dare/Content/Blueprints/PlayerCharacters/TankAnimBP.uexp" 770
+"C:/Dare/Content/Assets/Characters/Tank/tank_rig_01_PhysicsAsset.uasset" 771
+"C:/Dare/Content/Assets/Characters/Tank/tank_rig_01_PhysicsAsset.uexp" 772
+"C:/Dare/Content/Assets/Characters/Tank/lambert2.uasset" 773
+"C:/Dare/Content/Assets/Characters/Tank/lambert2.uexp" 774
+"C:/Dare/Content/Assets/Characters/Tank/tank_rig_01.uasset" 775
+"C:/Dare/Content/Assets/Characters/Tank/tank_rig_01.uexp" 776
+"C:/Dare/Content/Blueprints/PlayerCharacters/BP_MuscleCharacter.uasset" 777
+"C:/Dare/Content/Blueprints/PlayerCharacters/BP_MuscleCharacter.uexp" 778
+"C:/Dare/Content/Materials/MaterialFunctions/UVTiling.uasset" 779
+"C:/Dare/Content/Materials/MaterialFunctions/UVTiling.uexp" 780
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uasset" 781
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uexp" 782
+"C:/Dare/Content/StarterContent/Textures/T_Water_N.ubulk" 783
+"C:/Dare/Content/StarterContent/Textures/T_Water_N.uasset" 784
+"C:/Dare/Content/StarterContent/Textures/T_Water_N.uexp" 785
+"../../../Engine/Content/EngineMaterials/BlendFunc_DefBlend.uasset" 786
+"../../../Engine/Content/EngineMaterials/BlendFunc_DefBlend.uexp" 787
+"../../../Engine/Content/EngineMaterials/BlendFunc_DefBase.uasset" 788
+"../../../Engine/Content/EngineMaterials/BlendFunc_DefBase.uexp" 789
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Screen.uasset" 790
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Screen.uexp" 791
+"C:/Dare/Content/Materials/Textures/WindWaker_T.ubulk" 792
+"C:/Dare/Content/Materials/Textures/WindWaker_T.uasset" 793
+"C:/Dare/Content/Materials/Textures/WindWaker_T.uexp" 794
+"C:/Dare/Content/Materials/Textures/testWave.ubulk" 795
+"C:/Dare/Content/Materials/Textures/testWave.uasset" 796
+"C:/Dare/Content/Materials/Textures/testWave.uexp" 797
+"C:/Dare/Content/Materials/M_Water.uasset" 798
+"C:/Dare/Content/Materials/M_Water.uexp" 799
+"C:/Dare/Content/Materials/M_Water_Inst.uasset" 800
+"C:/Dare/Content/Materials/M_Water_Inst.uexp" 801
+"C:/Dare/Content/Materials/ToonshaderTest/CellShader.uasset" 802
+"C:/Dare/Content/Materials/ToonshaderTest/CellShader.uexp" 803
+"C:/Dare/Content/Materials/ToonshaderTest/CellShader_Inst.uasset" 804
+"C:/Dare/Content/Materials/ToonshaderTest/CellShader_Inst.uexp" 805
+"C:/Dare/Content/Assets/Temporary/Materials/lambert21.uasset" 806
+"C:/Dare/Content/Assets/Temporary/Materials/lambert21.uexp" 807
+"C:/Dare/Content/Assets/Temporary/Meshes/Bush.ubulk" 808
+"C:/Dare/Content/Assets/Temporary/Meshes/Bush.uasset" 809
+"C:/Dare/Content/Assets/Temporary/Meshes/Bush.uexp" 810
+"C:/Dare/Content/Assets/Temporary/Materials/standardSurface1.uasset" 811
+"C:/Dare/Content/Assets/Temporary/Materials/standardSurface1.uexp" 812
+"C:/Dare/Content/Assets/Temporary/Meshes/Terrain.ubulk" 813
+"C:/Dare/Content/Assets/Temporary/Meshes/Terrain.uasset" 814
+"C:/Dare/Content/Assets/Temporary/Meshes/Terrain.uexp" 815
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_ORM.ubulk" 816
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_ORM.uasset" 817
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_ORM.uexp" 818
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.uasset" 819
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.uexp" 820
+"C:/Dare/Content/StarterContent/Textures/T_ground_Moss_D.ubulk" 821
+"C:/Dare/Content/StarterContent/Textures/T_ground_Moss_D.uasset" 822
+"C:/Dare/Content/StarterContent/Textures/T_ground_Moss_D.uexp" 823
+"C:/Dare/Content/Materials/Characters/MageBake_low_lambert1_Normal.uasset" 824
+"C:/Dare/Content/Materials/Characters/MageBake_low_lambert1_Normal.uexp" 825
+"C:/Dare/Content/Materials/MaterialFunctions/NormalStrength.uasset" 826
+"C:/Dare/Content/Materials/MaterialFunctions/NormalStrength.uexp" 827
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.uasset" 828
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.uexp" 829
+"C:/Dare/Content/Materials/M_Master.uasset" 830
+"C:/Dare/Content/Materials/M_Master.uexp" 831
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_BaseColor.ubulk" 832
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_BaseColor.uasset" 833
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_BaseColor.uexp" 834
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_OcclusionRoughnessMetallic.ubulk" 835
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_OcclusionRoughnessMetallic.uasset" 836
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_OcclusionRoughnessMetallic.uexp" 837
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_Normal.ubulk" 838
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_Normal.uasset" 839
+"C:/Dare/Content/Assets/Environment/LilypadA_lambert2_Normal.uexp" 840
+"C:/Dare/Content/Materials/MI_Lilypad.uasset" 841
+"C:/Dare/Content/Materials/MI_Lilypad.uexp" 842
+"C:/Dare/Content/Assets/Environment/LilypadA.ubulk" 843
+"C:/Dare/Content/Assets/Environment/LilypadA.uasset" 844
+"C:/Dare/Content/Assets/Environment/LilypadA.uexp" 845
+"C:/Dare/Content/StarterContent/Materials/M_Basic_Wall.uasset" 846
+"C:/Dare/Content/StarterContent/Materials/M_Basic_Wall.uexp" 847
+"C:/Dare/Content/StarterContent/Shapes/Shape_Cube.ubulk" 848
+"C:/Dare/Content/StarterContent/Shapes/Shape_Cube.uasset" 849
+"C:/Dare/Content/StarterContent/Shapes/Shape_Cube.uexp" 850
+"C:/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.ubulk" 851
+"C:/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uasset" 852
+"C:/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uexp" 853
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 854
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uexp" 855
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uasset" 856
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uexp" 857
+"C:/Dare/Content/Assets/Environment/M_Lilypad.uasset" 858
+"C:/Dare/Content/Assets/Environment/M_Lilypad.uexp" 859
+"C:/Dare/Content/Assets/Environment/M_TempLilypad.uasset" 860
+"C:/Dare/Content/Assets/Environment/M_TempLilypad.uexp" 861
+"C:/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_Skeleton.uasset" 862
+"C:/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_Skeleton.uexp" 863
+"C:/Dare/Content/Assets/Characters/Witch/pickup1loop.uasset" 864
+"C:/Dare/Content/Assets/Characters/Witch/pickup1loop.uexp" 865
+"C:/Dare/Content/Assets/Characters/Witch/WalkCastLoop.uasset" 866
+"C:/Dare/Content/Assets/Characters/Witch/WalkCastLoop.uexp" 867
+"C:/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_PhysicsAsset.uasset" 868
+"C:/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5_PhysicsAsset.uexp" 869
+"C:/Dare/Content/Assets/Characters/Witch/lambert1.uasset" 870
+"C:/Dare/Content/Assets/Characters/Witch/lambert1.uexp" 871
+"C:/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5.uasset" 872
+"C:/Dare/Content/Assets/Characters/Witch/mage_meshbonesV5.uexp" 873
+"C:/Dare/Content/Assets/Characters/Witch/pickup1start.uasset" 874
+"C:/Dare/Content/Assets/Characters/Witch/pickup1start.uexp" 875
+"C:/Dare/Content/Assets/Characters/Witch/walk1.uasset" 876
+"C:/Dare/Content/Assets/Characters/Witch/walk1.uexp" 877
+"C:/Dare/Content/Assets/Characters/Witch/waterstart1.uasset" 878
+"C:/Dare/Content/Assets/Characters/Witch/waterstart1.uexp" 879
+"C:/Dare/Content/Assets/Characters/Witch/pickup1end.uasset" 880
+"C:/Dare/Content/Assets/Characters/Witch/pickup1end.uexp" 881
+"C:/Dare/Content/Assets/Characters/Witch/idle1.uasset" 882
+"C:/Dare/Content/Assets/Characters/Witch/idle1.uexp" 883
+"C:/Dare/Content/Blueprints/PlayerCharacters/MageAnimBP.uasset" 884
+"C:/Dare/Content/Blueprints/PlayerCharacters/MageAnimBP.uexp" 885
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_MassInitializationMode.uasset" 886
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_MassInitializationMode.uexp" 887
+"../../../Engine/Plugins/FX/Niagara/Content/DefaultAssets/DefaultRIbbonMaterial.uasset" 888
+"../../../Engine/Plugins/FX/Niagara/Content/DefaultAssets/DefaultRIbbonMaterial.uexp" 889
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_PositionInitializationMode.uasset" 890
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_PositionInitializationMode.uexp" 891
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitSpeed.uasset" 892
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitSpeed.uexp" 893
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_RotationalSolve.uasset" 894
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_RotationalSolve.uexp" 895
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitAccel.uasset" 896
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Solver_LimitAccel.uexp" 897
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SizeScaleMode.uasset" 898
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SizeScaleMode.uexp" 899
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_UVFlippingMode.uasset" 900
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_UVFlippingMode.uexp" 901
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 902
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uexp" 903
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessEvaluation.uasset" 904
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessEvaluation.uexp" 905
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSetRandom.uasset" 906
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSetRandom.uexp" 907
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_LifetimeMode.uasset" 908
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_LifetimeMode.uexp" 909
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSet.uasset" 910
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Ribbons/ENiagara_UnsetDirectSet.uexp" 911
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SpriteRotationMode.uasset" 912
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_SpriteRotationMode.uexp" 913
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_ColorInitializationMode.uasset" 914
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_ColorInitializationMode.uexp" 915
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraChannelCorrelation.uasset" 916
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraChannelCorrelation.uexp" 917
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterLifeCycleMode.uasset" 918
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterLifeCycleMode.uexp" 919
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_InfiniteLoopDuration.uasset" 920
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_InfiniteLoopDuration.uexp" 921
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_EmitterStateOptions.uasset" 922
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_EmitterStateOptions.uexp" 923
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraInactiveMode.uasset" 924
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraInactiveMode.uexp" 925
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExecutionStateManagement.uasset" 926
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExecutionStateManagement.uexp" 927
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode_Limited.uasset" 928
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode_Limited.uexp" 929
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSystemInactiveMode.uasset" 930
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSystemInactiveMode.uexp" 931
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Particle_InfiniteLife.uasset" 932
+"../../../Engine/Plugins/FX/Niagara/Content/Icons/Modules/T_Icon_Particle_InfiniteLife.uexp" 933
+"C:/Dare/Content/VFX/P_Water.uasset" 934
+"C:/Dare/Content/VFX/P_Water.uexp" 935
+"C:/Dare/Content/Assets/Temporary/Materials/lambert22.uasset" 936
+"C:/Dare/Content/Assets/Temporary/Materials/lambert22.uexp" 937
+"C:/Dare/Content/Assets/Temporary/Materials/brown.uasset" 938
+"C:/Dare/Content/Assets/Temporary/Materials/brown.uexp" 939
+"C:/Dare/Content/Assets/Temporary/Materials/darkest_green.uasset" 940
+"C:/Dare/Content/Assets/Temporary/Materials/darkest_green.uexp" 941
+"C:/Dare/Content/Assets/Temporary/Meshes/Tree.ubulk" 942
+"C:/Dare/Content/Assets/Temporary/Meshes/Tree.uasset" 943
+"C:/Dare/Content/Assets/Temporary/Meshes/Tree.uexp" 944
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/SpriteRenderer/ENiagara_ScaleSpriteSize.uasset" 945
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/SpriteRenderer/ENiagara_ScaleSpriteSize.uexp" 946
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSphereDistributionMode.uasset" 947
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraSphereDistributionMode.uexp" 948
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraTorusDistributionMode.uasset" 949
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraTorusDistributionMode.uexp" 950
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_LocationShapes.uasset" 951
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_LocationShapes.uexp" 952
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_CylinderMode.uasset" 953
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_CylinderMode.uexp" 954
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_IntegerConversion.uasset" 955
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_IntegerConversion.uexp" 956
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_ScaleMode.uasset" 957
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_ScaleMode.uexp" 958
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_LWCConvertPosToVec.uasset" 959
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_LWCConvertPosToVec.uexp" 960
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraVector4_Channels.uasset" 961
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraVector4_Channels.uexp" 962
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Angles/ENiagara_AngleInput.uasset" 963
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Angles/ENiagara_AngleInput.uexp" 964
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_VelocityMode.uasset" 965
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Utility/ENiagara_VelocityMode.uexp" 966
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_RotationMode.uasset" 967
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_RotationMode.uexp" 968
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_ConeMode.uasset" 969
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_ConeMode.uexp" 970
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_AttributeSamplingApplyOutput.uasset" 971
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagara_AttributeSamplingApplyOutput.uexp" 972
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_OffsetMode.uasset" 973
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_OffsetMode.uexp" 974
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_BoxPlaneMode.uasset" 975
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagara_BoxPlaneMode.uexp" 976
+"C:/Dare/Content/VFX/Textures/T_Smoke.ubulk" 977
+"C:/Dare/Content/VFX/Textures/T_Smoke.uasset" 978
+"C:/Dare/Content/VFX/Textures/T_Smoke.uexp" 979
+"C:/Dare/Content/VFX/M_Poof.uasset" 980
+"C:/Dare/Content/VFX/M_Poof.uexp" 981
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformOrder.uasset" 982
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformOrder.uexp" 983
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagaraRingDiscMode.uasset" 984
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Location/ENiagaraRingDiscMode.uexp" 985
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraShapeTorusMode.uasset" 986
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraShapeTorusMode.uexp" 987
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 988
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uexp" 989
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformType.uasset" 990
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Transforms/ENiagara_TransformType.uexp" 991
+"C:/Dare/Content/VFX/P_Poof.uasset" 992
+"C:/Dare/Content/VFX/P_Poof.uexp" 993
+"C:/Dare/Content/Assets/Temporary/Materials/darkbrown.uasset" 994
+"C:/Dare/Content/Assets/Temporary/Materials/darkbrown.uexp" 995
+"C:/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject.uasset" 996
+"C:/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject.uexp" 997
+"C:/Dare/Content/RT_DirtObject.uasset" 998
+"C:/Dare/Content/RT_DirtObject.uexp" 999
+"C:/Dare/Content/Materials/M_WaterSpray.uasset" 1000
+"C:/Dare/Content/Materials/M_WaterSpray.uexp" 1001
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_Normal.ubulk" 1002
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_Normal.uasset" 1003
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_Normal.uexp" 1004
+"../../../Engine/Content/EngineResources/AICON-Green_Low.uasset" 1005
+"../../../Engine/Content/EngineResources/AICON-Green_Low.uexp" 1006
+"../../../Engine/Content/EngineResources/Black_Low.uasset" 1007
+"../../../Engine/Content/EngineResources/Black_Low.uexp" 1008
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uasset" 1009
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uexp" 1010
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uasset" 1011
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uexp" 1012
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uasset" 1013
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uexp" 1014
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset" 1015
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uexp" 1016
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uasset" 1017
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uexp" 1018
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 1019
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uexp" 1020
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uasset" 1021
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uexp" 1022
+"C:/Dare/Content/Materials/M_DirtObject.uasset" 1023
+"C:/Dare/Content/Materials/M_DirtObject.uexp" 1024
+"C:/Dare/Content/Blueprints/WaterSpellObjects/BP_WaterTestObject.uasset" 1025
+"C:/Dare/Content/Blueprints/WaterSpellObjects/BP_WaterTestObject.uexp" 1026
+"C:/Dare/Content/VFX/M_ParticleBase.uasset" 1027
+"C:/Dare/Content/VFX/M_ParticleBase.uexp" 1028
+"C:/Dare/Content/VFX/fireMesh.ubulk" 1029
+"C:/Dare/Content/VFX/fireMesh.uasset" 1030
+"C:/Dare/Content/VFX/fireMesh.uexp" 1031
+"C:/Dare/Content/VFX/P_Fire.uasset" 1032
+"C:/Dare/Content/VFX/P_Fire.uexp" 1033
+"C:/Dare/Content/Blueprints/WaterSpellObjects/BP_Extinguishable.uasset" 1034
+"C:/Dare/Content/Blueprints/WaterSpellObjects/BP_Extinguishable.uexp" 1035
+"C:/Dare/Content/Materials/Characters/MageBake_low_lambert1_BaseColor.uasset" 1036
+"C:/Dare/Content/Materials/Characters/MageBake_low_lambert1_BaseColor.uexp" 1037
+"C:/Dare/Content/Materials/Characters/MageBake_low_lambert1_OcclusionRoughnessMetallic.uasset" 1038
+"C:/Dare/Content/Materials/Characters/MageBake_low_lambert1_OcclusionRoughnessMetallic.uexp" 1039
+"C:/Dare/Content/Materials/Characters/MageMat.uasset" 1040
+"C:/Dare/Content/Materials/Characters/MageMat.uexp" 1041
+"C:/Dare/Content/Assets/Characters/Witch/Broom/pasted__pasted__lambert2.uasset" 1042
+"C:/Dare/Content/Assets/Characters/Witch/Broom/pasted__pasted__lambert2.uexp" 1043
+"C:/Dare/Content/Assets/Characters/Witch/Broom/pasted__lambert2.uasset" 1044
+"C:/Dare/Content/Assets/Characters/Witch/Broom/pasted__lambert2.uexp" 1045
+"C:/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_PhysicsAsset.uasset" 1046
+"C:/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_PhysicsAsset.uexp" 1047
+"C:/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_Skeleton.uasset" 1048
+"C:/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2_Skeleton.uexp" 1049
+"C:/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2.uasset" 1050
+"C:/Dare/Content/Assets/Characters/Witch/Broom/mage_broom_bonesmesh2.uexp" 1051
+"C:/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_BaseColor.uasset" 1052
+"C:/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_BaseColor.uexp" 1053
+"C:/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_OcclusionRoughnessMetallic.uasset" 1054
+"C:/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_OcclusionRoughnessMetallic.uexp" 1055
+"C:/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_Normal.uasset" 1056
+"C:/Dare/Content/Assets/Temporary/Meshes/Broombake_low_lambert1_Normal.uexp" 1057
+"C:/Dare/Content/Assets/Temporary/Meshes/M_Broom.uasset" 1058
+"C:/Dare/Content/Assets/Temporary/Meshes/M_Broom.uexp" 1059
+"C:/Dare/Content/Assets/Characters/Witch/Broom/BP_Broom.uasset" 1060
+"C:/Dare/Content/Assets/Characters/Witch/Broom/BP_Broom.uexp" 1061
+"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 1062
+"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uexp" 1063
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.ubulk" 1064
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uasset" 1065
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_Emissive.uexp" 1066
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.ubulk" 1067
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uasset" 1068
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_BaseColor.uexp" 1069
+"C:/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uasset" 1070
+"C:/Dare/Content/Assets/Environment/Textures/M_CleanHouse.uexp" 1071
+"C:/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uasset" 1072
+"C:/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uexp" 1073
+"C:/Dare/Content/Assets/Environment/BrokenHouseA.ubulk" 1074
+"C:/Dare/Content/Assets/Environment/BrokenHouseA.uasset" 1075
+"C:/Dare/Content/Assets/Environment/BrokenHouseA.uexp" 1076
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.ubulk" 1077
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uasset" 1078
+"C:/Dare/Content/Assets/Environment/Textures/T_HousePaint_DIRTY_BaseColor.uexp" 1079
+"C:/Dare/Content/Assets/Environment/Textures/M_House.uasset" 1080
+"C:/Dare/Content/Assets/Environment/Textures/M_House.uexp" 1081
+"C:/Dare/Content/Assets/Environment/PurpleHouse.ubulk" 1082
+"C:/Dare/Content/Assets/Environment/PurpleHouse.uasset" 1083
+"C:/Dare/Content/Assets/Environment/PurpleHouse.uexp" 1084
+"C:/Dare/Content/Blueprints/Rebuildables/RebuildableHouseFire.uasset" 1085
+"C:/Dare/Content/Blueprints/Rebuildables/RebuildableHouseFire.uexp" 1086
+"C:/Dare/Content/Blueprints/PlayerCharacters/BP_MageCharacter.uasset" 1087
+"C:/Dare/Content/Blueprints/PlayerCharacters/BP_MageCharacter.uexp" 1088
+"C:/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uasset" 1089
+"C:/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uexp" 1090
+"../../../Engine/Content/EngineSky/T_Sky_Stars.ubulk" 1091
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 1092
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uexp" 1093
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.ubulk" 1094
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 1095
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uexp" 1096
+"../../../Engine/Content/EngineSky/T_Sky_Blue.ubulk" 1097
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 1098
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uexp" 1099
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 1100
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uexp" 1101
+"../../../Engine/Content/EngineSky/SM_SkySphere.ubulk" 1102
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1103
+"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 1104
+"C:/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uasset" 1105
+"C:/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uexp" 1106
+"C:/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uexp" 1107
+"C:/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uasset" 1108
+"C:/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.ufont" 1109
+"C:/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uasset" 1110
+"C:/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uexp" 1111
+"C:/Dare/Content/Blueprints/UIWidgets/Test.uasset" 1112
+"C:/Dare/Content/Blueprints/UIWidgets/Test.uexp" 1113
+"C:/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uasset" 1114
+"C:/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uexp" 1115
+"C:/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uasset" 1116
+"C:/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uexp" 1117
+"C:/Dare/Content/Materials/ToonshaderTest/SobelFunction.uasset" 1118
+"C:/Dare/Content/Materials/ToonshaderTest/SobelFunction.uexp" 1119
+"C:/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.ubulk" 1120
+"C:/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" 1121
+"C:/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uexp" 1122
+"C:/Dare/Content/Materials/ToonshaderTest/OutlineShader.uasset" 1123
+"C:/Dare/Content/Materials/ToonshaderTest/OutlineShader.uexp" 1124
+"C:/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uasset" 1125
+"C:/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uexp" 1126
+"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 1127
+"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uexp" 1128
+"C:/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uasset" 1129
+"C:/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uexp" 1130
+"C:/Dare/Content/Blueprints/BP_Pickup.uasset" 1131
+"C:/Dare/Content/Blueprints/BP_Pickup.uexp" 1132
+"C:/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.ubulk" 1133
+"C:/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" 1134
+"C:/Dare/Content/StarterContent/Textures/T_Detail_Rocky_N.uexp" 1135
+"C:/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.ubulk" 1136
+"C:/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" 1137
+"C:/Dare/Content/StarterContent/Textures/T_Rock_Basalt_D.uexp" 1138
+"C:/Dare/Content/StarterContent/Textures/T_RockMesh_N.ubulk" 1139
+"C:/Dare/Content/StarterContent/Textures/T_RockMesh_N.uasset" 1140
+"C:/Dare/Content/StarterContent/Textures/T_RockMesh_N.uexp" 1141
+"C:/Dare/Content/StarterContent/Textures/T_RockMesh_M.ubulk" 1142
+"C:/Dare/Content/StarterContent/Textures/T_RockMesh_M.uasset" 1143
+"C:/Dare/Content/StarterContent/Textures/T_RockMesh_M.uexp" 1144
+"C:/Dare/Content/StarterContent/Props/Materials/M_Rock.uasset" 1145
+"C:/Dare/Content/StarterContent/Props/Materials/M_Rock.uexp" 1146
+"C:/Dare/Content/StarterContent/Props/SM_Rock.ubulk" 1147
+"C:/Dare/Content/StarterContent/Props/SM_Rock.uasset" 1148
+"C:/Dare/Content/StarterContent/Props/SM_Rock.uexp" 1149
+"C:/Dare/Content/Audio/Music/linda_playing_track.ubulk" 1150
+"C:/Dare/Content/Audio/Music/linda_playing_track.uasset" 1151
+"C:/Dare/Content/Audio/Music/linda_playing_track.uexp" 1152
+"C:/Dare/Content/Assets/UI/ProgressBar/Yellow_Sparkles.uasset" 1153
+"C:/Dare/Content/Assets/UI/ProgressBar/Yellow_Sparkles.uexp" 1154
+"C:/Dare/Content/Assets/UI/ProgressBar/Flame2.uasset" 1155
+"C:/Dare/Content/Assets/UI/ProgressBar/Flame2.uexp" 1156
+"C:/Dare/Content/UI/WBP_BasicUI.uasset" 1157
+"C:/Dare/Content/UI/WBP_BasicUI.uexp" 1158
+"C:/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uasset" 1159
+"C:/Dare/Content/Blueprints/UIWidgets/LevelEndWidget.uexp" 1160
+"C:/Dare/Content/Audio/Music/lindas_tutorial_track.ubulk" 1161
+"C:/Dare/Content/Audio/Music/lindas_tutorial_track.uasset" 1162
+"C:/Dare/Content/Audio/Music/lindas_tutorial_track.uexp" 1163
+"C:/Dare/Content/PlayerGameMode.uasset" 1164
+"C:/Dare/Content/PlayerGameMode.uexp" 1165
+"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uasset" 1166
+"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uexp" 1167
+"C:/Dare/Content/Levels/TutorialLevel.uexp" 1168
+"C:/Dare/Content/Levels/TutorialLevel.umap" 1169
+"C:/Dare/Content/Assets/UI/Menus/Key_art_WIP_blur.uasset" 1170
+"C:/Dare/Content/Assets/UI/Menus/Key_art_WIP_blur.uexp" 1171
+"C:/Dare/Content/Assets/UI/Menus/UI_Text_Box_4.uasset" 1172
+"C:/Dare/Content/Assets/UI/Menus/UI_Text_Box_4.uexp" 1173
+"C:/Dare/Content/Assets/UI/Menus/Trailer_3_-_Posed_Normal.uasset" 1174
+"C:/Dare/Content/Assets/UI/Menus/Trailer_3_-_Posed_Normal.uexp" 1175
+"C:/Dare/Content/Assets/UI/Menus/dmg_control_with_hat_and_horns_outline.uasset" 1176
+"C:/Dare/Content/Assets/UI/Menus/dmg_control_with_hat_and_horns_outline.uexp" 1177
+"C:/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uasset" 1178
+"C:/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uexp" 1179
+"C:/Dare/Content/Levels/MainMenu.uexp" 1180
+"C:/Dare/Content/Levels/MainMenu.umap" 1181
+"../../../Engine/Content/BasicShapes/Cylinder.ubulk" 1182
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 1183
+"../../../Engine/Content/BasicShapes/Cylinder.uexp" 1184
+"C:/Dare/Content/Audio/Music/linda_playing_track_Cue.uasset" 1185
+"C:/Dare/Content/Audio/Music/linda_playing_track_Cue.uexp" 1186
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.ubulk" 1187
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" 1188
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Rust_N.uexp" 1189
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.ubulk" 1190
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" 1191
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Rust_D.uexp" 1192
+"C:/Dare/Content/StarterContent/Textures/T_MacroVariation.uasset" 1193
+"C:/Dare/Content/StarterContent/Textures/T_MacroVariation.uexp" 1194
+"C:/Dare/Content/StarterContent/Materials/M_Metal_Rust.uasset" 1195
+"C:/Dare/Content/StarterContent/Materials/M_Metal_Rust.uexp" 1196
+"C:/Dare/Content/Assets/Temporary/Meshes/Signpost.ubulk" 1197
+"C:/Dare/Content/Assets/Temporary/Meshes/Signpost.uasset" 1198
+"C:/Dare/Content/Assets/Temporary/Meshes/Signpost.uexp" 1199
+"C:/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uasset" 1200
+"C:/Dare/Content/Blueprints/EarthSpellObjects/BP_GrowingObject2.uexp" 1201
+"C:/Dare/Content/Assets/RayAssets/InteractiveOutline.uasset" 1202
+"C:/Dare/Content/Assets/RayAssets/InteractiveOutline.uexp" 1203
+"C:/Dare/Content/Assets/Temporary/Materials/lambert19.uasset" 1204
+"C:/Dare/Content/Assets/Temporary/Materials/lambert19.uexp" 1205
+"C:/Dare/Content/Assets/Temporary/Meshes/Well.ubulk" 1206
+"C:/Dare/Content/Assets/Temporary/Meshes/Well.uasset" 1207
+"C:/Dare/Content/Assets/Temporary/Meshes/Well.uexp" 1208
+"C:/Dare/Content/Assets/Temporary/Materials/lambert18.uasset" 1209
+"C:/Dare/Content/Assets/Temporary/Materials/lambert18.uexp" 1210
+"C:/Dare/Content/Assets/Temporary/Meshes/Flower.ubulk" 1211
+"C:/Dare/Content/Assets/Temporary/Meshes/Flower.uasset" 1212
+"C:/Dare/Content/Assets/Temporary/Meshes/Flower.uexp" 1213
+"C:/Dare/Content/Assets/RayAssets/Flower_opacity_edit.ubulk" 1214
+"C:/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uasset" 1215
+"C:/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uexp" 1216
+"C:/Dare/Content/Assets/RayAssets/flower_emmissive_2.ubulk" 1217
+"C:/Dare/Content/Assets/RayAssets/flower_emmissive_2.uasset" 1218
+"C:/Dare/Content/Assets/RayAssets/flower_emmissive_2.uexp" 1219
+"C:/Dare/Content/Assets/RayAssets/flower_base_colour_edit.ubulk" 1220
+"C:/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uasset" 1221
+"C:/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uexp" 1222
+"C:/Dare/Content/Assets/RayAssets/FlowerMat.uasset" 1223
+"C:/Dare/Content/Assets/RayAssets/FlowerMat.uexp" 1224
+"C:/Dare/Content/Assets/RayAssets/flowers.uasset" 1225
+"C:/Dare/Content/Assets/RayAssets/flowers.uexp" 1226
+"C:/Dare/Content/Assets/RayAssets/yellow_flower.ubulk" 1227
+"C:/Dare/Content/Assets/RayAssets/yellow_flower.uasset" 1228
+"C:/Dare/Content/Assets/RayAssets/yellow_flower.uexp" 1229
+"C:/Dare/Content/Assets/RayAssets/blue_flower_test.ubulk" 1230
+"C:/Dare/Content/Assets/RayAssets/blue_flower_test.uasset" 1231
+"C:/Dare/Content/Assets/RayAssets/blue_flower_test.uexp" 1232
+"C:/Dare/Content/Assets/RayAssets/GrassRVT.uasset" 1233
+"C:/Dare/Content/Assets/RayAssets/GrassRVT.uexp" 1234
+"C:/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uasset" 1235
+"C:/Dare/Content/Assets/RayAssets/GrassRVT_Inst.uexp" 1236
+"C:/Dare/Content/Assets/RayAssets/RVTgrass.ubulk" 1237
+"C:/Dare/Content/Assets/RayAssets/RVTgrass.uasset" 1238
+"C:/Dare/Content/Assets/RayAssets/RVTgrass.uexp" 1239
+"C:/Dare/Content/Assets/RayAssets/pink_flower.ubulk" 1240
+"C:/Dare/Content/Assets/RayAssets/pink_flower.uasset" 1241
+"C:/Dare/Content/Assets/RayAssets/pink_flower.uexp" 1242
+"C:/Dare/Content/Blueprints/SoundtrackTrigger.uasset" 1243
+"C:/Dare/Content/Blueprints/SoundtrackTrigger.uexp" 1244
+"C:/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uasset" 1245
+"C:/Dare/Content/Blueprints/PlayerCharacters/BP_Camera.uexp" 1246
+"C:/Dare/Content/Blueprints/WaterSpellObjects/BP_CleanableHouse.uasset" 1247
+"C:/Dare/Content/Blueprints/WaterSpellObjects/BP_CleanableHouse.uexp" 1248
+"C:/Dare/Content/Assets/Temporary/Meshes/Trunk.ubulk" 1249
+"C:/Dare/Content/Assets/Temporary/Meshes/Trunk.uasset" 1250
+"C:/Dare/Content/Assets/Temporary/Meshes/Trunk.uexp" 1251
+"C:/Dare/Content/VFX/Textures/T_Leaf.ubulk" 1252
+"C:/Dare/Content/VFX/Textures/T_Leaf.uasset" 1253
+"C:/Dare/Content/VFX/Textures/T_Leaf.uexp" 1254
+"C:/Dare/Content/VFX/M_Leaf.uasset" 1255
+"C:/Dare/Content/VFX/M_Leaf.uexp" 1256
+"C:/Dare/Content/VFX/P_Leaf.uasset" 1257
+"C:/Dare/Content/VFX/P_Leaf.uexp" 1258
+"C:/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.ubulk" 1259
+"C:/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.uasset" 1260
+"C:/Dare/Content/Assets/Environment/Tree_lambert1_OcclusionRoughnessMetallic.uexp" 1261
+"C:/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.ubulk" 1262
+"C:/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.uasset" 1263
+"C:/Dare/Content/Assets/Environment/Tree_lambert1_BaseColor.uexp" 1264
 "../../../Engine/Content/EngineMaterials/T_Default_Normal.ubulk" 1265
 "../../../Engine/Content/EngineMaterials/T_Default_Normal.uasset" 1266
 "../../../Engine/Content/EngineMaterials/T_Default_Normal.uexp" 1267
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Tree.uasset" 1268
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Tree.uexp" 1269
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_1_.ubulk" 1270
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_1_.uasset" 1271
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Tree_1_.uexp" 1272
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.ubulk" 1273
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" 1274
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uexp" 1275
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.ubulk" 1276
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" 1277
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uexp" 1278
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Steel.uasset" 1279
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Steel.uexp" 1280
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.ubulk" 1281
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" 1282
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uexp" 1283
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.ubulk" 1284
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" 1285
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uexp" 1286
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" 1287
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uexp" 1288
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.ubulk" 1289
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.uasset" 1290
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Lantern.uexp" 1291
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uasset" 1292
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uexp" 1293
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Tree_opacity-01.uasset" 1294
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Tree_opacity-01.uexp" 1295
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uasset" 1296
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uexp" 1297
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/bushes.uasset" 1298
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/bushes.uexp" 1299
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.ubulk" 1300
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.uasset" 1301
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/finalbush.uexp" 1302
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.uexp" 1303
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.umap" 1304
+"C:/Dare/Content/Materials/MI_Tree.uasset" 1268
+"C:/Dare/Content/Materials/MI_Tree.uexp" 1269
+"C:/Dare/Content/Assets/Environment/Tree_1_.ubulk" 1270
+"C:/Dare/Content/Assets/Environment/Tree_1_.uasset" 1271
+"C:/Dare/Content/Assets/Environment/Tree_1_.uexp" 1272
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.ubulk" 1273
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" 1274
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Steel_D.uexp" 1275
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.ubulk" 1276
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" 1277
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Steel_N.uexp" 1278
+"C:/Dare/Content/StarterContent/Materials/M_Metal_Steel.uasset" 1279
+"C:/Dare/Content/StarterContent/Materials/M_Metal_Steel.uexp" 1280
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.ubulk" 1281
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" 1282
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Gold_N.uexp" 1283
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.ubulk" 1284
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" 1285
+"C:/Dare/Content/StarterContent/Textures/T_Metal_Aluminum_D.uexp" 1286
+"C:/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" 1287
+"C:/Dare/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uexp" 1288
+"C:/Dare/Content/Assets/Temporary/Meshes/Lantern.ubulk" 1289
+"C:/Dare/Content/Assets/Temporary/Meshes/Lantern.uasset" 1290
+"C:/Dare/Content/Assets/Temporary/Meshes/Lantern.uexp" 1291
+"C:/Dare/Content/Materials/M_WaterStill_Inst.uasset" 1292
+"C:/Dare/Content/Materials/M_WaterStill_Inst.uexp" 1293
+"C:/Dare/Content/Assets/RayAssets/Tree_opacity-01.uasset" 1294
+"C:/Dare/Content/Assets/RayAssets/Tree_opacity-01.uexp" 1295
+"C:/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uasset" 1296
+"C:/Dare/Content/Assets/RayAssets/M_Tree_Leaves.uexp" 1297
+"C:/Dare/Content/Assets/RayAssets/bushes.uasset" 1298
+"C:/Dare/Content/Assets/RayAssets/bushes.uexp" 1299
+"C:/Dare/Content/Assets/RayAssets/finalbush.ubulk" 1300
+"C:/Dare/Content/Assets/RayAssets/finalbush.uasset" 1301
+"C:/Dare/Content/Assets/RayAssets/finalbush.uexp" 1302
+"C:/Dare/Content/Levels/Level1Playable.uexp" 1303
+"C:/Dare/Content/Levels/Level1Playable.umap" 1304
+"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 1305
+"../../../Engine/Content/Maps/Entry_BuiltData.uexp" 1306
+"../../../Engine/Content/Maps/Entry.uexp" 1307
+"../../../Engine/Content/Maps/Entry.umap" 1308

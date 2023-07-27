@@ -58,8 +58,9 @@ void ARebuildableBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(bIsRebuilding)
+	if(bIsRebuilding && !bIsOnFire)
 	{
+		UE_LOG(LogTemp,Warning,TEXT("AAAAA"));
 		RebuildProgress += DeltaTime * 60.f;
 		if(RebuildProgress >= 100.f)
 		{

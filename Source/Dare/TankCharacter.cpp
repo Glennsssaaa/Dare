@@ -116,7 +116,7 @@ void ATankCharacter::AbilityTwo()
 		// If building destroyed, rebuild it
 		if(!Rebuildable) return;
 
-		if(bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem && !bToggleInteract)
+		if(bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem && !bToggleInteract && !Rebuildable->GetIsOnFire())
 		{
 			Rebuildable->SetIsRebuilding(true);
 			bToggleInteract=true;
@@ -238,10 +238,10 @@ void ATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* O
 void ATankCharacter::Interact(const FInputActionValue& Value)
 {
 	Super::Interact(Value);
-	if(PickupablePlayer!=nullptr)
+	/*if(PickupablePlayer!=nullptr)
 	{
 		ThrowItem();
-	}
+	}*/
 }
 
 void ATankCharacter::ThrowItem()
