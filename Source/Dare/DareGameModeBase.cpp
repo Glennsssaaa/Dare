@@ -18,9 +18,13 @@ void ADareGameModeBase::BeginPlay()
 	{
 		AObjectBase* ActorCast = Cast<AObjectBase>(FoundActor);
 		MaxPoints+=ActorCast->Points;
-		UE_LOG(LogTemp,Warning,TEXT("Casted"));
+		if(ActorCast->Points>0)
+		{
+			count++;
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("%lld"), count));
+		}
 	}
-	
+	MaxPoints-=50;
 }
 
 void ADareGameModeBase::UpdateScore(float objPoints)

@@ -31,4 +31,6 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void UIUpdate();
+
+	int count;
 };
