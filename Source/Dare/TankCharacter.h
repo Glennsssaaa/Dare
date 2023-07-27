@@ -64,7 +64,7 @@ protected:
 	UPROPERTY()
 	bool bIsInRebuildZone;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool bIsCharging = false;
 
 	UPROPERTY()
