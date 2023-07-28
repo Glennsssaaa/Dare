@@ -168,8 +168,6 @@ void ATankCharacter::Charge()
 			}
 		}
 	}
-	delete OverlappingActors.GetData();
-	
 	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
 	{
