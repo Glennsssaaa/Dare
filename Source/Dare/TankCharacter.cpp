@@ -154,9 +154,24 @@ void ATankCharacter::Charge()
 	}, 2.0f, false, 1.0f);
 	
 
+	// Check if already overlapping with a destructible object
+	TArray<AActor*> OverlappingActors;
+	ChargeHitBox->GetOverlappingActors(OverlappingActors, ADestructableObject::StaticClass());
+	if(OverlappingActors.Num() > 0)
+	{
+		// If so, destroy the destructible object
+		for(AActor* Actor : OverlappingActors)
+		{
+			if(ADestructableObject* DestructibleActor = Cast<ADestructableObject>(Actor))
+			{
+				DestructibleActor->Destroy();
+			}
+		}
+	}
+	delete OverlappingActors.GetData();
+	
 	// Set function to run every frame
 	GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
-		
 	{
 		DashAimArrowComponent->SetVisibility(false);
 		
@@ -186,9 +201,6 @@ void ATankCharacter::Charge()
 	}, GetWorld()->DeltaTimeSeconds / 3.f, true, 0.0f);
 
 }
-
-
-
 
 void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
