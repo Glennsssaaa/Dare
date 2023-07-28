@@ -32,10 +32,20 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UBoxComponent* Box;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+
+protected:
+	// Player Character pointers
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 	ACharacter* MageCharacter;
 	
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 	ACharacter* TankCharacter;
+
+	// Minimum and Maximum zoom distance
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float MinZoomDistance = 3250.f;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float MaxZoomDistance = 10000.f;
 
 };

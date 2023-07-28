@@ -24,7 +24,7 @@ public:
 	float MaxPoints=0;
 
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
-	float currentPoints=0;
+	float CurrentPoints=0;
 
 	UFUNCTION(BlueprintCallable)
 	void UpdateScore(float objPoints);

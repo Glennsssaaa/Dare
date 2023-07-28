@@ -29,9 +29,9 @@ void ADareGameModeBase::BeginPlay()
 
 void ADareGameModeBase::UpdateScore(float objPoints)
 {
-	currentPoints += objPoints;
+	CurrentPoints += objPoints;
 	
-	if(MaxPoints<=currentPoints)
+	if(MaxPoints<=CurrentPoints)
 	{
 		UE_LOG(LogTemp,Warning,TEXT("You win!"));
 	}

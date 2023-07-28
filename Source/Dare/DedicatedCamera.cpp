@@ -5,7 +5,9 @@
 
 #include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
+#include "GameFramework/Character.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ADedicatedCamera::ADedicatedCamera()
@@ -38,7 +40,7 @@ ADedicatedCamera::ADedicatedCamera()
 void ADedicatedCamera::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -46,5 +48,28 @@ void ADedicatedCamera::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if(!MageCharacter || !TankCharacter)
+	{
+		MageCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+		TankCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 1);
+		return;
+	}
+	
+	// Lerp the camera to the midpoint between the two characters
+	FVector NewLocation = FMath::Lerp(MageCharacter->GetActorLocation(), TankCharacter->GetActorLocation(), 0.5f);
+	
+	// Set the Z value of the new location to be the same as the camera's current location
+	NewLocation.Z = SpringArm->GetComponentLocation().Z;
+	
+	// Get distance between the two characters
+	const float Distance = FVector::Dist(MageCharacter->GetActorLocation(), TankCharacter->GetActorLocation());
+	
+	// Clamp values to minimum and maximum zoom distance
+	const float ClampedDistance = FMath::Clamp(Distance, MinZoomDistance, MinZoomDistance);
+
+	// Set new spring arm location and target arm length
+	SpringArm->SetWorldLocation(NewLocation);
+	SpringArm->TargetArmLength = ClampedDistance;
+	
 }
 
