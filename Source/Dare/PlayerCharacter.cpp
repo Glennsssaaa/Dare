@@ -25,13 +25,13 @@ APlayerCharacter::APlayerCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-
+	//Mesh Initialization
 	if(!PlayerMesh)
 	{
 		PlayerMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("PlayerSkeletalMesh"));
 		PlayerMesh->SetupAttachment(GetRootComponent());
 	}
-
+	//Collision Initialization
 	if(!InteractCollision)
 	{
 		InteractCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractCollision"));
@@ -46,7 +46,7 @@ APlayerCharacter::APlayerCharacter()
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
+	//Player Controller Initialization
 	APlayerController* PC = Cast<APlayerController>(GetController());
 	// Print the controller index
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
@@ -85,11 +85,11 @@ void APlayerCharacter::BeginPlay()
 	
 }
 
+//Overriden Ability Functions
 void APlayerCharacter::AbilityOne()
 {
 	
 }
-
 void APlayerCharacter::AbilityTwo()
 {
 	
@@ -110,34 +110,42 @@ void APlayerCharacter::Tick(float DeltaTime)
 		{
 			DashCooldown = 0.f;
 		}
-		
+
+		// If the player is missing dash charges, recharge one charge every cooldown
 		if (DashCooldown <= 0.f && DashCharges < DashChargesMax)
 		{
 			DashCharges++;
+			// Reset Dash Cooldown if the player is still missing charges
 			if(DashCharges < DashChargesMax)
 			{
 				DashCooldown = DashCooldownDefault;
 			}
 		}
 	}
-	
+
+	//Checks if pickupable item is valid
 	if(PickupableItem)
 	{
+		//Checks if player is holding item
 		if(bIsHoldingItem)
 		{
+			//Checks if item has been moved yet
 			if(!PickupableItem->bHasLerped)
 			{
+				//Move item towards front of player character
 				if(!TargetLocation.Equals(PickupableItem->GetActorLocation(),50) )
 				{
 					PickupableItem->SetActorLocation(FMath::Lerp(PickupableItem->GetActorLocation(),TargetLocation,DeltaTime*50));
 				}
 				else
 				{
+					//Once items moved, set bHasLerped to true
 					PickupableItem->bHasLerped=true;
 				}
 			}
 			else
 			{
+				//If item has been moved, set item to front of player character
 				PickupableItem->SetActorLocation((PlayerMesh->GetForwardVector()*600) + PlayerMesh->GetComponentLocation() + FVector(0,0,200));
 			}
 		}
@@ -156,13 +164,14 @@ void APlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 	if(MoveValue.Y != 0)
 	{
 		AddMovementInput(GetActorForwardVector(), MoveValue.Y * MovementSpeed);
-		
+		//Checks if player is rotating, if not, rotate player mesh
 		if(!bIsPlayerRotating)
 		{
 			PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds * RotationSpeed));
 		}
 	}
 
+	//Add movement input
 	if(MoveValue.X!=0)
 	{
 		AddMovementInput(GetActorRightVector(), MoveValue.X * MovementSpeed);
@@ -187,22 +196,27 @@ void APlayerCharacter::Aim(const FInputActionValue& Value){
 	{
 		LookValue=TempLookValue;
 	}
-	
+
+	//Player look direction by controller value
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
 	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds * (RotationSpeed * 4.f)));
 
 }
 
+//Function for throwing item (TO BE IMPROVED)
 void APlayerCharacter::ThrowItem()
 {
+	//Checks if player is holding item and if item is valid
 	if(PickupableItem!=nullptr)
 	{
 		if(bIsHoldingItem)
 		{
+			//Detach item from player and set physics to true
 			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 			bIsHoldingItem=false;
 			PickupableItem->SetActorEnableCollision(true);
 			PickupableItem->Mesh->SetSimulatePhysics(true);
+			//Add impulse to item
 			if(GetVelocity().Length()<=5)
 			{
 				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector());
@@ -211,11 +225,13 @@ void APlayerCharacter::ThrowItem()
 			{
 				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector() * 250000);
 			}
+			//Reset pickupableItems variables
 			PickupableItem->bHasLerped=false;
 			PickupableItem=nullptr;
 		}
 		else
 		{
+			//If player is not holding item, attach item to player and set physics to false
 			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 			PickupableItem->Mesh->SetSimulatePhysics(false);
 			PickupableItem->SetActorEnableCollision(false);
@@ -238,9 +254,11 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 		{
 			bToggleInteract=true;
 		}
-	
+
+		//If player is overlapping an object, interact with it
 		if(OverlappedObject)
 		{
+			//If object is a growing object, call interact function and set bPlayerFrozen to true
 			if(!OverlappedObject->IsA(AGrowingObject::StaticClass()))
 			{
 				OverlappedObject->Interact();
@@ -309,21 +327,24 @@ void APlayerCharacter::PlayerDash()
 void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-
+	//Casts to overlapped object
 	OverlappedObject = Cast<AInteractableObject>(OtherActor);
 	if(OverlappedObject!=nullptr)
 	{
 	}
+	//If overlapped object has the respawn tag, set respawn position to players current location
 	if(OtherActor->ActorHasTag("Respawn"))
 	{
 		RespawnPos = this->GetActorLocation();
 		UE_LOG(LogTemp,Warning,TEXT("RespawnVol"));
 	}
+	//If overlapped object has the kill tag, set player location to respawn position
 	if(OtherComp->ComponentHasTag("Kill"))
 	{
 		SetActorLocation(RespawnPos);
 		UE_LOG(LogTemp,Warning,TEXT("Respawn"));
 	}
+	//If overlapped object is a pickup item, set pickupable item to overlapped object
 	if(OtherActor->IsA(APickupItem::StaticClass()))
 	{
 		PickupableItem = Cast<APickupItem>(OtherActor);
@@ -337,6 +358,7 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
+	//When overlap ends, set overlapped object to null
 	if(OverlappedObject != nullptr)
 	{
 		OverlappedObject=nullptr;

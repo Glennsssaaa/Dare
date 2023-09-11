@@ -13,8 +13,6 @@ AMageCharacter::AMageCharacter()
 {
 }
 
-
-
 // Called when the game starts or when spawned
 void AMageCharacter::BeginPlay()
 {
@@ -28,15 +26,15 @@ void AMageCharacter::BeginPlay()
 void AMageCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//Debug message to show water trace positioning 
 	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Trace Start: %f"), NextLocation.Length()));
 }
 
 
 void AMageCharacter::Interact(const FInputActionValue& Value)
 {
-
+	//Use base class interact
 	Super::Interact(Value);
-
 }
 
 //Water Spell
@@ -72,16 +70,20 @@ void AMageCharacter::AbilityOne()
 void AMageCharacter::AbilityTwo()
 {
 	Super::AbilityTwo();
-	
+
+	//Toggle earth spell
 	if(bToggleEarth){
+		//Unfreezes player
 		bToggleEarth=false;
 		bPlayerFrozen=false;
 	}
+	//If earth spell toggled and player is not holding an object, and is overlapping an object
 	else if(!bToggleEarth && !bIsHoldingItem && OverlappedObject)
 	{
-
+		//If overlapped object is a growing object
 		if(OverlappedObject->IsA(AGrowingObject::StaticClass()))
 		{
+			//If growing object is finished, unfreeze player
 			if(OverlappedObject->bFinished)
 			{
 				bPlayerFrozen=false;
@@ -89,13 +91,16 @@ void AMageCharacter::AbilityTwo()
 			}
 			else
 			{
+				//Else, toggle earth spell and interact with object
 				bToggleEarth=true;
 				OverlappedObject->Interact();
 				bPlayerFrozen=true;
 			}
 		}
+		//Else if overlapped object is an interactable object and is tagged as a bridge
 		else if(OverlappedObject->IsA(AInteractableObject::StaticClass()) && OverlappedObject->ActorHasTag("Bridge"))
 		{
+				//If bridge is finished, unfreeze player
 			if(OverlappedObject->bFinished)
 			{
 				bPlayerFrozen=false;
@@ -103,6 +108,7 @@ void AMageCharacter::AbilityTwo()
 			}
 			else
 			{
+				//Else, toggle earth spell and interact with object
 				bToggleEarth=true;
 				OverlappedObject->Interact();
 				bPlayerFrozen=true;
@@ -117,26 +123,7 @@ void AMageCharacter::LineTraceArc() {
 	float mouseDist = FVector::Distance(PlayerMesh->GetComponentLocation(), MouseHit.Location);
 	GravityOffset = GravityOffset + FVector(0,0,gravity * 0.1);
 	float offset;
-
-	//Position modified by mouse position
-/*	if(bUsingKeyboard)
-	{
-		offset = mouseDist*5;
-	}
-	else
-	{
-		offset = LookValue.Length()*5000;
-	}
-*/
-	/*
-	if(LookValue.Length()==0)
-	{
-		offset = 0.5*5000;
-	}
-	else
-	{
-		offset = LookValue.Length()*5000;
-	}*/
+	
 	offset = LookValue.Length()*5000;
 
 	float next = pow((offset*0.01),2) / (offset / 1000);
@@ -172,3 +159,25 @@ void AMageCharacter::LineTraceArc() {
 		}
 	}
 }
+
+
+
+//Code for using mouse position for water spell (UNUSED)
+/*	if(bUsingKeyboard)
+	{
+		offset = mouseDist*5;
+	}
+	else
+	{
+		offset = LookValue.Length()*5000;
+	}
+*/
+/*
+	if(LookValue.Length()==0)
+	{
+		offset = 0.5*5000;
+	}
+	else
+	{
+		offset = LookValue.Length()*5000;
+	}*/

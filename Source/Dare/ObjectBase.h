@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+//Base object for interactables in level
 #pragma once
 
 #include "CoreMinimal.h"
@@ -23,8 +22,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	//Points assigned to object, used for tracking level score
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	float Points;
-
+	//Updates game score
 	void UpdateGameMode();
 };

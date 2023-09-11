@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+//Base class for rebuildable objects
 #pragma once
 
 #include "CoreMinimal.h"
@@ -16,12 +15,13 @@ public:
 	// Sets default values for this actor's properties
 	ARebuildableBase();
 
+	//Function to destroy or rebuild object
 	UFUNCTION(BlueprintCallable)
 	void ToggleHouseDestruction();
-
+	//Function to set object on fire or put out fire
 	UFUNCTION(BlueprintCallable)
 	void ToggleFire();
-
+	//Function to clean or dirty object
 	UFUNCTION(BlueprintCallable)
 	void ToggleClean();
 
@@ -57,29 +57,29 @@ protected:
 	// House Collision Box
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
 	UBoxComponent* HouseCollision;
-	
+
+	// Fire VFX
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UNiagaraSystem* FireVfx;
 
-
+	//Object on fire state
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	bool bIsOnFire = false;
-	
+	//Object destroyed state
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	bool bIsDestroyed = true;
-	
+	//Object clean state
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	bool bIsClean = false;
-
+	//Object rebuilding state
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	bool bIsRebuilding = false;
-	
+	//Object rebuilding progress
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	float RebuildProgress = 0.0f;
-
+	//Object rebuilding speed
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	float RebuildSpeed = 10.0f;
-
 
 public:	
 	// Called every frame

@@ -13,6 +13,7 @@ ADedicatedCamera::ADedicatedCamera()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	//Initialize components
 	if(!Box)
 	{
 		Box = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
@@ -29,9 +30,6 @@ ADedicatedCamera::ADedicatedCamera()
 		Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 		Camera->SetupAttachment(SpringArm);
 	}
-
-
-
 }
 
 // Called when the game starts or when spawned
@@ -45,6 +43,5 @@ void ADedicatedCamera::BeginPlay()
 void ADedicatedCamera::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 

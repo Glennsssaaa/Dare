@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+//Input config data, used for storing input actions and axis mappings
 #pragma once
 
 #include "CoreMinimal.h"

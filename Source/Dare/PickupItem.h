@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+//Class for items that can be picked up by the player
 #pragma once
 
 #include "CoreMinimal.h"
@@ -22,21 +21,20 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	//Held state
 	bool bIsHeld;
+	//If the item has been lerped to the player
 	bool bHasLerped;
 
-
+	//Object Mesh
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Mesh;
-	
+	//Object Collision
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "Components", meta = (AllowPrivateAccess="true"))
 	class UBoxComponent* InteractCollision;
-
-
-	
+	//Object Overlap Function
 	UFUNCTION()
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-	
+	//Objects respawn position (Usually where it was set in editor)
 	FVector RespawnPos;
-
 };

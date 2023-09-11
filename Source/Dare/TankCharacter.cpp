@@ -14,12 +14,14 @@
 // Sets default values
 ATankCharacter::ATankCharacter()
 {
+	//Initialize the ChargeHitBox
 	if(!ChargeHitBox)
 	{
 		ChargeHitBox = CreateDefaultSubobject<UBoxComponent>(TEXT("ChargeHitBox"));
 		ChargeHitBox->SetupAttachment(PlayerMesh);
 	}
 
+	//Initialize the DashAimArrowComponent
 	if(!DashAimArrowComponent)
 	{
 		DashAimArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("DashAimArrowComponent"));
@@ -38,10 +40,12 @@ ATankCharacter::ATankCharacter()
 void ATankCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	//Set the DashAimArrowComponent to be invisible
 	DashAimArrowComponent->SetVisibility(false);
+	//Set the ChargeHitBox to use the OnOverlapBegin function
 	ChargeHitBox->OnComponentBeginOverlap.AddDynamic(this, &ATankCharacter::OnOverlapBegin);
+	//Sets the dash distance
 	DashDistance = 1350.f;
-
 }
 
 // Called every frame
@@ -49,12 +53,15 @@ void ATankCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//Checks if the pickupableplayer is valid, and if the player is holding an item
 	if(PickupablePlayer)
 	{
 		if(bIsHoldingItem)
 		{
+			//Checks if the player has lerped to the target location
 			if(!PickupablePlayer->bHasLerped)
 			{
+				//Lerps the player to the target location
 				if(!TargetLocation.Equals(PickupablePlayer->GetActorLocation(),50) )
 				{
 					PickupablePlayer->SetActorLocation(FMath::Lerp(PickupablePlayer->GetActorLocation(),TargetLocation,DeltaTime*50));
@@ -64,6 +71,7 @@ void ATankCharacter::Tick(float DeltaTime)
 					PickupablePlayer->bHasLerped=true;
 				}
 			}
+			//Holds the item in front of the player
 			else
 			{
 				PickupablePlayer->SetActorLocation((PlayerMesh->GetForwardVector()*600) + PlayerMesh->GetComponentLocation() + FVector(0,0,200));
@@ -258,7 +266,8 @@ void ATankCharacter::Interact(const FInputActionValue& Value)
 void ATankCharacter::ThrowItem()
 {
 	Super::ThrowItem();
-	
+
+	//Throwing the item for the tank (TO BE IMPROVED)
 	if(bIsHoldingItem)
 	{
 		PickupablePlayer->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);

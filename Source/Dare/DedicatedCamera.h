@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+//Improved camera class
 #pragma once
 
 #include "CoreMinimal.h"
@@ -22,19 +21,19 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	//Spring arm component
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class USpringArmComponent* SpringArm;
-
+	//Camera component
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UCameraComponent* Camera;
-
+	//Box component
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UBoxComponent* Box;
-
+	//Mage Character
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	ACharacter* MageCharacter;
-	
+	//Tank Character
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	ACharacter* TankCharacter;
 

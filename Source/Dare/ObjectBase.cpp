@@ -28,6 +28,7 @@ void AObjectBase::Tick(float DeltaTime)
 
 void AObjectBase::UpdateGameMode()
 {
+	//Finds the game mode and updates the score
 	TArray<AActor*> FoundActors;
 
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(),ADareGameModeBase::StaticClass(),FoundActors);

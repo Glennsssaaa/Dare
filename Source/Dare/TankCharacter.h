@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+//Tank Character Class, inherits from PlayerCharacter
 #pragma once
 
 #include "CoreMinimal.h"
@@ -30,14 +29,17 @@ public:
 
 	// Tank Rebuild Ability
 	virtual void AbilityTwo() override;
-	
+
+	// Tank Charge Ability
 	UFUNCTION()
 	void Charge();
 
+	//Overlap Functions
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) override;
 
 	virtual void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) override;
 
+	//Interact Function
 	virtual void Interact(const FInputActionValue& Value);
 
 protected:
@@ -49,30 +51,38 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UArrowComponent* DashAimArrowComponent;
 
+	//Distance of the charge ability
 	UPROPERTY()
 	float ChargeDistance = 1500.f;
 
+	//Speed of the charge ability
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float ChargeSpeed = 1.f;
-	
+
+	//Rebuildable Object
 	UPROPERTY()
 	class ARebuildableBase* Rebuildable;
 
+	//Timer Handle for charge ability (Unused)
 	UPROPERTY()
 	FTimerHandle ChargeTestTimer;
 
+	//If player is within the rebuild zone of the rebuildable object
 	UPROPERTY()
 	bool bIsInRebuildZone;
 
+	//If player is charging
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool bIsCharging = false;
 
+	//If player can charge
 	UPROPERTY()
 	bool bCanPlayerCharge = true;
 
 	
 private:
+	//Mage character for throwing
 	class AMageCharacter* PickupablePlayer;
-
+	//Throwing function
 	void ThrowItem();
 };
