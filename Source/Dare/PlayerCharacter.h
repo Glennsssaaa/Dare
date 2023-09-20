@@ -49,7 +49,7 @@ public:
 	float RotationSpeed = 5.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
-	float MovementSpeed = 5.0f;
+	float MovementSpeed = 100.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	bool bUsingKeyboard;

@@ -149,8 +149,8 @@ void APlayerCharacter::Tick(float DeltaTime)
 void APlayerCharacter::KeyboardMove(const FInputActionValue& Value)
 {
 	// Player can't move during certain actions, for example if they are aiming the tank's charge attack
+
 	if(!bCanPlayerMove || bPlayerFrozen) { return; }
-	
 	MoveValue=Value.Get<FVector2D>();
 	//Add movement input
 	if(MoveValue.Y != 0)
