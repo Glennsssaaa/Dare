@@ -33,29 +33,30 @@ public:
 	
 	
 	UFUNCTION(BlueprintImplementableEvent)
-		void DrawFunc(AActor* hitActor, FVector2D hitUV);
+	void DrawFunc(AActor* hitActor, FVector2D hitUV);
+	bool bToggleWater;
+	bool bToggleEarth;
+	bool bHasLerped;
 
-	
+protected:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	FVector WaterHitPosition;
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
-	bool bEnableWaterVFX;
+	bool bEnableWaterVfx;
 	
-	bool bHasLerped;
 
-	
-	bool bToggleWater;
-	bool bToggleEarth;
+
 private:
 
 	//Line Trace Variables
 	void LineTraceArc();
 	FVector GravityOffset;
 	FVector NextLocation;
-	float gravity = -980;
-	bool isDrawing = false;
-	FTimerHandle lineTraceTimer; 
+	
+	float Gravity = -980;
+	bool bIsDrawing = false;
+	FTimerHandle LineTraceTimer; 
 	FCollisionQueryParams QueryParams;
 
 	int AbilitySelected = 0;

@@ -48,4 +48,9 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float MaxZoomDistance = 15000.f;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float ZoomAddition = 500.f;
+	
+	FTimerHandle StartTimer;
+
 };

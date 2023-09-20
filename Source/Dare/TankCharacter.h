@@ -56,9 +56,6 @@ protected:
 	float ChargeSpeed = 1.f;
 	
 	UPROPERTY()
-	class ARebuildableBase* Rebuildable;
-
-	UPROPERTY()
 	FTimerHandle ChargeTestTimer;
 
 	UPROPERTY()
@@ -70,6 +67,9 @@ protected:
 	UPROPERTY()
 	bool bCanPlayerCharge = true;
 
+	// Stores the object that the player can currently rebuild
+	UPROPERTY()
+	class ARebuildableBase* Rebuildable;
 	
 private:
 	class AMageCharacter* PickupablePlayer;

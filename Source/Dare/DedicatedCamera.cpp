@@ -40,6 +40,15 @@ ADedicatedCamera::ADedicatedCamera()
 void ADedicatedCamera::BeginPlay()
 {
 	Super::BeginPlay();
+	SetActorTickEnabled(false);
+
+	GetWorldTimerManager().SetTimer(StartTimer, [this]()
+	{
+		MageCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+		TankCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 1);
+		// Enable tick
+		SetActorTickEnabled(true);
+	}, .1f, false, 0.1f);
 
 }
 
@@ -65,7 +74,10 @@ void ADedicatedCamera::Tick(float DeltaTime)
 	const float Distance = FVector::Dist(MageCharacter->GetActorLocation(), TankCharacter->GetActorLocation());
 	
 	// Clamp values to minimum and maximum zoom distance
-	const float ClampedDistance = FMath::Clamp(Distance, MinZoomDistance, MinZoomDistance);
+	float ClampedDistance = FMath::Clamp(Distance, MinZoomDistance, MinZoomDistance);
+
+	// Clamp Clamped distance to between 1 and 3
+	ZoomAddition = FMath::Clamp(ClampedDistance, 1.f, 3.f);
 
 	// Set new spring arm location and target arm length
 	SpringArm->SetWorldLocation(NewLocation);

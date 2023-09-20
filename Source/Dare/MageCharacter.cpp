@@ -48,9 +48,9 @@ void AMageCharacter::AbilityOne()
 	if(bToggleWater)
 	{
 		//Clears water ability timer
-		GetWorldTimerManager().ClearTimer(lineTraceTimer);
+		GetWorldTimerManager().ClearTimer(LineTraceTimer);
 		GravityOffset = FVector::ZeroVector;
-		bEnableWaterVFX=false;
+		bEnableWaterVfx=false;
 		bToggleWater=false;
 		bCanInteract=true;
 		MovementSpeed=5.0f;
@@ -59,9 +59,9 @@ void AMageCharacter::AbilityOne()
 	{
 		//Calculates next position and calls function by timer
 		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 200);
-		isDrawing = true;
-		bEnableWaterVFX=true;
-		GetWorldTimerManager().SetTimer(lineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
+		bIsDrawing = true;
+		bEnableWaterVfx=true;
+		GetWorldTimerManager().SetTimer(LineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
 		bToggleWater=true;
 		bCanInteract=false;
 		MovementSpeed=0.5f;
@@ -115,7 +115,7 @@ void AMageCharacter::AbilityTwo()
 void AMageCharacter::LineTraceArc() {
 	//Trajectory calculation to move in arc
 	float mouseDist = FVector::Distance(PlayerMesh->GetComponentLocation(), MouseHit.Location);
-	GravityOffset = GravityOffset + FVector(0,0,gravity * 0.1);
+	GravityOffset = GravityOffset + FVector(0,0,Gravity * 0.1);
 	float offset;
 
 	//Position modified by mouse position
