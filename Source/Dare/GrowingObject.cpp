@@ -50,6 +50,7 @@ void AGrowingObject::Grow()
 			TempChar->bToggleEarth=false;
 		}
 		hasGrown=true;
+		UpdateGameMode();
 	}
 	else
 	{

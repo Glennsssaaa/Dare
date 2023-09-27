@@ -28,9 +28,16 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void UpdateScore(float objPoints);
-
+	UFUNCTION(BlueprintCallable)
+	void MageTutorialObject();
+	
 	UFUNCTION(BlueprintImplementableEvent)
 	void UIUpdate();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void MageTutorialUpdate();
+	UFUNCTION(BlueprintImplementableEvent)
+	void TankTutorialUpdate();
+	
 	int count;
 };
