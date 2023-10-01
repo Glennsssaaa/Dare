@@ -199,23 +199,26 @@ void APlayerCharacter::ThrowItem()
 	{
 		if(bIsHoldingItem)
 		{
+			PickupableItem->GetWorld()->GetTimerManager().SetTimer(PickupableItem->RespawnCooldown, PickupableItem, &APickupItem::Respawn, 5.0f, false);
+			
 			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 			bIsHoldingItem=false;
 			PickupableItem->SetActorEnableCollision(true);
 			PickupableItem->Mesh->SetSimulatePhysics(true);
 			if(GetVelocity().Length()<=5)
 			{
-				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector());
+				PickupableItem->Mesh->SetAllPhysicsLinearVelocity(PlayerMesh->GetForwardVector() * 500);
 			}
 			else
 			{
-				PickupableItem->Mesh->AddImpulse(PlayerMesh->GetForwardVector() * 250000);
+				PickupableItem->Mesh->SetAllPhysicsLinearVelocity(PlayerMesh->GetForwardVector() * 2000);
 			}
 			PickupableItem->bHasLerped=false;
 			PickupableItem=nullptr;
 		}
 		else
 		{
+			PickupableItem->GetWorld()->GetTimerManager().ClearTimer(PickupableItem->RespawnCooldown);
 			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 			PickupableItem->Mesh->SetSimulatePhysics(false);
 			PickupableItem->SetActorEnableCollision(false);
@@ -247,11 +250,11 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 				bPlayerFrozen = OverlappedObject->bFreezePlayer;
 			}
 		}
-		/*
+		
 		if(PickupableItem!=nullptr)
 		{
 			ThrowItem();
-		}*/
+		}
 	}
 }
 

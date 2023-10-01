@@ -22,6 +22,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	void Respawn();
 	bool bIsHeld;
 	bool bHasLerped;
 
@@ -31,12 +32,12 @@ public:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "Components", meta = (AllowPrivateAccess="true"))
 	class UBoxComponent* InteractCollision;
-
+	
 
 	
 	UFUNCTION()
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 	
 	FVector RespawnPos;
-
+	FTimerHandle RespawnCooldown;
 };

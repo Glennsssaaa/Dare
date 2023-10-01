@@ -31,7 +31,6 @@ void APickupItem::BeginPlay()
 void APickupItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -39,8 +38,14 @@ void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 {
 	if(OtherActor->ActorHasTag("Kill"))
 	{
-		SetActorLocation(RespawnPos);
-		
+		Respawn();
 	}
+}
+
+void APickupItem::Respawn()
+{
+	SetActorLocation(RespawnPos);
+	Mesh->SetPhysicsLinearVelocity(FVector(0.0f));
+	GetWorld()->GetTimerManager().ClearTimer(RespawnCooldown);
 }
 
