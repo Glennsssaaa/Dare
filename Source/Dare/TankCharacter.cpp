@@ -98,11 +98,8 @@ void ATankCharacter::AbilityOne()
 		{
 			// Step 2: If player presses input again within 5 seconds, they will
 			// charge forward in the direction they are aiming
-			
 			Charge();
-			
 			bHasAimedAbility = false;
-			bCanPlayerMove = true;
 		}
 	}
 	
