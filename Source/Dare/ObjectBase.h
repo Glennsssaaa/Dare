@@ -25,6 +25,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	float Points;
+	UPROPERTY(BlueprintReadWrite,EditAnywhere)
+	bool mageTutorialObject=false;
+	UPROPERTY(BlueprintReadWrite,EditAnywhere)
+	bool tankTutorialObject=false;
 
 	void UpdateGameMode();
 };

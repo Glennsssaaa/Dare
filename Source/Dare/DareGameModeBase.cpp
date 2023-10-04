@@ -27,6 +27,11 @@ void ADareGameModeBase::BeginPlay()
 	MaxPoints-=100;
 }
 
+void ADareGameModeBase::MageTutorialObject()
+{
+	MageTutorialUpdate();
+}
+
 void ADareGameModeBase::UpdateScore(float objPoints)
 {
 	CurrentPoints += objPoints;
