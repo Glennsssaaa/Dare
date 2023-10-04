@@ -334,8 +334,11 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 		PickupableItem = Cast<APickupItem>(OtherActor);
 		if(PickupableItem!=nullptr)
 		{
-			PickupableItem->Mesh->SetRenderCustomDepth(true);
-			UE_LOG(LogTemp,Warning,TEXT("Pickup"));
+			if(!PickupableItem->bIsPlaced)
+			{
+				PickupableItem->Mesh->SetRenderCustomDepth(true);
+				UE_LOG(LogTemp,Warning,TEXT("Pickup"));
+			}
 		}
 	}
 }
