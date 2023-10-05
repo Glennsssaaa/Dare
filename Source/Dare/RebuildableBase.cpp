@@ -7,6 +7,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "TankCharacter.h"
 #include "Components/BoxComponent.h"
+#include "Components/WidgetComponent.h"
 
 // Sets default values
 ARebuildableBase::ARebuildableBase()
@@ -38,6 +39,12 @@ ARebuildableBase::ARebuildableBase()
 		HouseCollision->SetupAttachment(DestroyedMesh);
 	}
 
+	if(!TutorialTip)
+	{
+		TutorialTip = CreateDefaultSubobject<UWidgetComponent>(TEXT("TutorialTip"));
+		TutorialTip->SetupAttachment(DestroyedMesh);
+	}
+
 	if(!FireVfx)
 	{
 	//	UNiagaraComponent* NiagaraComp = UNiagaraFunctionLibrary::SpawnSystemAttached(FireVfx, DestroyedMesh, NAME_None, FVector(0.f), FRotator(0.f), EAttachLocation::Type::KeepRelativeOffset, true);
@@ -60,7 +67,6 @@ void ARebuildableBase::Tick(float DeltaTime)
 
 	if(bIsRebuilding && !bIsOnFire)
 	{
-		UE_LOG(LogTemp,Warning,TEXT("AAAAA"));
 		RebuildProgress += DeltaTime * 60.f;
 		if(RebuildProgress >= 100.f)
 		{
@@ -83,6 +89,10 @@ void ARebuildableBase::ToggleHouseDestruction()
 		RebuildProgress = 0.f;
 		Points=-Points;
 		UpdateGameMode();
+		if(bForTutorial)
+		{
+			TutorialTip->SetVisibility(true);
+		}
 	}
 	else
 	{
@@ -101,6 +111,10 @@ void ARebuildableBase::ToggleHouseDestruction()
 			Points=-Points;
 		}
 		UpdateGameMode();
+		if(bForTutorial)
+		{
+			TutorialTip->SetVisibility(false);
+		}
 	}
 }
 

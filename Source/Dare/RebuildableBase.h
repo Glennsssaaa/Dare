@@ -57,6 +57,10 @@ protected:
 	// House Collision Box
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
 	UBoxComponent* HouseCollision;
+
+	// Widget Component
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
+	class UWidgetComponent* TutorialTip;
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UNiagaraSystem* FireVfx;
@@ -80,7 +84,8 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "House State")
 	float RebuildSpeed = 10.0f;
 
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bForTutorial = false;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

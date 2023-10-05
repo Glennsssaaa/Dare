@@ -21,6 +21,9 @@ public:
 
 	UPROPERTY(BlueprintReadOnly)
 	bool hasGrown;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bForTutorial = false;
 	
 private:
 	FTimerHandle growthTimer; 

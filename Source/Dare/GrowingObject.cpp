@@ -36,7 +36,7 @@ void AGrowingObject::Interact()
 
 void AGrowingObject::Grow()
 {
-
+	
 	if(ObjectMesh->GetRelativeScale3D().Length()>1)
 	{
 		GetWorldTimerManager().ClearTimer(growthTimer);
