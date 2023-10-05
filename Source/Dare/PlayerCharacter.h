@@ -175,4 +175,8 @@ protected:
 	UPROPERTY()
 	class APickupItem* PickupableItem;
 
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void ScreenShake();
+
 };
