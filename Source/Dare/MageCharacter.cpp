@@ -72,7 +72,21 @@ void AMageCharacter::AbilityOne()
 void AMageCharacter::AbilityTwo()
 {
 	Super::AbilityTwo();
-	
+	if(bToggleEarth)
+	{
+		bToggleEarth=false;
+		MovementSpeed=5.0f;
+		bCanInteract=true;
+	}
+	else if(!bToggleEarth && !bToggleWater && !bIsHoldingItem)
+	{
+		MovementSpeed=0.5f;
+		bToggleEarth=true;
+		bCanInteract=false;
+	}
+
+	///OLD EARTH SPELL CODE
+	/*
 	if(bToggleEarth){
 		bToggleEarth=false;
 		bPlayerFrozen=false;
@@ -108,7 +122,7 @@ void AMageCharacter::AbilityTwo()
 				bPlayerFrozen=true;
 			}
 		}
-	}
+	}*/
 }
 
 //Trace in arc for water spell

@@ -35,6 +35,7 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void DrawFunc(AActor* hitActor, FVector2D hitUV);
 	bool bToggleWater;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	bool bToggleEarth;
 	bool bHasLerped;
 
