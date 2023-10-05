@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "TankCharacter.h"
+
 #include "DestructableObject.h"
 #include "EnhancedInputComponent.h"
 #include "InputConfigData.h"
@@ -206,9 +207,9 @@ void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor*
 	if (OtherActor->ActorHasTag("Destruct") && bIsCharging && !bCanPlayerCharge)
 	{
 		// Smoke fog function at some point
-
 		// Instead do this for now
 		OtherActor->Destroy();
+		ScreenShake();
 	}
 
 	if(OtherComp->ComponentHasTag("Rebuild"))
@@ -231,7 +232,9 @@ void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor*
 		if(OverlappedCharacter->GetIsDestroyed() == false && bIsCharging)
 		{
 			OverlappedCharacter->ToggleHouseDestruction();
+			ScreenShake();
 		}
+
 	}
 
 	if(OtherActor->IsA(AMageCharacter::StaticClass()))
