@@ -2,6 +2,8 @@
 
 
 #include "PickupItem.h"
+
+#include "ItemPlacement.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -18,6 +20,7 @@ APickupItem::APickupItem()
 	InteractCollision->SetupAttachment(Mesh);
 	InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
 	InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &APickupItem::OnOverlapBegin);
+	
 }
 
 // Called when the game starts or when spawned
@@ -39,6 +42,18 @@ void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 	if(OtherActor->ActorHasTag("Kill"))
 	{
 		Respawn();
+	}
+	AItemPlacement* placement = Cast<AItemPlacement>(OtherActor);
+	if(placement!=nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Overlapped with placement"));
+		if(placement->Mesh->GetStaticMesh() == Mesh->GetStaticMesh())
+		{
+			SetActorTransform(OtherActor->GetActorTransform());
+			Mesh->SetMobility(EComponentMobility::Static);
+			bIsPlaced=true;
+			GetWorld()->GetTimerManager().ClearTimer(RespawnCooldown);
+		}
 	}
 }
 

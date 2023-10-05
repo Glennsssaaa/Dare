@@ -195,10 +195,12 @@ void APlayerCharacter::Aim(const FInputActionValue& Value){
 
 void APlayerCharacter::ThrowItem()
 {
+
 	if(PickupableItem!=nullptr)
 	{
 		if(bIsHoldingItem)
 		{
+			PickupableItem->Mesh->SetRenderCustomDepth(false);
 			PickupableItem->GetWorld()->GetTimerManager().SetTimer(PickupableItem->RespawnCooldown, PickupableItem, &APickupItem::Respawn, 5.0f, false);
 			
 			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
@@ -251,7 +253,7 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 			}
 		}
 		
-		if(PickupableItem!=nullptr)
+		if(PickupableItem!=nullptr && !PickupableItem->bIsPlaced)
 		{
 			ThrowItem();
 		}
@@ -330,9 +332,13 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 	if(OtherActor->IsA(APickupItem::StaticClass()))
 	{
 		PickupableItem = Cast<APickupItem>(OtherActor);
-		if(PickupableItem==nullptr)
+		if(PickupableItem!=nullptr)
 		{
-			PickupableItem=Cast<APickupItem>(OtherActor);
+			if(!PickupableItem->bIsPlaced)
+			{
+				PickupableItem->Mesh->SetRenderCustomDepth(true);
+				UE_LOG(LogTemp,Warning,TEXT("Pickup"));
+			}
 		}
 	}
 }
@@ -343,5 +349,9 @@ void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor*
 	if(OverlappedObject != nullptr)
 	{
 		OverlappedObject=nullptr;
+	}
+	if(PickupableItem!=nullptr)
+	{
+		PickupableItem->Mesh->SetRenderCustomDepth(false);
 	}
 }
