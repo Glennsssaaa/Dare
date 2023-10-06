@@ -74,7 +74,7 @@ void ADedicatedCamera::Tick(float DeltaTime)
 	const float Distance = FVector::Dist(MageCharacter->GetActorLocation(), TankCharacter->GetActorLocation());
 	
 	// Clamp values to minimum and maximum zoom distance
-	float ClampedDistance = FMath::Clamp(Distance, MinZoomDistance, MinZoomDistance);
+	float ClampedDistance = FMath::Clamp(Distance, MinZoomDistance, MaxZoomDistance);
 
 	// Clamp Clamped distance to between 1 and 3
 	ZoomAddition = FMath::Clamp(ClampedDistance, 1.f, 3.f);

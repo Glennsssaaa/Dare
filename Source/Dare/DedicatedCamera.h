@@ -46,7 +46,7 @@ protected:
 	float MinZoomDistance = 4000.f;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	float MaxZoomDistance = 15000.f;
+	float MaxZoomDistance = 12500.f;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float ZoomAddition = 500.f;
