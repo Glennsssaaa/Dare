@@ -36,26 +36,6 @@ void AGrowingObject::Interact()
 
 void AGrowingObject::Grow()
 {
-	
-	if(ObjectMesh->GetRelativeScale3D().Length()>1)
-	{
-		GetWorldTimerManager().ClearTimer(growthTimer);
-		bFinished=true;
-		TArray<AActor*> FoundActors;
-		UGameplayStatics::GetAllActorsOfClass(GetWorld(), AMageCharacter::StaticClass(), FoundActors);
-		AMageCharacter* TempChar = Cast<AMageCharacter>(FoundActors[0]);
-		if(TempChar!=nullptr)
-		{
-			TempChar->bPlayerFrozen=false;
-			TempChar->bToggleEarth=false;
-		}
-		hasGrown=true;
-		UpdateGameMode();
-	}
-	else
-	{
-		FVector NewScale = ObjectMesh->GetRelativeScale3D() + FVector(0.003,0.003,0.003);
-		ObjectMesh->SetRelativeScale3D(NewScale);
-	}
+
 }
 

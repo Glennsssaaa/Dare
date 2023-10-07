@@ -21,7 +21,7 @@ void ADareGameModeBase::BeginPlay()
 		if(ActorCast->Points>0)
 		{
 			count++;
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("%lld"), count));
+			//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("%lld"), count));
 		}
 	}
 	MaxPoints-=100;
