@@ -39,6 +39,8 @@ void APickupItem::Tick(float DeltaTime)
 void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Placed"));
+
 	if(OtherActor->ActorHasTag("Kill"))
 	{
 		Respawn();
@@ -50,9 +52,13 @@ void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 		if(placement->Mesh->GetStaticMesh() == Mesh->GetStaticMesh())
 		{
 			SetActorTransform(OtherActor->GetActorTransform());
-			Mesh->SetMobility(EComponentMobility::Static);
 			bIsPlaced=true;
 			GetWorld()->GetTimerManager().ClearTimer(RespawnCooldown);
+			OtherActor->Destroy();
+			UpdateGameMode();
+			UE_LOG(LogTemp, Warning, TEXT("Placed"));
+			Mesh->SetMobility(EComponentMobility::Static);
+
 		}
 	}
 }

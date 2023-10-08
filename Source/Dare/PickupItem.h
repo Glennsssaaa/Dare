@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "ObjectBase.h"
 #include "PickupItem.generated.h"
 
 UCLASS()
-class DARE_API APickupItem : public AActor
+class DARE_API APickupItem : public AObjectBase
 {
 	GENERATED_BODY()
 	
