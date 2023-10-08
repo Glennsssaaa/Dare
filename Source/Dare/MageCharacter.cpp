@@ -28,7 +28,6 @@ void AMageCharacter::BeginPlay()
 void AMageCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Trace Start: %f"), NextLocation.Length()));
 }
 
 
