@@ -46,6 +46,7 @@ void AObjectBase::UpdateGameMode()
 		}
 		else
 		{
+			UE_LOG(LogTemp,Warning,TEXT("Updating Score"));
 			GameMode->UpdateScore(Points);
 		}
 	}
