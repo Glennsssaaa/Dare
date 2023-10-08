@@ -211,19 +211,14 @@ void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor*
 
 	if(OtherComp->ComponentHasTag("Rebuild"))
 	{
-
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Rebuild")));
 		// ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
 		// OverlappedCharacter->ToggleHouseDestruction();
 		Rebuildable = Cast<ARebuildableBase>(OtherActor);
 		bIsInRebuildZone = true;
-		
-		
 	}
 
 	if(OtherComp->ComponentHasTag("HouseCollision") && bIsCharging && !bCanPlayerCharge)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Big Destory")));
 		ARebuildableBase* OverlappedCharacter = Cast<ARebuildableBase>(OtherActor);
 
 		if(OverlappedCharacter->GetIsDestroyed() == false && bIsCharging)
@@ -249,7 +244,6 @@ void ATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* O
 	// Player left build zone, stop rebuilding
 	if(OtherComp->ComponentHasTag("Rebuild"))
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, FString::Printf(TEXT("Left rebuild area")));
 		Rebuildable->SetIsRebuilding(false);
 		Rebuildable = nullptr;
 		bIsInRebuildZone = false;

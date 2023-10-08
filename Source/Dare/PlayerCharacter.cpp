@@ -142,8 +142,6 @@ void APlayerCharacter::Tick(float DeltaTime)
 			}
 		}
 	}
-	// Print Dash Charges to screen
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, FString::Printf(TEXT("Dash Charges: %d"), DashCharges));
 }
 
 void APlayerCharacter::KeyboardMove(const FInputActionValue& Value)
