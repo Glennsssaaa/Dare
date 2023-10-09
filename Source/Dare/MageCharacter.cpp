@@ -11,6 +11,7 @@
 // Sets default values
 AMageCharacter::AMageCharacter()
 {
+
 }
 
 
@@ -57,7 +58,7 @@ void AMageCharacter::AbilityOne()
 	else if(!bToggleWater && !bToggleEarth && !bIsHoldingItem)
 	{
 		//Calculates next position and calls function by timer
-		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 200);
+		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 1000);
 		bIsDrawing = true;
 		bEnableWaterVfx=true;
 		GetWorldTimerManager().SetTimer(LineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
@@ -150,8 +151,16 @@ void AMageCharacter::LineTraceArc() {
 	{
 		offset = LookValue.Length()*5000;
 	}*/
-	offset = LookValue.Length()*5000;
+	UE_LOG(LogTemp, Warning, TEXT("LookValue: %f"), LookValue.Y);
 
+	if(LookValue.Length()<0.5)
+	{
+		offset = 0.5*5000;
+	}
+	else
+	{
+		offset = LookValue.Length()*5000;
+	}
 	float next = pow((offset*0.01),2) / (offset / 1000);
 	FVector vec = PlayerMesh->GetForwardVector() * next;
 
@@ -161,13 +170,12 @@ void AMageCharacter::LineTraceArc() {
 
 	//Trace against the floor
 	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_WorldStatic , QueryParams);
-	//DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
 	
 	//If hit, call the drawfunc from blueprints with the hit actor and UV locations
 	if (Hit.bBlockingHit) {
 		NextLocation.X = GetActorLocation().X;
 		NextLocation.Y = GetActorLocation().Y;
-		NextLocation.Z = GetActorLocation().Z + 200;
+		NextLocation.Z = GetActorLocation().Z + 1000;
 		GravityOffset = FVector::ZeroVector;
 		FVector2D hitUV;
 		UGameplayStatics::FindCollisionUV(Hit,0,hitUV);

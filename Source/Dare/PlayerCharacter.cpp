@@ -185,7 +185,6 @@ void APlayerCharacter::Aim(const FInputActionValue& Value){
 	{
 		LookValue=TempLookValue;
 	}
-	
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
 	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds * (RotationSpeed * 4.f)));
 
