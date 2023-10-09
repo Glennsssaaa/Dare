@@ -77,7 +77,7 @@ void ATankCharacter::AbilityOne()
 {
 	Super::AbilityOne();
 
-	if(!bCanPlayerCharge) { return; }
+	if(!bCanPlayerCharge || !bCanPlayerDash) { return; }
 	// Make sure tank isn't currently holding an object
 	if(!bIsHoldingItem)
 	{
@@ -141,6 +141,7 @@ void ATankCharacter::Charge()
 
 	bCanPlayerCharge = false;
 	bCanPlayerMove = false;
+	bCanPlayerDash = false;
 	bIsCharging = true;
 	// Find the predicted location of the player after the dash
 	PredictedLocation = (PlayerMesh->GetForwardVector() * DashDistance) + GetActorLocation();
@@ -184,6 +185,7 @@ void ATankCharacter::Charge()
 			// Location reached, activate dash cooldown, re-enable input and camera lag
 			bCanPlayerMove = true;
 			bIsCharging = false;
+			bCanPlayerDash = true;
 
 			// Clear Dash timer to stop function running every frame
 			GetWorld()->GetTimerManager().ClearTimer(DashCooldownTimerHandle);
