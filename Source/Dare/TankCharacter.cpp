@@ -228,12 +228,6 @@ void ATankCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor*
 		}
 
 	}
-
-	if(OtherActor->IsA(AMageCharacter::StaticClass()))
-	{
-		PickupablePlayer= Cast<AMageCharacter>(OtherActor);
-	}
-	
 }
 
 void ATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -253,31 +247,9 @@ void ATankCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* O
 void ATankCharacter::Interact(const FInputActionValue& Value)
 {
 	Super::Interact(Value);
-	/*if(PickupablePlayer!=nullptr)
-	{
-		ThrowItem();
-	}*/
 }
 
 void ATankCharacter::ThrowItem()
 {
 	Super::ThrowItem();
-	
-	if(bIsHoldingItem)
-	{
-		PickupablePlayer->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
-		bIsHoldingItem=false;
-		PickupablePlayer->SetActorEnableCollision(true);
-	//	PickupablePlayer->GetCapsuleComponent()->SetSimulatePhysics(true);
-		//PickupablePlayer->GetCapsuleComponent()->AddImpulse(PlayerMesh->GetForwardVector()*250000);
-		PickupablePlayer->bHasLerped=false;
-	}
-	else
-	{
-		PickupablePlayer->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
-		PickupablePlayer->GetCapsuleComponent()->SetSimulatePhysics(false);
-		PickupablePlayer->SetActorEnableCollision(false);
-		bIsHoldingItem=true;
-		TargetLocation = (PlayerMesh->GetForwardVector()*6000)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
-	}
 }

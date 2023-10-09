@@ -211,7 +211,10 @@ void APlayerCharacter::ThrowItem()
 			}
 			else
 			{
-				PickupableItem->Mesh->SetAllPhysicsLinearVelocity(PlayerMesh->GetForwardVector() * 2000);
+				FVector velocity = PlayerMesh->GetForwardVector() * 2000;
+				//PickupableItem->Mesh->SetAllPhysicsLinearVelocity(PlayerMesh->GetForwardVector() * 2000);
+				PickupableItem->Mesh->SetPhysicsLinearVelocity(FVector(velocity.X,velocity.Y,velocity.Z+500));
+
 			}
 			PickupableItem->bHasLerped=false;
 			PickupableItem=nullptr;
@@ -330,7 +333,7 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 	if(OtherActor->IsA(APickupItem::StaticClass()))
 	{
 		PickupableItem = Cast<APickupItem>(OtherActor);
-		if(PickupableItem!=nullptr)
+		if(PickupableItem!=nullptr && !bIsHoldingItem)
 		{
 			if(!PickupableItem->bIsPlaced)
 			{
@@ -348,8 +351,9 @@ void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor*
 	{
 		OverlappedObject=nullptr;
 	}
-	if(PickupableItem!=nullptr)
+	if(PickupableItem!=nullptr && !bIsHoldingItem)
 	{
 		PickupableItem->Mesh->SetRenderCustomDepth(false);
+		PickupableItem=nullptr;
 	}
 }
