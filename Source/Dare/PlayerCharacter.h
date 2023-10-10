@@ -107,7 +107,11 @@ public:
 	
 	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
 	bool bPlayerFrozen;
-	
+
+		
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
+	bool bShowInteractButton=false;
+
 protected:
 	
 	// Dash Cooldown Timer
@@ -166,8 +170,6 @@ protected:
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 	FVector TargetLocation;
-	
-
 
 	UPROPERTY()
 	class AInteractableObject* OverlappedObject;

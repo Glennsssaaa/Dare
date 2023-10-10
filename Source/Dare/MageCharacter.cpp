@@ -62,8 +62,9 @@ void AMageCharacter::AbilityOne()
 		bCanInteract=true;
 		MovementSpeed=5.0f;
 	}
-	else if(!bToggleWater && !bToggleEarth && !bIsHoldingItem)
+	else if(!bToggleWater && !bIsHoldingItem)
 	{
+		bToggleEarth=false;
 		//Calculates next position and calls function by timer
 		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 750);
 		bIsDrawing = true;
@@ -85,8 +86,15 @@ void AMageCharacter::AbilityTwo()
 		MovementSpeed=5.0f;
 		bCanInteract=true;
 	}
-	else if(!bToggleEarth && !bToggleWater && !bIsHoldingItem)
+	else if(!bToggleEarth && !bIsHoldingItem)
 	{
+		if(bToggleWater)
+		{
+			bToggleWater=false;
+			GetWorldTimerManager().ClearTimer(LineTraceTimer);
+			GravityOffset = FVector::ZeroVector;
+			bEnableWaterVfx=false;
+		}
 		MovementSpeed=0.5f;
 		bToggleEarth=true;
 		bCanInteract=false;

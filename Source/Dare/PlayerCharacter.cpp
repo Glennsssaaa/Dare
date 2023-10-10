@@ -220,12 +220,13 @@ void APlayerCharacter::ThrowItem()
 		}
 		else
 		{
+			bIsHoldingItem=true;
 			PickupableItem->GetWorld()->GetTimerManager().ClearTimer(PickupableItem->RespawnCooldown);
 			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 			PickupableItem->Mesh->SetSimulatePhysics(false);
 			PickupableItem->SetActorEnableCollision(false);
-			bIsHoldingItem=true;
 			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
+			bShowInteractButton=false;
 		}
 	}
 }
@@ -329,6 +330,7 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 				if(!PickupableItem->bIsPlaced)
 				{
 					PickupableItem->Mesh->SetRenderCustomDepth(true);
+					bShowInteractButton=true;
 				}
 				else
 				{
@@ -348,6 +350,8 @@ void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor*
 	}
 	if(PickupableItem!=nullptr && !bIsHoldingItem)
 	{
+		bShowInteractButton=false;
 		PickupableItem->Mesh->SetRenderCustomDepth(false);
+		PickupableItem=nullptr;
 	}
 }
