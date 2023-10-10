@@ -217,6 +217,7 @@ void APlayerCharacter::ThrowItem()
 			}
 			PickupableItem->bHasLerped=false;
 			PickupableItem=nullptr;
+			UE_LOG(LogTemp,Warning,TEXT("Throw"));
 		}
 		else
 		{
@@ -226,6 +227,7 @@ void APlayerCharacter::ThrowItem()
 			PickupableItem->SetActorEnableCollision(false);
 			bIsHoldingItem=true;
 			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
+			UE_LOG(LogTemp,Warning,TEXT("Pickup"));
 		}
 	}
 }
@@ -331,13 +333,19 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 	}
 	if(OtherActor->IsA(APickupItem::StaticClass()))
 	{
-		PickupableItem = Cast<APickupItem>(OtherActor);
-		if(PickupableItem!=nullptr && !bIsHoldingItem)
+		if(PickupableItem==nullptr)
 		{
-			if(!PickupableItem->bIsPlaced)
+			PickupableItem = Cast<APickupItem>(OtherActor);
+			if(PickupableItem!=nullptr && !bIsHoldingItem)
 			{
-				PickupableItem->Mesh->SetRenderCustomDepth(true);
-				UE_LOG(LogTemp,Warning,TEXT("Pickup"));
+				if(!PickupableItem->bIsPlaced)
+				{
+					PickupableItem->Mesh->SetRenderCustomDepth(true);
+				}
+				else
+				{
+					PickupableItem=nullptr;
+				}
 			}
 		}
 	}
@@ -353,6 +361,5 @@ void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor*
 	if(PickupableItem!=nullptr && !bIsHoldingItem)
 	{
 		PickupableItem->Mesh->SetRenderCustomDepth(false);
-		PickupableItem=nullptr;
 	}
 }
