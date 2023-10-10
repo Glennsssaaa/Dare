@@ -29,6 +29,13 @@ void AMageCharacter::BeginPlay()
 void AMageCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	if(OverlappedObject && bToggleEarth)
+	{
+		if(!OverlappedObject->IsA(AGrowingObject::StaticClass()))
+		{
+			OverlappedObject->Interact();
+		}
+	}
 }
 
 

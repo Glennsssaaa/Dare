@@ -245,16 +245,6 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 		{
 			bToggleInteract=true;
 		}
-	
-		if(OverlappedObject)
-		{
-			if(!OverlappedObject->IsA(AGrowingObject::StaticClass()))
-			{
-				OverlappedObject->Interact();
-				bPlayerFrozen = OverlappedObject->bFreezePlayer;
-			}
-		}
-		
 		if(PickupableItem!=nullptr && !PickupableItem->bIsPlaced)
 		{
 			ThrowItem();
