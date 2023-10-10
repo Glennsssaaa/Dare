@@ -20,6 +20,7 @@ APickupItem::APickupItem()
 	InteractCollision->SetupAttachment(Mesh);
 	InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
 	InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &APickupItem::OnOverlapBegin);
+	Mesh->OnComponentBeginOverlap.AddDynamic(this, &APickupItem::OnKillOverlap);
 	
 }
 
@@ -39,12 +40,8 @@ void APickupItem::Tick(float DeltaTime)
 void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if(OtherActor->ActorHasTag("Kill"))
-	{
-		Respawn();
-	}
 	AItemPlacement* placement = Cast<AItemPlacement>(OtherActor);
-	if(placement!=nullptr)
+	if(placement!=nullptr && !bIsPlaced)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped with placement"));
 		if(placement->Mesh->GetStaticMesh() == Mesh->GetStaticMesh())
@@ -56,8 +53,17 @@ void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 			UpdateGameMode();
 			UE_LOG(LogTemp, Warning, TEXT("Placed"));
 			Mesh->SetMobility(EComponentMobility::Static);
-
+			
 		}
+	}
+}
+
+void APickupItem::OnKillOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if(OtherActor->ActorHasTag("Kill"))
+	{
+		Respawn();
 	}
 }
 

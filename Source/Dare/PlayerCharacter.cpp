@@ -185,7 +185,6 @@ void APlayerCharacter::Aim(const FInputActionValue& Value){
 	{
 		LookValue=TempLookValue;
 	}
-	
 	PlayerDirection = FVector(LookValue.Y,LookValue.X,0);
 	PlayerMesh->SetWorldRotation(FMath::Lerp(PlayerMesh->GetComponentRotation(), UKismetMathLibrary::MakeRotFromX(PlayerDirection), GetWorld()->DeltaTimeSeconds * (RotationSpeed * 4.f)));
 
@@ -194,7 +193,7 @@ void APlayerCharacter::Aim(const FInputActionValue& Value){
 void APlayerCharacter::ThrowItem()
 {
 
-	if(PickupableItem!=nullptr)
+	if(PickupableItem!=nullptr && !PickupableItem->bIsPlaced)
 	{
 		if(bIsHoldingItem)
 		{
@@ -221,12 +220,13 @@ void APlayerCharacter::ThrowItem()
 		}
 		else
 		{
+			bIsHoldingItem=true;
 			PickupableItem->GetWorld()->GetTimerManager().ClearTimer(PickupableItem->RespawnCooldown);
 			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 			PickupableItem->Mesh->SetSimulatePhysics(false);
 			PickupableItem->SetActorEnableCollision(false);
-			bIsHoldingItem=true;
 			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
+			bShowInteractButton=false;
 		}
 	}
 }
@@ -244,16 +244,6 @@ void APlayerCharacter::Interact(const FInputActionValue& Value)
 		{
 			bToggleInteract=true;
 		}
-	
-		if(OverlappedObject)
-		{
-			if(!OverlappedObject->IsA(AGrowingObject::StaticClass()))
-			{
-				OverlappedObject->Interact();
-				bPlayerFrozen = OverlappedObject->bFreezePlayer;
-			}
-		}
-		
 		if(PickupableItem!=nullptr && !PickupableItem->bIsPlaced)
 		{
 			ThrowItem();
@@ -332,13 +322,20 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 	}
 	if(OtherActor->IsA(APickupItem::StaticClass()))
 	{
-		PickupableItem = Cast<APickupItem>(OtherActor);
-		if(PickupableItem!=nullptr && !bIsHoldingItem)
+		if(PickupableItem==nullptr)
 		{
-			if(!PickupableItem->bIsPlaced)
+			PickupableItem = Cast<APickupItem>(OtherActor);
+			if(PickupableItem!=nullptr && !bIsHoldingItem)
 			{
-				PickupableItem->Mesh->SetRenderCustomDepth(true);
-				UE_LOG(LogTemp,Warning,TEXT("Pickup"));
+				if(!PickupableItem->bIsPlaced)
+				{
+					PickupableItem->Mesh->SetRenderCustomDepth(true);
+					bShowInteractButton=true;
+				}
+				else
+				{
+					PickupableItem=nullptr;
+				}
 			}
 		}
 	}
@@ -353,6 +350,7 @@ void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor*
 	}
 	if(PickupableItem!=nullptr && !bIsHoldingItem)
 	{
+		bShowInteractButton=false;
 		PickupableItem->Mesh->SetRenderCustomDepth(false);
 		PickupableItem=nullptr;
 	}
