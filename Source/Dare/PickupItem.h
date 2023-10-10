@@ -28,6 +28,7 @@ public:
 	bool bHasLerped;
 	bool bCanPlace;
 	bool bIsPlaced;
+	bool bScoreUpdated;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Mesh;

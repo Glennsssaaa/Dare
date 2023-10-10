@@ -43,17 +43,19 @@ void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 	AItemPlacement* placement = Cast<AItemPlacement>(OtherActor);
 	if(placement!=nullptr && !bIsPlaced)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Overlapped with placement"));
+		UE_LOG(LogTemp,Warning,TEXT("Placed"))
 		if(placement->Mesh->GetStaticMesh() == Mesh->GetStaticMesh())
 		{
 			SetActorTransform(OtherActor->GetActorTransform());
 			bIsPlaced=true;
 			GetWorld()->GetTimerManager().ClearTimer(RespawnCooldown);
 			OtherActor->Destroy();
-			UpdateGameMode();
-			UE_LOG(LogTemp, Warning, TEXT("Placed"));
 			Mesh->SetMobility(EComponentMobility::Static);
-			
+			if(!bScoreUpdated)
+			{
+				bScoreUpdated=true;
+				UpdateGameMode();
+			}
 		}
 	}
 }

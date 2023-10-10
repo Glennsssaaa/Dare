@@ -198,7 +198,6 @@ void APlayerCharacter::ThrowItem()
 		PickupableItem->Mesh->SetRenderCustomDepth(false);
 		if(bIsHoldingItem)
 		{
-			PickupableItem->Mesh->SetRenderCustomDepth(false);
 			PickupableItem->GetWorld()->GetTimerManager().SetTimer(PickupableItem->RespawnCooldown, PickupableItem, &APickupItem::Respawn, 5.0f, false);
 			
 			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
