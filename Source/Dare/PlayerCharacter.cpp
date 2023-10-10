@@ -193,7 +193,7 @@ void APlayerCharacter::Aim(const FInputActionValue& Value){
 void APlayerCharacter::ThrowItem()
 {
 
-	if(PickupableItem!=nullptr)
+	if(PickupableItem!=nullptr && !PickupableItem->bIsPlaced)
 	{
 		if(bIsHoldingItem)
 		{
@@ -217,7 +217,6 @@ void APlayerCharacter::ThrowItem()
 			}
 			PickupableItem->bHasLerped=false;
 			PickupableItem=nullptr;
-			UE_LOG(LogTemp,Warning,TEXT("Throw"));
 		}
 		else
 		{
@@ -227,7 +226,6 @@ void APlayerCharacter::ThrowItem()
 			PickupableItem->SetActorEnableCollision(false);
 			bIsHoldingItem=true;
 			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
-			UE_LOG(LogTemp,Warning,TEXT("Pickup"));
 		}
 	}
 }

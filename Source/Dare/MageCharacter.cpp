@@ -65,7 +65,7 @@ void AMageCharacter::AbilityOne()
 	else if(!bToggleWater && !bToggleEarth && !bIsHoldingItem)
 	{
 		//Calculates next position and calls function by timer
-		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 1000);
+		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 750);
 		bIsDrawing = true;
 		bEnableWaterVfx=true;
 		GetWorldTimerManager().SetTimer(LineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
@@ -177,12 +177,12 @@ void AMageCharacter::LineTraceArc() {
 
 	//Trace against the floor
 	GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd,ECC_WorldStatic , QueryParams);
-	
+	DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 1.0f, 0, 10.f);
 	//If hit, call the drawfunc from blueprints with the hit actor and UV locations
 	if (Hit.bBlockingHit) {
 		NextLocation.X = GetActorLocation().X;
 		NextLocation.Y = GetActorLocation().Y;
-		NextLocation.Z = GetActorLocation().Z + 1000;
+		NextLocation.Z = GetActorLocation().Z + 750;
 		GravityOffset = FVector::ZeroVector;
 		FVector2D hitUV;
 		UGameplayStatics::FindCollisionUV(Hit,0,hitUV);

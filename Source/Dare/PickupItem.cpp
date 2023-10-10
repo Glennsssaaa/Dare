@@ -41,7 +41,7 @@ void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	AItemPlacement* placement = Cast<AItemPlacement>(OtherActor);
-	if(placement!=nullptr)
+	if(placement!=nullptr && !bIsPlaced)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped with placement"));
 		if(placement->Mesh->GetStaticMesh() == Mesh->GetStaticMesh())
