@@ -33,7 +33,8 @@ void ADareGameModeBase::MageTutorialObject()
 void ADareGameModeBase::UpdateScore(float objPoints)
 {
 	CurrentPoints += objPoints;
-	
+	UE_LOG(LogTemp,Warning,TEXT("Current Points: %f"),CurrentPoints);
+	UE_LOG(LogTemp,Warning,TEXT("Max Points: %f"),MaxPoints);
 	if(MaxPoints<=CurrentPoints)
 	{
 		UE_LOG(LogTemp,Warning,TEXT("You win!"));

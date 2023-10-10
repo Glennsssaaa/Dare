@@ -195,6 +195,7 @@ void APlayerCharacter::ThrowItem()
 
 	if(PickupableItem!=nullptr && !PickupableItem->bIsPlaced)
 	{
+		PickupableItem->Mesh->SetRenderCustomDepth(false);
 		if(bIsHoldingItem)
 		{
 			PickupableItem->Mesh->SetRenderCustomDepth(false);
@@ -331,6 +332,7 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 				{
 					PickupableItem->Mesh->SetRenderCustomDepth(true);
 					bShowInteractButton=true;
+					PickupableItem->GetWorld()->GetTimerManager().SetTimer(PickupableItem->RespawnCooldown, PickupableItem, &APickupItem::Respawn, 5.0f, false);
 				}
 				else
 				{
@@ -344,6 +346,7 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
+	UE_LOG(LogTemp,Warning,TEXT("OverlapEnd"));
 	if(OverlappedObject != nullptr)
 	{
 		OverlappedObject=nullptr;
