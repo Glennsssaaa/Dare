@@ -735,22 +735,22 @@
 "../../../Engine/Content/Maps/Entry_BuiltData.uexp" 734
 "../../../Engine/Content/Maps/Entry.uexp" 735
 "../../../Engine/Content/Maps/Entry.umap" 736
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/Final_Menu_Image.uasset" 737
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/Final_Menu_Image.uexp" 738
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/FinalMainMenu/final_menu_button.uasset" 739
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/FinalMainMenu/final_menu_button.uexp" 740
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uexp" 741
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uasset" 742
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.ufont" 743
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uasset" 744
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uexp" 745
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/green_indicator.uasset" 746
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/green_indicator.uexp" 747
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uasset" 748
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uexp" 749
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Main_level_Soundtrack.ubulk" 750
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Main_level_Soundtrack.uasset" 751
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Main_level_Soundtrack.uexp" 752
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Menu_and_Intro_Soundtrack.ubulk" 737
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Menu_and_Intro_Soundtrack.uasset" 738
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Menu_and_Intro_Soundtrack.uexp" 739
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/Final_Menu_Image.uasset" 740
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/Final_Menu_Image.uexp" 741
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/FinalMainMenu/final_menu_button.uasset" 742
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/Menus/FinalMainMenu/final_menu_button.uexp" 743
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uexp" 744
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.uasset" 745
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B.ufont" 746
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uasset" 747
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Font/FallingSkySemibold-Bn7B_Font.uexp" 748
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/green_indicator.uasset" 749
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/Main_Menu/green_indicator.uexp" 750
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uasset" 751
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/MainMenuWidget.uexp" 752
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.uexp" 753
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/MainMenu.umap" 754
 "../../../Engine/Content/BasicShapes/Plane.ubulk" 755
@@ -1225,54 +1225,54 @@
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_WaterFinal.uexp" 1224
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RT_DirtObject.uasset" 1225
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RT_DirtObject.uexp" 1226
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterSpray.uasset" 1227
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterSpray.uexp" 1228
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_DIRTY_BaseColor.ubulk" 1229
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_DIRTY_BaseColor.uasset" 1230
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_DIRTY_BaseColor.uexp" 1231
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Emissive.ubulk" 1232
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Emissive.uasset" 1233
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Emissive.uexp" 1234
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Normal.ubulk" 1235
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Normal.uasset" 1236
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Normal.uexp" 1237
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_ORM.ubulk" 1238
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_ORM.uasset" 1239
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_ORM.uexp" 1240
-"../../../Engine/Content/EngineResources/AICON-Green_Low.uasset" 1241
-"../../../Engine/Content/EngineResources/AICON-Green_Low.uexp" 1242
-"../../../Engine/Content/EngineResources/Black_Low.uasset" 1243
-"../../../Engine/Content/EngineResources/Black_Low.uexp" 1244
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uasset" 1245
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uexp" 1246
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uasset" 1247
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uexp" 1248
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uasset" 1249
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uexp" 1250
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset" 1251
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uexp" 1252
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uasset" 1253
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uexp" 1254
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 1255
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uexp" 1256
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uasset" 1257
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uexp" 1258
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_DirtObject.uasset" 1259
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_DirtObject.uexp" 1260
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_BaseColor.ubulk" 1261
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_BaseColor.uasset" 1262
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_BaseColor.uexp" 1263
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_House.uasset" 1264
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_House.uexp" 1265
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/tank_charge_icon_1.uasset" 1266
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/tank_charge_icon_1.uexp" 1267
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/WaterBubble.uasset" 1268
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/WaterBubble.uexp" 1269
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.ubulk" 1270
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uasset" 1271
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uexp" 1272
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_CleanableHouse.uasset" 1273
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_CleanableHouse.uexp" 1274
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_DIRTY_BaseColor.ubulk" 1227
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_DIRTY_BaseColor.uasset" 1228
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_DIRTY_BaseColor.uexp" 1229
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Emissive.ubulk" 1230
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Emissive.uasset" 1231
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Emissive.uexp" 1232
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Normal.ubulk" 1233
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Normal.uasset" 1234
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_Normal.uexp" 1235
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_ORM.ubulk" 1236
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_ORM.uasset" 1237
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_ORM.uexp" 1238
+"../../../Engine/Content/EngineResources/AICON-Green_Low.uasset" 1239
+"../../../Engine/Content/EngineResources/AICON-Green_Low.uexp" 1240
+"../../../Engine/Content/EngineResources/Black_Low.uasset" 1241
+"../../../Engine/Content/EngineResources/Black_Low.uexp" 1242
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uasset" 1243
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.uexp" 1244
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uasset" 1245
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.uexp" 1246
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uasset" 1247
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uexp" 1248
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset" 1249
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uexp" 1250
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uasset" 1251
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugScalarValues.uexp" 1252
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 1253
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uexp" 1254
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uasset" 1255
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DebugFloat4Values.uexp" 1256
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_DirtObject.uasset" 1257
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_DirtObject.uexp" 1258
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_BaseColor.ubulk" 1259
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_BaseColor.uasset" 1260
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_HousePaint_BaseColor.uexp" 1261
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_House.uasset" 1262
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_House.uexp" 1263
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/tank_charge_icon_1.uasset" 1264
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/tank_charge_icon_1.uexp" 1265
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/WaterBubble.uasset" 1266
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/WaterBubble.uexp" 1267
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.ubulk" 1268
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uasset" 1269
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/PurpleHouse.uexp" 1270
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_CleanableHouse.uasset" 1271
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_CleanableHouse.uexp" 1272
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterSpray.uasset" 1273
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterSpray.uexp" 1274
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_WaterTestObject.uasset" 1275
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/WaterSpellObjects/BP_WaterTestObject.uexp" 1276
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/RebuildProgressBar.uasset" 1277
@@ -1388,317 +1388,332 @@
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Tutorial_Soundtrack.uexp" 1387
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/3StarsWidget.uasset" 1388
 "C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/3StarsWidget.uexp" 1389
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/stars_final_1_star.uasset" 1390
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/stars_final_1_star.uexp" 1391
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/reviews_1_star.uasset" 1392
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/reviews_1_star.uexp" 1393
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/1StarsWidget.uasset" 1394
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/1StarsWidget.uexp" 1395
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset" 1396
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uexp" 1397
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.uasset" 1398
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.uexp" 1399
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/PostProcessing/M_Transition.uasset" 1400
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/PostProcessing/M_Transition.uexp" 1401
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Transition.uasset" 1402
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Transition.uexp" 1403
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uasset" 1404
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uexp" 1405
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/TutorialTrigger.uasset" 1406
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/TutorialTrigger.uexp" 1407
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Side.ubulk" 1408
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Side.uasset" 1409
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Side.uexp" 1410
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_Side.ubulk" 1411
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_Side.uasset" 1412
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_Side.uexp" 1413
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.ubulk" 1414
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uasset" 1415
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uexp" 1416
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 1417
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uexp" 1418
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uasset" 1419
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uexp" 1420
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Lilypad.uasset" 1421
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Lilypad.uexp" 1422
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_TempLilypad.uasset" 1423
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_TempLilypad.uexp" 1424
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uasset" 1425
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uexp" 1426
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/M_CliffGrassPlane.uasset" 1427
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/M_CliffGrassPlane.uexp" 1428
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_GrassPlane.ubulk" 1429
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_GrassPlane.uasset" 1430
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_GrassPlane.uexp" 1431
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uasset" 1432
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uexp" 1433
-"../../../Engine/Content/EngineSky/T_Sky_Stars.ubulk" 1434
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 1435
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uexp" 1436
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.ubulk" 1437
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 1438
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uexp" 1439
-"../../../Engine/Content/EngineSky/T_Sky_Blue.ubulk" 1440
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 1441
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uexp" 1442
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 1443
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uexp" 1444
-"../../../Engine/Content/EngineSky/SM_SkySphere.ubulk" 1445
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1446
-"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 1447
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_InsideCorner.ubulk" 1448
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_InsideCorner.uasset" 1449
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_InsideCorner.uexp" 1450
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Pillar.ubulk" 1451
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Pillar.uasset" 1452
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Pillar.uexp" 1453
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uasset" 1454
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uexp" 1455
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.ubulk" 1456
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uasset" 1457
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uexp" 1458
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/M_WaterStill_Fountain.uasset" 1459
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/M_WaterStill_Fountain.uexp" 1460
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift1.uasset" 1461
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift1.uexp" 1462
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.ubulk" 1463
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uasset" 1464
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uexp" 1465
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.ubulk" 1466
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uasset" 1467
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uexp" 1468
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.ubulk" 1469
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uasset" 1470
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uexp" 1471
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uasset" 1472
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uexp" 1473
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uasset" 1474
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uexp" 1475
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.ubulk" 1476
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uasset" 1477
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uexp" 1478
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_BaseColor.ubulk" 1479
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_BaseColor.uasset" 1480
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_BaseColor.uexp" 1481
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_Normal.ubulk" 1482
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_Normal.uasset" 1483
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_Normal.uexp" 1484
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_OcclusionRoughnessMetallic.ubulk" 1485
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_OcclusionRoughnessMetallic.uasset" 1486
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_OcclusionRoughnessMetallic.uexp" 1487
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Rock.uasset" 1488
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Rock.uexp" 1489
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Boulder_low.ubulk" 1490
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Boulder_low.uasset" 1491
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Boulder_low.uexp" 1492
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Emissive.ubulk" 1493
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Emissive.uasset" 1494
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Emissive.uexp" 1495
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_BaseColor.ubulk" 1496
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_BaseColor.uasset" 1497
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_BaseColor.uexp" 1498
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_ORM.ubulk" 1499
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_ORM.uasset" 1500
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_ORM.uexp" 1501
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Normal.ubulk" 1502
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Normal.uasset" 1503
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Normal.uexp" 1504
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Lantern.uasset" 1505
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Lantern.uexp" 1506
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern.ubulk" 1507
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern.uasset" 1508
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern.uexp" 1509
-"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 1510
-"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uexp" 1511
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift2.uasset" 1512
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift2.uexp" 1513
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_1.uasset" 1514
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_1.uexp" 1515
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_2.uasset" 1516
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_2.uexp" 1517
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_3.uasset" 1518
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_3.uexp" 1519
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_4.uasset" 1520
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_4.uexp" 1521
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_5.uasset" 1522
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_5.uexp" 1523
-"../../../Engine/Content/BasicShapes/Sphere.ubulk" 1524
-"../../../Engine/Content/BasicShapes/Sphere.uasset" 1525
-"../../../Engine/Content/BasicShapes/Sphere.uexp" 1526
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Cutscene.uasset" 1527
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Cutscene.uexp" 1528
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_TreeTrunkBurnt2_low_BaseColor.ubulk" 1529
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_TreeTrunkBurnt2_low_BaseColor.uasset" 1530
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_TreeTrunkBurnt2_low_BaseColor.uexp" 1531
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_TreeTrunk_Burnt.uasset" 1532
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_TreeTrunk_Burnt.uexp" 1533
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_PoofTrail.uasset" 1534
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_PoofTrail.uexp" 1535
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_PoofSpline.uasset" 1536
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_PoofSpline.uexp" 1537
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_IntroCutscene.uasset" 1538
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_IntroCutscene.uexp" 1539
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceFrequencyMode.uasset" 1540
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceFrequencyMode.uexp" 1541
-"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl32.uasset" 1542
-"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl32.uexp" 1543
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraCurlNoiseQuality.uasset" 1544
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraCurlNoiseQuality.uexp" 1545
-"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl64.uasset" 1546
-"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl64.uexp" 1547
-"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl16.uasset" 1548
-"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl16.uexp" 1549
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceMode.uasset" 1550
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceMode.uexp" 1551
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindGroundMaskMode.uasset" 1552
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindGroundMaskMode.uexp" 1553
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Wind.uasset" 1554
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Wind.uexp" 1555
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind_02.ubulk" 1556
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind_02.uasset" 1557
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind_02.uexp" 1558
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindCombingMode.uasset" 1559
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindCombingMode.uexp" 1560
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceContributionMode.uasset" 1561
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceContributionMode.uexp" 1562
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindOffsetMode.uasset" 1563
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindOffsetMode.uexp" 1564
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionDistanceMode.uasset" 1565
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionDistanceMode.uexp" 1566
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionMode.uasset" 1567
-"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionMode.uexp" 1568
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Leaf.uasset" 1569
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Leaf.uexp" 1570
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind.ubulk" 1571
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind.uasset" 1572
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind.uexp" 1573
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/P_Wind.uasset" 1574
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/P_Wind.uexp" 1575
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Camera/BP_Camera.uasset" 1576
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Camera/BP_Camera.uexp" 1577
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Corner.ubulk" 1578
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Corner.uasset" 1579
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Corner.uexp" 1580
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uasset" 1581
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uexp" 1582
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uasset" 1583
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uexp" 1584
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.ubulk" 1585
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" 1586
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uexp" 1587
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uasset" 1588
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uexp" 1589
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uasset" 1590
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uexp" 1591
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDark_LayerInfo.uasset" 1592
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDark_LayerInfo.uexp" 1593
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.ubulk" 1594
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uasset" 1595
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uexp" 1596
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_GrassRVT_New.uasset" 1597
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_GrassRVT_New.uexp" 1598
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/MI_Grass_NoRVT.uasset" 1599
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/MI_Grass_NoRVT.uexp" 1600
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_NoRVT.ubulk" 1601
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_NoRVT.uasset" 1602
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_NoRVT.uexp" 1603
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RVT/LandscapeHeight.uasset" 1604
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RVT/LandscapeHeight.uexp" 1605
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.ubulk" 1606
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uasset" 1607
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uexp" 1608
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uasset" 1609
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uexp" 1610
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Basic_Wall.uasset" 1611
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Basic_Wall.uexp" 1612
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.ubulk" 1613
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.uasset" 1614
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.uexp" 1615
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uasset" 1616
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uexp" 1617
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/Ground_LayerInfo.uasset" 1618
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/Ground_LayerInfo.uexp" 1619
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Pillar.ubulk" 1620
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Pillar.uasset" 1621
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Pillar.uexp" 1622
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_OutsideCorner.ubulk" 1623
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_OutsideCorner.uasset" 1624
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_OutsideCorner.uexp" 1625
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert1.uasset" 1626
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert1.uexp" 1627
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert2.uasset" 1628
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert2.uexp" 1629
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Fountain_test.ubulk" 1630
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Fountain_test.uasset" 1631
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Fountain_test.uexp" 1632
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDarker_LayerInfo.uasset" 1633
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDarker_LayerInfo.uexp" 1634
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/MI_GrassRVT_New_Inst.uasset" 1635
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/MI_GrassRVT_New_Inst.uexp" 1636
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_RVT.ubulk" 1637
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_RVT.uasset" 1638
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_RVT.uexp" 1639
-"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uasset" 1640
-"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uexp" 1641
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Whole.ubulk" 1642
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Whole.uasset" 1643
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Whole.uexp" 1644
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Modular.ubulk" 1645
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Modular.uasset" 1646
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Modular.uexp" 1647
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uasset" 1648
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uexp" 1649
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/IntroCutsceneLevelFinal.uexp" 1650
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/IntroCutsceneLevelFinal.umap" 1651
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPotBase.ubulk" 1652
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPotBase.uasset" 1653
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPotBase.uexp" 1654
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_YellowPot.uasset" 1655
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_YellowPot.uexp" 1656
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPot.ubulk" 1657
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPot.uasset" 1658
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPot.uexp" 1659
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerYellow.uasset" 1660
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerYellow.uexp" 1661
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_TestWater.uasset" 1662
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_TestWater.uexp" 1663
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/ChargeBubble.uasset" 1664
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/ChargeBubble.uexp" 1665
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uasset" 1666
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uexp" 1667
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uasset" 1668
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uexp" 1669
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 1670
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uexp" 1671
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uasset" 1672
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uexp" 1673
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPotBase.ubulk" 1674
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPotBase.uasset" 1675
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPotBase.uexp" 1676
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PinkPot.uasset" 1677
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PinkPot.uexp" 1678
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPot.ubulk" 1679
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPot.uasset" 1680
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPot.uexp" 1681
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPink.uasset" 1682
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPink.uexp" 1683
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePotBase.ubulk" 1684
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePotBase.uasset" 1685
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePotBase.uexp" 1686
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PurplePot.uasset" 1687
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PurplePot.uexp" 1688
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePot.ubulk" 1689
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePot.uasset" 1690
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePot.uexp" 1691
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPurple.uasset" 1692
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPurple.uexp" 1693
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_ObjectGuideline.uasset" 1694
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_ObjectGuideline.uexp" 1695
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/RepairBubble.uasset" 1696
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/RepairBubble.uexp" 1697
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uasset" 1698
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uexp" 1699
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_ItemPlacement.uasset" 1700
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_ItemPlacement.uexp" 1701
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.uexp" 1702
-"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.umap" 1703
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Main_level_Soundtrack.ubulk" 1390
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Main_level_Soundtrack.uasset" 1391
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Audio/Music/Main_level_Soundtrack.uexp" 1392
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/stars_final_1_star.uasset" 1393
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/stars_final_1_star.uexp" 1394
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/reviews_1_star.uasset" 1395
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/FinalUIAssets/End_Screen/reviews_1_star.uexp" 1396
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/1StarsWidget.uasset" 1397
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/1StarsWidget.uexp" 1398
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset" 1399
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uexp" 1400
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.uasset" 1401
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.uexp" 1402
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/PostProcessing/M_Transition.uasset" 1403
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/PostProcessing/M_Transition.uexp" 1404
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Transition.uasset" 1405
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Transition.uexp" 1406
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uasset" 1407
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/PlayerGameMode.uexp" 1408
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/TutorialTrigger.uasset" 1409
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/TutorialTrigger.uexp" 1410
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Side.ubulk" 1411
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Side.uasset" 1412
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Side.uexp" 1413
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_Side.ubulk" 1414
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_Side.uasset" 1415
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_Side.uexp" 1416
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.ubulk" 1417
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uasset" 1418
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/T_GrassDistortionNoise.uexp" 1419
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 1420
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uexp" 1421
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uasset" 1422
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.uexp" 1423
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Lilypad.uasset" 1424
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_Lilypad.uexp" 1425
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_TempLilypad.uasset" 1426
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_TempLilypad.uexp" 1427
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uasset" 1428
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_EarthBridge.uexp" 1429
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/M_CliffGrassPlane.uasset" 1430
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/M_CliffGrassPlane.uexp" 1431
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_GrassPlane.ubulk" 1432
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_GrassPlane.uasset" 1433
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_GrassPlane.uexp" 1434
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uasset" 1435
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/InteractiveOutline.uexp" 1436
+"../../../Engine/Content/EngineSky/T_Sky_Stars.ubulk" 1437
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 1438
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uexp" 1439
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.ubulk" 1440
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 1441
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uexp" 1442
+"../../../Engine/Content/EngineSky/T_Sky_Blue.ubulk" 1443
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 1444
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uexp" 1445
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 1446
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uexp" 1447
+"../../../Engine/Content/EngineSky/SM_SkySphere.ubulk" 1448
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1449
+"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 1450
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_InsideCorner.ubulk" 1451
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_InsideCorner.uasset" 1452
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_InsideCorner.uexp" 1453
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Pillar.ubulk" 1454
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Pillar.uasset" 1455
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Pillar.uexp" 1456
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uasset" 1457
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Materials/lambert19.uexp" 1458
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.ubulk" 1459
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uasset" 1460
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Temporary/Meshes/Well.uexp" 1461
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/M_WaterStill_Fountain.uasset" 1462
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/M_WaterStill_Fountain.uexp" 1463
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift1.uasset" 1464
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift1.uexp" 1465
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.ubulk" 1466
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uasset" 1467
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/Flower_opacity_edit.uexp" 1468
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.ubulk" 1469
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uasset" 1470
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_emmissive_2.uexp" 1471
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.ubulk" 1472
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uasset" 1473
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flower_base_colour_edit.uexp" 1474
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uasset" 1475
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/FlowerMat.uexp" 1476
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uasset" 1477
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/flowers.uexp" 1478
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.ubulk" 1479
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uasset" 1480
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/yellow_flower.uexp" 1481
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_BaseColor.ubulk" 1482
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_BaseColor.uasset" 1483
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_BaseColor.uexp" 1484
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_Normal.ubulk" 1485
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_Normal.uasset" 1486
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_Normal.uexp" 1487
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_OcclusionRoughnessMetallic.ubulk" 1488
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_OcclusionRoughnessMetallic.uasset" 1489
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/Boulder_low_pCube10_01_OcclusionRoughnessMetallic.uexp" 1490
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Rock.uasset" 1491
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Rock.uexp" 1492
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Boulder_low.ubulk" 1493
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Boulder_low.uasset" 1494
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Boulder_low.uexp" 1495
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Emissive.ubulk" 1496
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Emissive.uasset" 1497
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Emissive.uexp" 1498
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_BaseColor.ubulk" 1499
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_BaseColor.uasset" 1500
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_BaseColor.uexp" 1501
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_ORM.ubulk" 1502
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_ORM.uasset" 1503
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_ORM.uexp" 1504
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Normal.ubulk" 1505
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Normal.uasset" 1506
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_SM_Lantern_Normal.uexp" 1507
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Lantern.uasset" 1508
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Lantern.uexp" 1509
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern.ubulk" 1510
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern.uasset" 1511
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern.uexp" 1512
+"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 1513
+"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uexp" 1514
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift2.uasset" 1515
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_PineTreeHueShift2.uexp" 1516
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_1.uasset" 1517
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_1.uexp" 1518
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_2.uasset" 1519
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_2.uexp" 1520
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_3.uasset" 1521
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_3.uexp" 1522
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_4.uasset" 1523
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_4.uexp" 1524
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_5.uasset" 1525
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/IntroPanels/Panel_5.uexp" 1526
+"../../../Engine/Content/BasicShapes/Sphere.ubulk" 1527
+"../../../Engine/Content/BasicShapes/Sphere.uasset" 1528
+"../../../Engine/Content/BasicShapes/Sphere.uexp" 1529
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Cutscene.uasset" 1530
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_Cutscene.uexp" 1531
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_TreeTrunkBurnt2_low_BaseColor.ubulk" 1532
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_TreeTrunkBurnt2_low_BaseColor.uasset" 1533
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_TreeTrunkBurnt2_low_BaseColor.uexp" 1534
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_TreeTrunk_Burnt.uasset" 1535
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_TreeTrunk_Burnt.uexp" 1536
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_PoofTrail.uasset" 1537
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/P_PoofTrail.uexp" 1538
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_PoofSpline.uasset" 1539
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_PoofSpline.uexp" 1540
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_IntroCutscene.uasset" 1541
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/UI/WBP_IntroCutscene.uexp" 1542
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceFrequencyMode.uasset" 1543
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceFrequencyMode.uexp" 1544
+"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl32.uasset" 1545
+"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl32.uexp" 1546
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraCurlNoiseQuality.uasset" 1547
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/ENiagaraCurlNoiseQuality.uexp" 1548
+"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl64.uasset" 1549
+"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl64.uexp" 1550
+"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl16.uasset" 1551
+"../../../Engine/Plugins/FX/Niagara/Content/VectorFields/Assets/TilingCurl16.uexp" 1552
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceMode.uasset" 1553
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceMode.uexp" 1554
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindGroundMaskMode.uasset" 1555
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindGroundMaskMode.uexp" 1556
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Wind.uasset" 1557
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Wind.uexp" 1558
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind_02.ubulk" 1559
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind_02.uasset" 1560
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind_02.uexp" 1561
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindCombingMode.uasset" 1562
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindCombingMode.uexp" 1563
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceContributionMode.uasset" 1564
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindTurbulenceContributionMode.uexp" 1565
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindOffsetMode.uasset" 1566
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindOffsetMode.uexp" 1567
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionDistanceMode.uasset" 1568
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionDistanceMode.uexp" 1569
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionMode.uasset" 1570
+"../../../Engine/Plugins/FX/Niagara/Content/Enums/Wind/ENiagaraWindFrictionMode.uexp" 1571
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Leaf.uasset" 1572
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/M_Leaf.uexp" 1573
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind.ubulk" 1574
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind.uasset" 1575
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/SM_Wind.uexp" 1576
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/P_Wind.uasset" 1577
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/VFX/WindWisp/P_Wind.uexp" 1578
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Camera/BP_Camera.uasset" 1579
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Camera/BP_Camera.uexp" 1580
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Corner.ubulk" 1581
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Corner.uasset" 1582
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Cliff_Corner.uexp" 1583
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uasset" 1584
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/NormalOutlines.uexp" 1585
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uasset" 1586
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/SobelFunction.uexp" 1587
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.ubulk" 1588
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" 1589
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Textures/T_Smoke_Tiled_D.uexp" 1590
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uasset" 1591
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader.uexp" 1592
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uasset" 1593
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/ToonshaderTest/OutlineShader_Inst.uexp" 1594
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDark_LayerInfo.uasset" 1595
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDark_LayerInfo.uexp" 1596
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.ubulk" 1597
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uasset" 1598
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/blue_flower_test.uexp" 1599
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_GrassRVT_New.uasset" 1600
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/M_GrassRVT_New.uexp" 1601
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/MI_Grass_NoRVT.uasset" 1602
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/MI_Grass_NoRVT.uexp" 1603
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_NoRVT.ubulk" 1604
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_NoRVT.uasset" 1605
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_NoRVT.uexp" 1606
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RVT/LandscapeHeight.uasset" 1607
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/RVT/LandscapeHeight.uexp" 1608
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.ubulk" 1609
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uasset" 1610
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/pink_flower.uexp" 1611
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uasset" 1612
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/SoundtrackTrigger.uexp" 1613
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Basic_Wall.uasset" 1614
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Materials/M_Basic_Wall.uexp" 1615
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.ubulk" 1616
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.uasset" 1617
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/StarterContent/Shapes/Shape_Cube.uexp" 1618
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uasset" 1619
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_Pickup.uexp" 1620
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/Ground_LayerInfo.uasset" 1621
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/Ground_LayerInfo.uexp" 1622
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Pillar.ubulk" 1623
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Pillar.uasset" 1624
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Pillar.uexp" 1625
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_OutsideCorner.ubulk" 1626
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_OutsideCorner.uasset" 1627
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/NewCliffs/SM_NewCliffs_OutsideCorner.uexp" 1628
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert1.uasset" 1629
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert1.uexp" 1630
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert2.uasset" 1631
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/lambert2.uexp" 1632
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Fountain_test.ubulk" 1633
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Fountain_test.uasset" 1634
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/Fountain_test.uexp" 1635
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDarker_LayerInfo.uasset" 1636
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Landscape/LayerInfo/GrassDarker_LayerInfo.uexp" 1637
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/MI_GrassRVT_New_Inst.uasset" 1638
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/RayAssets/MI_GrassRVT_New_Inst.uexp" 1639
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_RVT.ubulk" 1640
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_RVT.uasset" 1641
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_GrassClump_RVT.uexp" 1642
+"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uasset" 1643
+"../../../Engine/Content/EngineSky/M_SimpleSkyDome.uexp" 1644
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Whole.ubulk" 1645
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Whole.uasset" 1646
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Lantern_Whole.uexp" 1647
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Modular.ubulk" 1648
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Modular.uasset" 1649
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fence_Modular.uexp" 1650
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uasset" 1651
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_WaterStill_Inst.uexp" 1652
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/IntroCutsceneLevelFinal.uexp" 1653
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/IntroCutsceneLevelFinal.umap" 1654
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fountain_WithWater.ubulk" 1655
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fountain_WithWater.uasset" 1656
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Environment/SM_Fountain_WithWater.uexp" 1657
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPotBase.ubulk" 1658
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPotBase.uasset" 1659
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPotBase.uexp" 1660
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_YellowPot.uasset" 1661
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_YellowPot.uexp" 1662
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPot.ubulk" 1663
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPot.uasset" 1664
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/YellowPot.uexp" 1665
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerYellow.uasset" 1666
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerYellow.uexp" 1667
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/ChargeBubble.uasset" 1668
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/ChargeBubble.uexp" 1669
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uasset" 1670
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/UI/DialogueBox/ui_speech_bubble.uexp" 1671
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uasset" 1672
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/Test.uexp" 1673
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 1674
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uexp" 1675
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uasset" 1676
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/DestrucibleEnvironments/Boulder.uexp" 1677
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPotBase.ubulk" 1678
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPotBase.uasset" 1679
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPotBase.uexp" 1680
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PinkPot.uasset" 1681
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PinkPot.uexp" 1682
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPot.ubulk" 1683
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPot.uasset" 1684
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PinkPot.uexp" 1685
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPink.uasset" 1686
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPink.uexp" 1687
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_D.ubulk" 1688
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_D.uasset" 1689
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_D.uexp" 1690
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_ORM.ubulk" 1691
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_ORM.uasset" 1692
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_ORM.uexp" 1693
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_N.ubulk" 1694
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_N.uasset" 1695
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/Textures/T_Fountain_N.uexp" 1696
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Fountain.uasset" 1697
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/MI_Fountain.uexp" 1698
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePotBase.ubulk" 1699
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePotBase.uasset" 1700
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePotBase.uexp" 1701
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PurplePot.uasset" 1702
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/M_PurplePot.uexp" 1703
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePot.ubulk" 1704
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePot.uasset" 1705
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Assets/Pots/PurplePot.uexp" 1706
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPurple.uasset" 1707
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/EarthSpellObjects/BP_FlowerPurple.uexp" 1708
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_ObjectGuideline.uasset" 1709
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Materials/M_ObjectGuideline.uexp" 1710
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/RepairBubble.uasset" 1711
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/UIWidgets/TutorialBubbles/RepairBubble.uexp" 1712
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uasset" 1713
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/Rebuildables/RebuildableHouse.uexp" 1714
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_ItemPlacement.uasset" 1715
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Blueprints/BP_ItemPlacement.uexp" 1716
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.uexp" 1717
+"C:/Users/glenn/Documents/Unreal Projects/Dare/Content/Levels/Level1Playable.umap" 1718
