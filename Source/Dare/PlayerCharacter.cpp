@@ -198,11 +198,11 @@ void APlayerCharacter::ThrowItem()
 		PickupableItem->Mesh->SetRenderCustomDepth(false);
 		if(bIsHoldingItem)
 		{
+			PickupableItem->bIsHeld=false;
 			PickupableItem->GetWorld()->GetTimerManager().SetTimer(PickupableItem->RespawnCooldown, PickupableItem, &APickupItem::Respawn, 5.0f, false);
-			
 			PickupableItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 			bIsHoldingItem=false;
-			PickupableItem->SetActorEnableCollision(true);
+		//	PickupableItem->SetActorEnableCollision(true);
 			PickupableItem->Mesh->SetSimulatePhysics(true);
 			if(GetVelocity().Length()<=5)
 			{
@@ -220,11 +220,12 @@ void APlayerCharacter::ThrowItem()
 		}
 		else
 		{
+			PickupableItem->bIsHeld=true;
 			bIsHoldingItem=true;
 			PickupableItem->GetWorld()->GetTimerManager().ClearTimer(PickupableItem->RespawnCooldown);
 			PickupableItem->AttachToComponent(PlayerMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 			PickupableItem->Mesh->SetSimulatePhysics(false);
-			PickupableItem->SetActorEnableCollision(false);
+		//	PickupableItem->SetActorEnableCollision(false);
 			TargetLocation = (PlayerMesh->GetForwardVector()*600)+PlayerMesh->GetComponentLocation() + FVector(0,0,200);
 			bShowInteractButton=false;
 		}

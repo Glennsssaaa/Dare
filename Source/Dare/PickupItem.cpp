@@ -3,7 +3,6 @@
 
 #include "PickupItem.h"
 
-#include "ItemPlacement.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -20,6 +19,7 @@ APickupItem::APickupItem()
 	InteractCollision->SetupAttachment(Mesh);
 	InteractCollision->SetBoxExtent(FVector(100.f,100.f,100.f));
 	InteractCollision->OnComponentBeginOverlap.AddDynamic(this, &APickupItem::OnOverlapBegin);
+	InteractCollision->OnComponentEndOverlap.AddDynamic(this, &APickupItem::OnOverlapEnd);
 	Mesh->OnComponentBeginOverlap.AddDynamic(this, &APickupItem::OnKillOverlap);
 	
 }
@@ -35,28 +35,40 @@ void APickupItem::BeginPlay()
 void APickupItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-}
-
-void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	AItemPlacement* placement = Cast<AItemPlacement>(OtherActor);
-	if(placement!=nullptr && !bIsPlaced)
+	if(placement!=nullptr && !bIsPlaced && !bIsHeld)
 	{
-		UE_LOG(LogTemp,Warning,TEXT("Placed"))
 		if(placement->Mesh->GetStaticMesh() == Mesh->GetStaticMesh())
 		{
-			SetActorTransform(OtherActor->GetActorTransform());
+			if(placement!=nullptr)
+			{
+				placement->Mesh->SetVisibility(false);
+				UE_LOG(LogTemp,Warning,TEXT("Placement"))
+			}
+			SetActorTransform(placement->GetActorTransform());
 			bIsPlaced=true;
+			Mesh->SetSimulatePhysics(false);
 			GetWorld()->GetTimerManager().ClearTimer(RespawnCooldown);
-			OtherActor->Destroy();
-			Mesh->SetMobility(EComponentMobility::Static);
+			//Mesh->SetMobility(EComponentMobility::Static);
 			if(!bScoreUpdated)
 			{
 				bScoreUpdated=true;
 				UpdateGameMode();
 			}
 		}
+	}
+}
+
+void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	placement = Cast<AItemPlacement>(OtherActor);
+}
+
+void APickupItem::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	if(placement!=nullptr)
+	{
+		placement=nullptr;
 	}
 }
 
