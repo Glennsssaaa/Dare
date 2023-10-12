@@ -328,7 +328,7 @@ void APlayerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActo
 			PickupableItem = Cast<APickupItem>(OtherActor);
 			if(PickupableItem!=nullptr && !bIsHoldingItem)
 			{
-				if(!PickupableItem->bIsPlaced)
+				if(!PickupableItem->bIsPlaced && !PickupableItem->bIsHeld)
 				{
 					PickupableItem->Mesh->SetRenderCustomDepth(true);
 					bShowInteractButton=true;
