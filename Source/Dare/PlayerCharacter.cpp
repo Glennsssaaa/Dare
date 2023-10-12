@@ -204,17 +204,11 @@ void APlayerCharacter::ThrowItem()
 			bIsHoldingItem=false;
 		//	PickupableItem->SetActorEnableCollision(true);
 			PickupableItem->Mesh->SetSimulatePhysics(true);
-			if(GetVelocity().Length()<=5)
-			{
-				PickupableItem->Mesh->SetAllPhysicsLinearVelocity(PlayerMesh->GetForwardVector() * 500);
-			}
-			else
-			{
-				FVector velocity = PlayerMesh->GetForwardVector() * 2000;
-				//PickupableItem->Mesh->SetAllPhysicsLinearVelocity(PlayerMesh->GetForwardVector() * 2000);
-				PickupableItem->Mesh->SetPhysicsLinearVelocity(FVector(velocity.X,velocity.Y,velocity.Z+500));
 
-			}
+			FVector velocity = PlayerMesh->GetForwardVector() * 2000;
+			//PickupableItem->Mesh->SetAllPhysicsLinearVelocity(PlayerMesh->GetForwardVector() * 2000);
+			PickupableItem->Mesh->SetPhysicsLinearVelocity(FVector(velocity.X,velocity.Y,velocity.Z+500));
+
 			PickupableItem->bHasLerped=false;
 			PickupableItem=nullptr;
 		}
