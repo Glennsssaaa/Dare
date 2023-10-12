@@ -77,58 +77,59 @@ void ATankCharacter::AbilityOne()
 {
 	Super::AbilityOne();
 
-	if(!bCanPlayerCharge || !bCanPlayerDash) { return; }
-	// Make sure tank isn't currently holding an object
-	if(!bIsHoldingItem)
-	{
-		if(!bHasAimedAbility)
+	if (bCanUseAbilityOne) {
+		if (!bCanPlayerCharge || !bCanPlayerDash) { return; }
+		// Make sure tank isn't currently holding an object
+		if (!bIsHoldingItem)
 		{
-			// Step 1: First time input has been pressed, player now aims the charge
-			
-			// Player can't move 
-			bCanPlayerMove = false;
-			
-			DashAimArrowComponent->SetVisibility(true);
-			bHasAimedAbility = true;
-			GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+			if (!bHasAimedAbility)
 			{
+				// Step 1: First time input has been pressed, player now aims the charge
+
+				// Player can't move 
+				bCanPlayerMove = false;
+
+				DashAimArrowComponent->SetVisibility(true);
+				bHasAimedAbility = true;
+				GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+					{
+						bHasAimedAbility = false;
+					}, 5.f, false);
+			}
+			else
+			{
+				// Step 2: If player presses input again within 5 seconds, they will
+				// charge forward in the direction they are aiming
+				Charge();
 				bHasAimedAbility = false;
-			}, 5.f, false);
-		}
-		else
-		{
-			// Step 2: If player presses input again within 5 seconds, they will
-			// charge forward in the direction they are aiming
-			Charge();
-			bHasAimedAbility = false;
+			}
 		}
 	}
-	
 }
 
 void ATankCharacter::AbilityTwo()
 {
 	Super::AbilityTwo();
-	
-	if(!bIsHoldingItem)
-	{
-		// If building destroyed, rebuild it
-		if(!Rebuildable) return;
+	if (bCanUseAbilityTwo) {
+		if (!bIsHoldingItem)
+		{
+			// If building destroyed, rebuild it
+			if (!Rebuildable) return;
 
-		if(bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem && !bToggleInteract && !Rebuildable->GetIsOnFire())
-		{
-			Rebuildable->SetIsRebuilding(true);
-			bToggleInteract=true;
-			bPlayerFrozen=true;
-		}
-		else if(bToggleInteract && bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem)
-		{
-			bPlayerFrozen=false;
-			bToggleInteract=false;
-			Rebuildable->SetIsRebuilding(false);
+			if (bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem && !bToggleInteract && !Rebuildable->GetIsOnFire())
+			{
+				Rebuildable->SetIsRebuilding(true);
+				bToggleInteract = true;
+				bPlayerFrozen = true;
+			}
+			else if (bToggleInteract && bIsInRebuildZone && Rebuildable->GetIsDestroyed() && !bIsHoldingItem)
+			{
+				bPlayerFrozen = false;
+				bToggleInteract = false;
+				Rebuildable->SetIsRebuilding(false);
+			}
 		}
 	}
-	
 }
 
 void ATankCharacter::Charge()

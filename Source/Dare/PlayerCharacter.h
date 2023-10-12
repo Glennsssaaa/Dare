@@ -59,7 +59,14 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	TArray<TEnumAsByte<EObjectTypeQuery>> mousehitObjs;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bCanUseAbilityOne;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bCanUseAbilityTwo;
+
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AActor* InteractableActor;
 	

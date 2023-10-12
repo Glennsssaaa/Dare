@@ -23,6 +23,8 @@ void AMageCharacter::BeginPlay()
 	QueryParams.bTraceComplex = true;
 	QueryParams.AddIgnoredActor(this);
 	QueryParams.bReturnFaceIndex=true;
+	bToggleEarth = false;
+	bToggleWater = false;
 }
 
 // Called every frame
@@ -50,29 +52,30 @@ void AMageCharacter::Interact(const FInputActionValue& Value)
 void AMageCharacter::AbilityOne()
 {
 	Super::AbilityOne();
-
-	//Interact toggle
-	if(bToggleWater)
-	{
-		//Clears water ability timer
-		GetWorldTimerManager().ClearTimer(LineTraceTimer);
-		GravityOffset = FVector::ZeroVector;
-		bEnableWaterVfx=false;
-		bToggleWater=false;
-		bCanInteract=true;
-		MovementSpeed=5.0f;
-	}
-	else if(!bToggleWater && !bIsHoldingItem)
-	{
-		bToggleEarth=false;
-		//Calculates next position and calls function by timer
-		NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 750);
-		bIsDrawing = true;
-		bEnableWaterVfx=true;
-		GetWorldTimerManager().SetTimer(LineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
-		bToggleWater=true;
-		bCanInteract=false;
-		MovementSpeed=0.5f;
+	if (bCanUseAbilityOne) {
+		//Interact toggle
+		if (bToggleWater)
+		{
+			//Clears water ability timer
+			GetWorldTimerManager().ClearTimer(LineTraceTimer);
+			GravityOffset = FVector::ZeroVector;
+			bEnableWaterVfx = false;
+			bToggleWater = false;
+			bCanInteract = true;
+			MovementSpeed = 5.0f;
+		}
+		else if (!bToggleWater && !bIsHoldingItem)
+		{
+			bToggleEarth = false;
+			//Calculates next position and calls function by timer
+			NextLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + 750);
+			bIsDrawing = true;
+			bEnableWaterVfx = true;
+			GetWorldTimerManager().SetTimer(LineTraceTimer, this, &AMageCharacter::LineTraceArc, 0.01f, true);
+			bToggleWater = true;
+			bCanInteract = false;
+			MovementSpeed = 0.5f;
+		}
 	}
 }
 
@@ -80,26 +83,27 @@ void AMageCharacter::AbilityOne()
 void AMageCharacter::AbilityTwo()
 {
 	Super::AbilityTwo();
-	if(bToggleEarth)
-	{
-		bToggleEarth=false;
-		MovementSpeed=5.0f;
-		bCanInteract=true;
-	}
-	else if(!bToggleEarth && !bIsHoldingItem)
-	{
-		if(bToggleWater)
+	if (bCanUseAbilityTwo) {
+		if (bToggleEarth)
 		{
-			bToggleWater=false;
-			GetWorldTimerManager().ClearTimer(LineTraceTimer);
-			GravityOffset = FVector::ZeroVector;
-			bEnableWaterVfx=false;
+			bToggleEarth = false;
+			MovementSpeed = 5.0f;
+			bCanInteract = true;
 		}
-		MovementSpeed=0.5f;
-		bToggleEarth=true;
-		bCanInteract=false;
+		else if (!bToggleEarth && !bIsHoldingItem)
+		{
+			if (bToggleWater)
+			{
+				bToggleWater = false;
+				GetWorldTimerManager().ClearTimer(LineTraceTimer);
+				GravityOffset = FVector::ZeroVector;
+				bEnableWaterVfx = false;
+			}
+			MovementSpeed = 0.5f;
+			bToggleEarth = true;
+			bCanInteract = false;
+		}
 	}
-
 	///OLD EARTH SPELL CODE
 	/*
 	if(bToggleEarth){
